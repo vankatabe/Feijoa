@@ -1,0 +1,18 @@
+Test Name:	CheckSiteLoad2
+Test FullName:	Blog.UI.Tests.UITests2.CheckSiteLoad2
+Test Source:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog.UI.Tests\UITests2.cs : line 18
+Test Outcome:	Failed
+Test Duration:	0:00:45.296
+
+Result StackTrace:	
+at OpenQA.Selenium.Firefox.FirefoxDriverServer.ConnectToBrowser(TimeSpan timeToWait)
+   at OpenQA.Selenium.Firefox.FirefoxDriverServer.Start()
+   at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Firefox.FirefoxDriver..ctor(FirefoxBinary binary, FirefoxProfile profile)
+   at OpenQA.Selenium.Firefox.FirefoxDriver..ctor()
+   at Blog.UI.Tests.UITests2.CheckSiteLoad2() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog.UI.Tests\UITests2.cs:line 19
+Result Message:	OpenQA.Selenium.WebDriverException : Failed to start up socket within 45000 milliseconds. Attempted to connect to the following addresses: 127.0.0.1:7055
+

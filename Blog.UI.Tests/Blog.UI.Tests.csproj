@@ -46,6 +46,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
@@ -85,12 +86,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasePage.cs" />
     <Compile Include="BrowserHost.cs" />
-    <Compile Include="UITests.cs" />
+    <Compile Include="Pages\HomePage\HomePage.cs" />
+    <Compile Include="Pages\HomePage\HomePageAsserter.cs" />
+    <Compile Include="Pages\HomePage\HomePageMap.cs" />
+    <Compile Include="HomePageTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Config\Environment.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +107,7 @@
   <ItemGroup>
     <Content Include="bin\Debug\Blog.UI.Tests.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

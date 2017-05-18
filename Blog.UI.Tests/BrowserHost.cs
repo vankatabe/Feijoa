@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace Blog.UI.Tests
     public static class BrowserHost
     {
         public static readonly SelenoHost Instance = new SelenoHost();
-        private static readonly string RootUrl = "http://localhost:60634/Article/List";
+        private static readonly string RootUrl = ConfigurationManager.AppSettings["URL"];
 
         static BrowserHost()
         {

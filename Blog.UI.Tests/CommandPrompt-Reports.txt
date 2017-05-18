@@ -1,0 +1,12 @@
+"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe" --labels=All --out="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.txt" --result="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml";format=nunit2 "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll"
+
+@ echo --where "method == FirstNameField_Empty_ErrorMessage"
+
+copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.xml" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\packages\SpecFlow.2.1.0\tools\TestResult.xml"
+"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\packages\SpecFlow.2.1.0\tools\specflow.exe" nunitexecutionreport "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage.csproj" /out:"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.htm"
+
+@echo spaces in folder names might break the execution
+@echo .txt and .xml files with the results need to be put in specflow.exe's folder
+
+"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.html"
+@echo proba reportunit "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.xml" reportunit "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.html"

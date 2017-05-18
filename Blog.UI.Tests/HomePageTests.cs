@@ -22,7 +22,7 @@ namespace Blog.UI.Tests
         [SetUp]
         public void Init()
         {
-            // this.driver = BrowserHost.Instance.Application.Browser;
+            // this.driver = BrowserHost.Instance.Application.Browser; // void
         }
 
         [TearDown]
@@ -71,21 +71,6 @@ namespace Blog.UI.Tests
 
         }
 
-        [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
-        [Description("Navigate to Blog webb address, expected: open Blog homepage and Logo present")]
-        [Author("vankatabe")]
-        public void CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePageProba()
-        {
-            var homePage = new HomePage(this.driver);
-            //  IWebDriver driver = BrowserHost.Instance.Application.Browser;
-            // WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
-
-            homePage.NavigateTo(homePage.URL);
-
-            // var logo = homePage.Wait.Until(w => w.FindElement(By.XPath("/html/body/div[1]/div/div[1]/a")));
-
-            homePage.AssertHomePageLogoDisplayed("SOFTUNI BLOG");
-        }
+       
     }
 }

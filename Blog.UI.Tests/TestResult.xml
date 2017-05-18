@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-18" time="12:16:00">
+  <environment nunit-version="3.5.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests" machine-name="VANETO-PC" user="vaneto" user-domain="vaneto-PC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" executed="True" result="Success" success="True" time="13.549" asserts="2">
+    <properties>
+      <property name="_PID" value="7296" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <results>
+      <test-suite type="TestSuite" name="Blog" executed="True" result="Success" success="True" time="13.529" asserts="2">
+        <results>
+          <test-suite type="TestSuite" name="UI" executed="True" result="Success" success="True" time="13.527" asserts="2">
+            <results>
+              <test-suite type="TestSuite" name="Tests" executed="True" result="Success" success="True" time="13.525" asserts="2">
+                <results>
+                  <test-suite type="TestFixture" name="HomePageTests" executed="True" result="Success" success="True" time="13.518" asserts="2">
+                    <results>
+                      <test-case name="Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Navigate to Blog webb address, expected: Blog homepage open and Logo present" executed="True" result="Success" success="True" time="0.593" asserts="2">
+                        <properties>
+                          <property name="Priority" value="1" />
+                          <property name="Test scenario number:" value="9" />
+                          <property name="Homepage test number:" value="1" />
+                          <property name="Description" value="Navigate to Blog webb address, expected: Blog homepage open and Logo present" />
+                          <property name="Author" value="vankatabe" />
+                        </properties>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

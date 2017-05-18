@@ -14,12 +14,12 @@ namespace Blog.UI.Tests
     [TestFixture]
     public class HomePageTests
     {
-        private IWebDriver driver;
+        private IWebDriver driver = BrowserHost.Instance.Application.Browser;
 
         [SetUp]
         public void Init()
         {
-            this.driver = BrowserHost.Instance.Application.Browser;
+            // this.driver = BrowserHost.Instance.Application.Browser;
         }
 
         [TearDown]

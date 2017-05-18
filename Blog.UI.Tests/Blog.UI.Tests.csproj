@@ -45,6 +45,10 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="nunit.framework, Version=3.6.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
@@ -79,6 +83,10 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="TestStack.Seleno, Version=0.9.61.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\TestStack.Seleno.0.9.61\lib\NET40\TestStack.Seleno.dll</HintPath>
       <Private>True</Private>

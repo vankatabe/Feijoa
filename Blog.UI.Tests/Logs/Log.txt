@@ -9,3 +9,5 @@ System.NullReferenceException : Object reference not set to an instance of an ob
 [2017-05-18T14:27:57] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 [2017-05-18T14:51:20] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 [2017-05-18T15:16:14] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-18T15:23:43] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-18T15:28:53] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage

@@ -2,8 +2,8 @@
 
 @ echo --where "method == FirstNameField_Empty_ErrorMessage"
 
-copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.xml" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\packages\SpecFlow.2.1.0\tools\TestResult.xml"
-"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\packages\SpecFlow.2.1.0\tools\specflow.exe" nunitexecutionreport "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage.csproj" /out:"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.htm"
+copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\SpecFlow.2.1.0\tools\TestResult.xml"
+"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\SpecFlow.2.1.0\tools\specflow.exe" nunitexecutionreport "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Blog.UI.Tests.csproj" /out:"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.htm"
 
 @echo spaces in folder names might break the execution
 @echo .txt and .xml files with the results need to be put in specflow.exe's folder

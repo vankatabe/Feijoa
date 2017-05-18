@@ -58,7 +58,7 @@ namespace Blog.UI.Tests
             //  IWebDriver driver = BrowserHost.Instance.Application.Browser;
             // WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
 
-            homePage.NavigateTo(homePage.URL);
+          //  homePage.NavigateTo(homePage.URL);
 
             // var logo = homePage.Wait.Until(w => w.FindElement(By.XPath("/html/body/div[1]/div/div[1]/a")));
 

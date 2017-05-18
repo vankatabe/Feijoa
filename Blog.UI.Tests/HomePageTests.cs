@@ -1,4 +1,5 @@
 ﻿using Blog.UI.Tests.Attributes;
+using Blog.UI.Tests.Models;
 using Blog.UI.Tests.Pages.HomePage;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -7,6 +8,7 @@ using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -51,27 +53,22 @@ namespace Blog.UI.Tests
 
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
-        [Description("Navigate to Blog webb address, expected: open Blog homepage and Logo present")]
+        [Description("Navigate to Blog webb address, expected: Blog homepage open and Logo present")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]
         public void CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage()
         {
-            var homePage = new HomePage(this.driver);
-            //  IWebDriver driver = BrowserHost.Instance.Application.Browser;
-            // WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+            HomePage homePage = new HomePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
 
             homePage.NavigateTo(homePage.URL);
 
-            // var logo = homePage.Wait.Until(w => w.FindElement(By.XPath("/html/body/div[1]/div/div[1]/a")));
+            homePage.AssertHomePageLogoDisplayed(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { homePage, page.Effect });
 
-            homePage.AssertHomePageLogoDisplayed("SOFTUNI BLOG");
-
-            /* for the DataDriven Asserter, use these first and 4-th rows:
-              MethodInfo asserter = typeof(RegistrationPageAssester).GetMethod(user.Asserter);
-           // asserter.Invoke(null, new object[] { regPage, errorMessage });
-            // could be also like next row - Effect - from the Effect column in the Excel file. Need to add Effect property in RegistrationUser.cs
-            asserter.Invoke(null, new object[] { regPage, user.Effect });
-            */
         }
 
         [Test]

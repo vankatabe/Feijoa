@@ -9,4 +9,5 @@ copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-S
 @echo .txt and .xml files with the results need to be put in specflow.exe's folder
 
 "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.html"
+@echo for the CI: copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml" "TestResult.xml"
 @echo proba reportunit "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.xml" reportunit "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.html"

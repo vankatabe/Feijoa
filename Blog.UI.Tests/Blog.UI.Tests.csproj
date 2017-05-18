@@ -127,6 +127,10 @@
   <ItemGroup>
     <Content Include="bin\Debug\Blog.UI.Tests.dll" />
     <Content Include="Logs\Log.txt" />
+    <Content Include="TestResult.htm" />
+    <Content Include="TestResult.html" />
+    <Content Include="TestResult.txt" />
+    <Content Include="TestResult.xml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

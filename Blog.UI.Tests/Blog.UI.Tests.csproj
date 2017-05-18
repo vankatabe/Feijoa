@@ -86,6 +86,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\LogResultToFileAttribute.cs" />
     <Compile Include="BasePage.cs" />
     <Compile Include="BrowserHost.cs" />
     <Compile Include="Pages\HomePage\HomePage.cs" />
@@ -99,6 +100,8 @@
     <None Include="Config\Environment.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="DataDrivenTests\Requirements-Traceability-matrix-testcase_template-draft.xls" />
+    <None Include="DataDrivenTests\UserData.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Blog.UI.Tests.dll" />
+    <Content Include="Logs\Log.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

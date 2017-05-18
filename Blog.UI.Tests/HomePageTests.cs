@@ -1,4 +1,5 @@
-﻿using Blog.UI.Tests.Pages.HomePage;
+﻿using Blog.UI.Tests.Attributes;
+using Blog.UI.Tests.Pages.HomePage;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
@@ -25,7 +26,7 @@ namespace Blog.UI.Tests
         [TearDown]
         public void CleanUp()
         {
-            // Add old-style logger for failed tests
+            // The old-style logger for failed tests
             //    if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
             //    {
             //        string filenameTxt = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".txt";
@@ -52,6 +53,7 @@ namespace Blog.UI.Tests
         [Property("Priority", 1), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
         [Description("Navigate to Blog webb address, expected: open Blog homepage and Logo present")]
         [Author("vankatabe")]
+        [LogResultToFileAttribute]
         public void CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage()
         {
             var homePage = new HomePage(this.driver);

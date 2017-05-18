@@ -1,0 +1,6 @@
+[2017-05-18T13:52:49] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOGy"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+

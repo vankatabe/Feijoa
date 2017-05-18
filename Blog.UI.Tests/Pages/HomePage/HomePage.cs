@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,7 @@ namespace Blog.UI.Tests.Pages.HomePage
         {
             get
             {
-                return base.url;
+                return ConfigurationManager.AppSettings["URL"];
             }
         }
     }

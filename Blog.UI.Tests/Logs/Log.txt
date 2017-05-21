@@ -95,3 +95,9 @@ System.Data.OleDb.OleDbException : No value given for one or more required param
 
 [2017-05-21T14:29:07] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 [2017-05-21T14:47:18] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T14:53:17] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T14:54:00] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T15:04:51] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T15:05:14] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T15:32:43] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T15:33:41] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage

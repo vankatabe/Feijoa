@@ -31,7 +31,7 @@ namespace Blog.UI.Tests
         public void CleanUp()
         {
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
-            driver.Quit(); // causes Firefox to crash
+            // driver.Quit(); // causes Firefox to crash
             // The old-style logger for failed tests
             //    if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
             //    {

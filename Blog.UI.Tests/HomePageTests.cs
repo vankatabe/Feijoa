@@ -18,16 +18,20 @@ namespace Blog.UI.Tests
     public class HomePageTests
     {
         private IWebDriver driver = BrowserHost.Instance.Application.Browser;
+        private string testStatus = "failed";
 
         [SetUp]
         public void Init()
         {
             // this.driver = BrowserHost.Instance.Application.Browser; // void
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
         }
 
         [TearDown]
         public void CleanUp()
         {
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            driver.Quit(); // causes Firefox to crash
             // The old-style logger for failed tests
             //    if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
             //    {
@@ -48,7 +52,6 @@ namespace Blog.UI.Tests
             //        screenshot.SaveAsFile(filenameJpg, ScreenshotImageFormat.Jpeg);
             //    }
             //
-            //driver.Quit(); // causes Firefox to crash
         }
 
         [Test]
@@ -60,6 +63,7 @@ namespace Blog.UI.Tests
         {
             HomePage homePage = new HomePage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, "failed"); // First, write in xlsx 'failed' against the test
 
             homePage.NavigateTo(homePage.URL);
 
@@ -68,9 +72,8 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { homePage, page.Effect });
-            page.Status = "passed";
+            testStatus = "passed";
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
-
-       
     }
 }

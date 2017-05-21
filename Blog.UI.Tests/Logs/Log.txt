@@ -23,3 +23,74 @@ System.Data.OleDb.OleDbException : No value given for one or more required param
 [2017-05-21T13:41:17] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 System.Data.OleDb.OleDbException : No value given for one or more required parameters.
 [2017-05-21T13:42:19] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T13:56:40] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T13:59:04] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T14:01:43] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T14:02:49] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:05:11] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:05:53] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T14:06:17] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:06:39] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:13:42] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-21T14:16:15] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:17:47] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-21T14:19:54] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-21T14:20:27] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:25:08] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:27:24] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:27:59] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:28:40] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+  Expected string length 13 but was 12. Strings differ at index 12.
+  Expected: "SOFTUNI BLOG1"
+  But was:  "SOFTUNI BLOG"
+  -----------------------^
+
+[2017-05-21T14:29:07] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage

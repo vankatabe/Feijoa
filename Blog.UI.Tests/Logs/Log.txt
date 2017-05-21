@@ -14,3 +14,12 @@ System.NullReferenceException : Object reference not set to an instance of an ob
 [2017-05-18T15:42:28] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 [2017-05-18T16:00:04] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 [2017-05-18T16:02:28] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T13:38:15] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.Data.OleDb.OleDbException : Syntax error in string in query expression 'key = 'CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage'.
+[2017-05-21T13:39:20] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.Data.OleDb.OleDbException : Syntax error in string in query expression 'Key = 'CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage'.
+[2017-05-21T13:40:32] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-21T13:41:17] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-21T13:42:19] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage

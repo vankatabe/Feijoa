@@ -27,9 +27,15 @@ namespace Blog.UI.Tests.Models
         {
             using (var connection = new OleDbConnection(TestDataFileConnection()))
             {
+                OleDbCommand writeResult = new OleDbCommand();
                 connection.Open();
                 var query = string.Format("select * from [DataSet$] where key = '{0}'", keyName); // DataSet - name of the xlsx sheet where our data is
                 var value = connection.Query<BlogPages>(query).FirstOrDefault();
+                string sql = null;
+                writeResult.Connection = connection;
+                sql = "Update [DataSet$] set Status = 'New Name' where Key = 'CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage'";
+                writeResult.CommandText = sql;
+                writeResult.ExecuteNonQuery();
                 connection.Close();
                 return value;
             }

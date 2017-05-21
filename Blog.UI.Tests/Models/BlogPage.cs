@@ -22,5 +22,6 @@ namespace Blog.UI.Tests.Models
 
         public string Asserter { get; set; }
 
+        public string Status { get; set; }
     }
 }

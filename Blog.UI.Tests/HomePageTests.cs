@@ -68,7 +68,7 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { homePage, page.Effect });
-
+            page.Status = "passed";
         }
 
        

@@ -9,8 +9,8 @@ namespace Blog.UI.Tests.Models
     public class BlogPages
     {
         private static string uniqueUser = Guid.NewGuid().ToString();
-        private static string email = uniqueUser + "@email.com";
-        private static string fullname = uniqueUser;
+        private static string email;
+        private static string fullname;
 
         public string Key { get; set; }
 
@@ -30,14 +30,14 @@ namespace Blog.UI.Tests.Models
 
         public string UniqEmail
         {
-            get { return email; }
-            set { email = uniqueUser + "@uniqueemail.com"; }
+            get { return uniqueUser + "@uniqueemail.com"; }
+            // set { email = uniqueUser + "@uniqueemail.com"; }
         }
 
         public string UniqFullname
         {
-            get { return fullname; }
-            set { fullname = uniqueUser; }
+            get { return uniqueUser; }
+            //set { fullname = uniqueUser; }
         }
     }
 }

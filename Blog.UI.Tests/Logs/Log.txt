@@ -158,3 +158,28 @@ OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
 OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
   ----> OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//[@id='logoutForm']/ul/li[2]/a" is invalid: SyntaxError: The expression is not a legal expression.
 [2017-05-23T16:02:33] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T17:20:05] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T17:20:07] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T17:20:09] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-05-23T17:20:09] [Failed] Register_UniqueCredentials_RegisterSuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-23T17:20:44] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T17:20:46] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T17:20:56] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-05-23T17:20:57] [Failed] Register_UniqueCredentials_RegisterSuccessful
+System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
+  ----> OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-05-23T17:22:07] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.WebDriverException : Unexpected error. System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it [::1]:1328
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+[2017-05-23T17:22:27] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T17:22:42] [Passed] Register_UniqueCredentials_RegisterSuccessful

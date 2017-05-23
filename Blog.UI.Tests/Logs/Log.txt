@@ -183,3 +183,40 @@ OpenQA.Selenium.WebDriverException : Unexpected error. System.Net.WebException: 
    at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
 [2017-05-23T17:22:27] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
 [2017-05-23T17:22:42] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T22:03:10] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:03:12] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:03:13] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:03:23] [Failed] Register_UniqueCredentials_RegisterSuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-05-23T22:14:16] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:14:18] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:14:19] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 7393f90a-85a1-4917-a2c2-fce8651240c9@uniqueemail.com!"
+  But was:  "Hello 13666c18-b71d-4e2a-9ec1-da4303a2da43@uniqueemail.com!"
+  -----------------^
+
+[2017-05-23T22:14:19] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 4ebf8184-80d7-4e20-9c98-3f140a305e36@uniqueemail.com!"
+  But was:  "Hello 7393f90a-85a1-4917-a2c2-fce8651240c9@uniqueemail.com!"
+  -----------------^
+
+[2017-05-23T22:14:48] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:14:50] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:15:01] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-05-23T22:15:02] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 7.
+  Expected: "Hello d5471ee7-0fac-4a42-9a62-d95989508764@uniqueemail.com!"
+  But was:  "Hello df9d6812-ca7e-4bae-ade0-942e02ba0aa4@uniqueemail.com!"
+  ------------------^
+
+[2017-05-23T22:15:35] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:15:37] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:15:38] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:15:39] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T22:18:04] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:18:06] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:18:07] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:18:08] [Passed] Register_UniqueCredentials_RegisterSuccessful

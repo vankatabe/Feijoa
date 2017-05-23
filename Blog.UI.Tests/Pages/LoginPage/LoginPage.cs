@@ -22,9 +22,9 @@ namespace Blog.UI.Tests.Pages.LoginPage
             }
         }
 
-        public void FillLoginForm(BlogPages user)
+        public void FillLoginForm(BlogPages user, string uniqId)
         {
-            Type(this.Email, user.UniqEmail);
+            Type(this.Email, user.UniqEmail(uniqId));
             Type(this.Password, user.Password);
             this.SubmitButton.Click();
         }

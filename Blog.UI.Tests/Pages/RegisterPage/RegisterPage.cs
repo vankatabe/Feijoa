@@ -22,10 +22,10 @@ namespace Blog.UI.Tests.Pages.RegisterPage
             }
         }
 
-        public void FillRegistrationForm(BlogPages user)
+        public void FillRegistrationForm(BlogPages user, string uniqId)
         {
-            Type(this.Email, user.UniqEmail);
-            Type(this.Fullname, user.UniqFullname);
+            Type(this.Email, user.UniqEmail(uniqId));
+            Type(this.Fullname, user.UniqFullname(uniqId));
             Type(this.Password, user.Password);
             Type(this.ConfirmPassword, user.ConfirmPassword);
             this.SubmitButton.Click();

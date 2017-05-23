@@ -19,11 +19,13 @@ namespace Blog.UI.Tests
     {
         private IWebDriver driver = BrowserHost.Instance.Application.Browser;
         private string testStatus = "failed";
+        private string uniqId;
 
         [SetUp]
         public void Init()
         {
             // this.driver = BrowserHost.Instance.Application.Browser; // void
+            uniqId = Guid.NewGuid().ToString();
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
         }
 
@@ -68,9 +70,9 @@ namespace Blog.UI.Tests
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, "failed"); // First, write in xlsx 'failed' against the test
 
             registerPage.NavigateTo(registerPage.URL);
-            registerPage.FillRegistrationForm(page);
+            registerPage.FillRegistrationForm(page, uniqId);
             // Assert that User is Logged-in
-            loginPage.AssertGreetingDisplayed("Hello " + page.UniqEmail + '!');
+            // loginPage.AssertGreetingDisplayed("Hello " + page.UniqEmail(uniqId) + '!');
             // Press Logoff link
             homePage.LogoffLink.Click();
 

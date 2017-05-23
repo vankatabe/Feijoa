@@ -19,11 +19,13 @@ namespace Blog.UI.Tests
     {
         private IWebDriver driver = BrowserHost.Instance.Application.Browser;
         private string testStatus = "failed";
+        private string uniqId;
 
         [SetUp]
         public void Init()
         {
             // this.driver = BrowserHost.Instance.Application.Browser; // void
+            uniqId = Guid.NewGuid().ToString();
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
         }
 
@@ -68,16 +70,16 @@ namespace Blog.UI.Tests
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, "failed"); // First, write in xlsx 'failed' against the test
 
             registerPage.NavigateTo(registerPage.URL);
-            registerPage.FillRegistrationForm(page);
+            registerPage.FillRegistrationForm(page, uniqId);
             homePage.LogoffLink.Click();
             loginPage.NavigateTo(loginPage.URL);
-            loginPage.FillLoginForm(page);
+            loginPage.FillLoginForm(page, uniqId);
 
-            loginPage.AssertGreetingDisplayed(page.Effect + ' ' + page.UniqEmail + '!');
+            loginPage.AssertGreetingDisplayed(page.Effect + ' ' + page.UniqEmail(uniqId) + '!');
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
-            asserter.Invoke(null, new object[] { loginPage, page.Effect + ' ' + page.UniqEmail + '!' });
+            asserter.Invoke(null, new object[] { loginPage, page.Effect + ' ' + page.UniqEmail(uniqId) + '!' });
             testStatus = "passed";
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }

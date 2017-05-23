@@ -22,6 +22,14 @@ copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-S
 
 
 ---for TeamCityBlogProject relative paths:
+
+--real deal:
+packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe --labels=All --out=Blog.UI.Tests\TestResult.txt --result=Blog.UI.Tests\TestResult.xml;format=nunit2 Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll
+packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe Blog.UI.Tests\TestResult.xml Blog.UI.Tests\TestResult.html
+copy Blog.UI.Tests\TestResult.xml packages\SpecFlow.2.1.0\tools\TestResult.xml
+packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport Blog.UI.Tests\Blog.UI.Tests.csproj /out:Blog.UI.Tests\TestResult.htm
+
+--or
 ..\..\..\packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe --labels=All --out=..\..\TestResult.txt --result=..\..\Blog.UI.Tests\TestResult.xml;format=nunit2 \Blog.UI.Tests.dll
 ..\..\..\packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe ..\..\TestResult.xml ..\..\TestResult.html
 copy ..\..\TestResult.xml TestResult.xml
@@ -32,3 +40,4 @@ copy ..\..\TestResult.xml TestResult.xml
 ..\..\..\packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe ..\..\..\Blog.UI.Tests\TestResult.xml ..\..\..\Blog.UI.Tests\TestResult.html
 copy ..\..\TestResult.xml ..\..\..\packages\SpecFlow.2.1.0\tools\TestResult.xml
 ..\..\..\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport ..\..\..\bin\Debug\Blog.UI.Tests.csproj /out:..\..\..\Blog.UI.Tests\TestResult.htm
+

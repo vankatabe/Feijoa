@@ -136,3 +136,9 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logo
 [2017-05-23T15:39:11] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
 [2017-05-23T15:39:22] [Failed] Register_UniqueCredentials_RegisterSuccessful
 OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a
+[2017-05-23T15:47:29] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T15:47:31] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T15:47:32] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T15:47:43] [Failed] Register_UniqueCredentials_RegisterSuccessful
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a

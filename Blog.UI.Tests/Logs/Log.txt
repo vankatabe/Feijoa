@@ -142,3 +142,19 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logo
 [2017-05-23T15:47:43] [Failed] Register_UniqueCredentials_RegisterSuccessful
 OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
   ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a
+[2017-05-23T15:56:48] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T15:56:50] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T15:56:51] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T15:57:02] [Failed] Register_UniqueCredentials_RegisterSuccessful
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//[@id='logoutForm']/ul/li[2]/a" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-05-23T15:59:36] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  Expected string length 53 but was 6. Strings differ at index 0.
+  Expected: "Hello 22300098-4e09-42ef-b862-6e261307d230@email.com!"
+  But was:  "Log in"
+  -----------^
+
+[2017-05-23T16:01:15] [Failed] Register_UniqueCredentials_RegisterSuccessful
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//[@id='logoutForm']/ul/li[2]/a" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-05-23T16:02:33] [Passed] Register_UniqueCredentials_RegisterSuccessful

@@ -55,8 +55,8 @@ namespace Blog.UI.Tests.Pages.RegisterPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//[@id='logoutForm']/ul/li[2]/a")));
-                return this.Driver.FindElement(By.XPath("//[@id='logoutForm']/ul/li[2]/a"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id='logoutForm']/ul/li[2]/a")));
+                return this.Driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li[2]/a"));
             }
         }
         

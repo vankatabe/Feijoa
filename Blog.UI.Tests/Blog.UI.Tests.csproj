@@ -105,12 +105,16 @@
     <Compile Include="BasePage.cs" />
     <Compile Include="BrowserHost.cs" />
     <Compile Include="Models\AccessExcelData.cs" />
-    <Compile Include="Models\BlogPage.cs" />
+    <Compile Include="Models\BlogPages.cs" />
     <Compile Include="Pages\HomePage\HomePage.cs" />
     <Compile Include="Pages\HomePage\HomePageAsserter.cs" />
     <Compile Include="Pages\HomePage\HomePageMap.cs" />
     <Compile Include="HomePageTests.cs" />
+    <Compile Include="Pages\RegisterPage\RegisterPage.cs" />
+    <Compile Include="Pages\RegisterPage\RegisterPageAsserter.cs" />
+    <Compile Include="Pages\RegisterPage\RegisterPageMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPageTests.cs" />
     <Compile Include="SpecFlowTests\OpenHomePage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

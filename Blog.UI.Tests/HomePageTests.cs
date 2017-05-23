@@ -56,7 +56,7 @@ namespace Blog.UI.Tests
 
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
-        [Description("Navigate to Blog webb address, expected: Blog homepage open and Logo present")]
+        [Description("Navigate to Blog web address, expected: Blog homepage open and Logo present")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]
         public void CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage()

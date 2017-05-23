@@ -101,3 +101,11 @@ System.Data.OleDb.OleDbException : No value given for one or more required param
 [2017-05-21T15:05:14] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 [2017-05-21T15:32:43] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 [2017-05-21T15:33:41] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-21T15:40:20] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T12:05:33] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  Expected string length 58 but was 59. Strings differ at index 5.
+  Expected: "Hello61a666a4-b71f-4395-8f04-0634efb6bfd1@uniqueemail.com!"
+  But was:  "Hello 61a666a4-b71f-4395-8f04-0634efb6bfd1@uniqueemail.com!"
+  ----------------^
+
+[2017-05-23T12:06:48] [Passed] Register_UniqueCredentials_RegisterSuccessful

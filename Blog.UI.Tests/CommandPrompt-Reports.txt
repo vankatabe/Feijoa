@@ -11,3 +11,24 @@ copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-S
 "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.html"
 @echo for the CI: copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml" "TestResult.xml"
 @echo proba reportunit "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.xml" reportunit "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\SeleniumTestsDemoQaPage\SeleniumTestsDemoQaPage\TestResult.html"
+
+
+
+---for TeamCityBlogProject absolute paths:
+"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe" --labels=All --out="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.txt" --result="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml";format=nunit2 "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll"
+"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml" "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.html"
+copy "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.xml" "TestResult.xml"
+"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\packages\SpecFlow.2.1.0\tools\specflow.exe" nunitexecutionreport "C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Blog.UI.Tests.csproj" /out:"C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\TestResult.htm"
+
+
+---for TeamCityBlogProject relative paths:
+..\..\..\packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe --labels=All --out=..\..\TestResult.txt --result=..\..\Blog.UI.Tests\TestResult.xml;format=nunit2 \Blog.UI.Tests.dll
+..\..\..\packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe ..\..\TestResult.xml ..\..\TestResult.html
+copy ..\..\TestResult.xml TestResult.xml
+..\..\..\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport ..\..\Blog.UI.Tests.csproj /out:..\..\TestResult.htm
+
+--or
+..\..\..\packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe --labels=All --out=..\..\..\Blog.UI.Tests\TestResult.txt --result=..\..\..\Blog.UI.Tests\TestResult.xml;format=nunit2 ..\..\..\bin\Debug\Blog.UI.Tests.dll
+..\..\..\packages\ReportUnit.1.5.0-beta1\tools\reportunit.exe ..\..\..\Blog.UI.Tests\TestResult.xml ..\..\..\Blog.UI.Tests\TestResult.html
+copy ..\..\TestResult.xml ..\..\..\packages\SpecFlow.2.1.0\tools\TestResult.xml
+..\..\..\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport ..\..\..\bin\Debug\Blog.UI.Tests.csproj /out:..\..\..\Blog.UI.Tests\TestResult.htm

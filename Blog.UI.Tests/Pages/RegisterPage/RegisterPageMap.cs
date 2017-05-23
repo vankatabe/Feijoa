@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +55,7 @@ namespace Blog.UI.Tests.Pages.RegisterPage
         {
             get
             {
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id='logoutForm']/ul/li[2]/a")));
                 return this.Driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li[2]/a"));
             }
         }

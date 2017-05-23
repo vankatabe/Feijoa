@@ -121,3 +121,18 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logo
 [2017-05-23T14:38:48] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
 System.ArgumentException : Object of type 'Blog.UI.Tests.Pages.LoginPage.LoginPage' cannot be converted to type 'Blog.UI.Tests.Pages.HomePage.HomePage'.
 [2017-05-23T14:44:04] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T15:18:20] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T15:18:22] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T15:18:22] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T15:18:33] [Failed] Register_UniqueCredentials_RegisterSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a
+[2017-05-23T15:27:27] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T15:27:29] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T15:27:30] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T15:27:41] [Failed] Register_UniqueCredentials_RegisterSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a
+[2017-05-23T15:39:07] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T15:39:09] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T15:39:11] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T15:39:22] [Failed] Register_UniqueCredentials_RegisterSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a

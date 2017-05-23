@@ -13,5 +13,10 @@ namespace Blog.UI.Tests.Pages.HomePage
         {
             Assert.AreEqual(text, page.Logo.Text);
         }
+
+        public static void AssertLoginDisplayed(this HomePage page, string text)
+        {
+            Assert.AreEqual(text, page.LoginLink.Text);
+        }
     }
 }

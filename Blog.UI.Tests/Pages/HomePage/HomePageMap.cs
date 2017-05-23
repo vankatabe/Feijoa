@@ -23,5 +23,22 @@ namespace Blog.UI.Tests.Pages.HomePage
 
             }
         }
+
+        public IWebElement LogoffLink
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("//a[contains(text(),'Log off')]"));
+            }
+        }
+        
+            public IWebElement LoginLink
+        {
+            get
+            {
+                return this.Driver.FindElement(By.Id("loginLink"));
+            }
+        }
+
     }
 }

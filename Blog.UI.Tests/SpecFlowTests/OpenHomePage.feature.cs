@@ -66,18 +66,10 @@ namespace Blog.UI.Tests.SpecFlowTests
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check WebSite Load _ Enter Blog URL _ Open Blog Home Page")]
         [NUnit.Framework.CategoryAttribute("Regression")]
-        [NUnit.Framework.CategoryAttribute("test")]
-        [NUnit.Framework.CategoryAttribute("open")]
-        [NUnit.Framework.CategoryAttribute("Blog")]
-        [NUnit.Framework.CategoryAttribute("website")]
         public virtual void CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check WebSite Load _ Enter Blog URL _ Open Blog Home Page", new string[] {
-                        "Regression",
-                        "test",
-                        "open",
-                        "Blog",
-                        "website"});
+                        "Regression"});
 #line 7
  this.ScenarioSetup(scenarioInfo);
 #line 8

@@ -109,3 +109,15 @@ System.Data.OleDb.OleDbException : No value given for one or more required param
   ----------------^
 
 [2017-05-23T12:06:48] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T13:52:33] [Failed] Login_ValidCredentials_LoginSuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-05-23T13:58:22] [Failed] Login_ValidCredentials_LoginSuccessful
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-23T13:59:21] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T14:15:45] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T14:33:34] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a
+[2017-05-23T14:38:48] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+System.ArgumentException : Object of type 'Blog.UI.Tests.Pages.LoginPage.LoginPage' cannot be converted to type 'Blog.UI.Tests.Pages.HomePage.HomePage'.
+[2017-05-23T14:44:04] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful

@@ -9,7 +9,7 @@ namespace Blog.UI.Tests.Models
     public class BlogPages
     {
         private static string uniqueUser = Guid.NewGuid().ToString();
-        private static string email = uniqueUser + "email.com";
+        private static string email = uniqueUser + "@email.com";
         private static string fullname = uniqueUser;
 
         public string Key { get; set; }

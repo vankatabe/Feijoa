@@ -24,6 +24,7 @@ namespace Blog.UI.Tests.Pages.RegisterPage
                 return this.Driver.FindElement(By.Id("FullName"));
             }
         }
+
         public IWebElement Password
         {
             get

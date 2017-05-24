@@ -220,3 +220,45 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
 [2017-05-23T22:18:06] [Passed] Login_ValidCredentials_LoginSuccessful
 [2017-05-23T22:18:07] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
 [2017-05-23T22:18:08] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T22:27:57] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:27:59] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:28:00] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:28:01] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T22:31:57] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:31:59] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:32:00] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:32:01] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T22:34:09] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:34:11] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:34:12] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:34:13] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T22:36:08] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:36:10] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:36:11] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:36:12] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T22:41:05] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:41:08] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:41:09] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:41:09] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-23T22:43:12] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:43:15] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:43:26] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-05-23T22:43:27] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 8eba2416-0aca-49d3-b002-2200c9fb7c28@uniqueemail.com!"
+  But was:  "Hello 2decb019-0e2d-4b21-bafc-1c8e87266b76@uniqueemail.com!"
+  -----------------^
+
+[2017-05-23T22:50:12] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-23T22:50:14] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-23T22:50:15] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-23T22:50:16] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-24T11:29:42] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-24T11:29:44] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-24T11:29:46] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-24T11:29:47] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-24T12:32:43] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-24T12:32:46] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-24T12:32:47] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-24T12:32:49] [Passed] Register_UniqueCredentials_RegisterSuccessful

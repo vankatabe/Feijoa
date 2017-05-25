@@ -1,4 +1,5 @@
 => Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated
+=> Blog.UI.Tests.EditPageTests.Edit_ChangeContent_ContentChanged
 => Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 => Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful
 => Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful

@@ -320,3 +320,37 @@ System.Reflection.TargetParameterCountException : Parameter count mismatch.
   -----------^
 
 [2017-05-25T21:27:52] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-25T21:31:15] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-25T21:31:19] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-25T21:31:20] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-25T21:31:20] [Failed] Login_ValidCredentials_LoginSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello afe8d512-e84a-4ded-b660-1d47577a3a5c@uniqueemail.com!"
+  But was:  "Hello d399e2f1-0787-4fc8-91f9-a98b0fae48ba@uniqueemail.com!"
+  -----------------^
+
+[2017-05-25T21:31:21] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-25T21:31:22] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-25T21:51:30] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-25T21:51:35] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-25T21:51:35] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-25T21:51:36] [Failed] Login_ValidCredentials_LoginSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 0170f8e7-e5f5-4315-bb0f-c89d28dd129d@uniqueemail.com!"
+  But was:  "Hello 366b85f9-8006-41d5-b087-e25f2230234d@uniqueemail.com!"
+  -----------------^
+
+[2017-05-25T21:51:47] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-05-25T21:51:48] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello b1506eeb-6297-4ec2-af4c-a65b05016bf8@uniqueemail.com!"
+  But was:  "Hello fa2e87eb-b692-47c0-9a9a-d7a06d663396@uniqueemail.com!"
+  -----------------^
+
+[2017-05-25T21:56:48] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-25T21:56:53] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-25T21:56:53] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-25T21:56:56] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-25T21:56:57] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-25T21:56:58] [Passed] Register_UniqueCredentials_RegisterSuccessful

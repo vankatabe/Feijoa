@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Blog.UI.Tests
@@ -74,6 +75,7 @@ namespace Blog.UI.Tests
 
             // Press Logoff link
             homePage.LogoffLink.Click();
+            Thread.Sleep(1000);
 
             homePage.AssertLoginDisplayed(page.Effect);
             // for the DataDriven Asserter:

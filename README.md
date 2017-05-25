@@ -6,3 +6,4 @@ Assignmnent: https://softuni.bg/downloads/svn/qa-automation/03.%20QA-Automation-
 In the documentation, Use Cases were written in Gherkn language. Some tests were written in gherkin as well, using SpecFlow framework.
 
 Example video1: https://youtu.be/QPEKwmuwalk
+Example video1: https://youtu.be/mICUMNlwpbI

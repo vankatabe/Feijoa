@@ -68,10 +68,10 @@ namespace Blog.UI.Tests
             LoginPage loginPage = new LoginPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, "failed"); // First, write in xlsx 'failed' against the test
-
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationForm(page, uniqId);
             homePage.LogoffLink.Click();
+
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginForm(page, uniqId);
 

@@ -63,7 +63,6 @@ namespace Blog.UI.Tests
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, "failed"); // First, write in xlsx 'failed' against the test
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationForm(page, uniqId);

@@ -63,7 +63,6 @@ namespace Blog.UI.Tests
         {
             HomePage homePage = new HomePage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, "failed"); // First, write in xlsx 'failed' against the test
 
             homePage.NavigateTo(homePage.URL);
 

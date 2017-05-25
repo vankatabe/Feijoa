@@ -12,7 +12,6 @@ namespace Blog.UI.Tests.Pages.CreatePage
     {
         public static void AssertArticleIsDisplayed(this CreatePage page, IWebElement title, string text)
         {
-            //page.ArticleTitle = 
             Assert.AreEqual(text, title.Text);
         }
     }

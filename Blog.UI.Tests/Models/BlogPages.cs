@@ -28,14 +28,16 @@ namespace Blog.UI.Tests.Models
 
         public string UniqEmail(string uniqId)
         {
-             return uniqId + "@uniqueemail.com"; 
+            return uniqId + "@uniqueemail.com";
             // set { email = uniqueUser + "@uniqueemail.com"; }
         }
 
         public string UniqFullname(string uniqId)
         {
-            return uniqId; 
+            return uniqId;
             //set { fullname = uniqueUser; }
         }
+
+        public string ArticleBodyText { get; set; }
     }
 }

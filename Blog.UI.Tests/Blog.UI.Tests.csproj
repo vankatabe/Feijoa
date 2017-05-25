@@ -104,9 +104,13 @@
     <Compile Include="Attributes\LogResultToFileAttribute.cs" />
     <Compile Include="BasePage.cs" />
     <Compile Include="BrowserHost.cs" />
+    <Compile Include="CreatePageTests.cs" />
     <Compile Include="LogoffTests.cs" />
     <Compile Include="Models\AccessExcelData.cs" />
     <Compile Include="Models\BlogPages.cs" />
+    <Compile Include="Pages\CreatePage\CreatePage.cs" />
+    <Compile Include="Pages\CreatePage\CreatePageAsserter.cs" />
+    <Compile Include="Pages\CreatePage\CreatePageMap.cs" />
     <Compile Include="Pages\LoginPage\LoginPage.cs" />
     <Compile Include="Pages\LoginPage\LoginPageAsserter.cs" />
     <Compile Include="Pages\LoginPage\LoginPageMap.cs" />

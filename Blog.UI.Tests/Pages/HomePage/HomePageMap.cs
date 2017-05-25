@@ -31,8 +31,8 @@ namespace Blog.UI.Tests.Pages.HomePage
                 return this.Driver.FindElement(By.XPath("//a[contains(text(),'Log off')]"));
             }
         }
-        
-            public IWebElement LoginLink
+
+        public IWebElement LoginLink
         {
             get
             {
@@ -40,5 +40,28 @@ namespace Blog.UI.Tests.Pages.HomePage
             }
         }
 
+        public IWebElement CreateLink // We don't ned it for Regression / Smoke tests - we will navigate straight to the Create URL. Maybe we still need it for regression - for checking if the links are working among the site
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("//a[contains(text(),'Create')]"));
+            }
+        }
+
+        public IWebElement ArticleTitle(string uniqId)
+        {
+            
+                return this.Driver.FindElement(By.XPath(($"//*[contains(text(), 'Article{uniqId}')]")));
+
+            
+        }
+
+        public List<IWebElement> Titles
+        {
+            get
+            {
+                return this.Driver.FindElements(By.ClassName("h2")).ToList();
+            }
+        }
     }
 }

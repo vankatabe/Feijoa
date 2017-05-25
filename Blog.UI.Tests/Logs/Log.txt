@@ -262,3 +262,37 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
 [2017-05-24T12:32:46] [Passed] Login_ValidCredentials_LoginSuccessful
 [2017-05-24T12:32:47] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
 [2017-05-24T12:32:49] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-25T16:21:27] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-25T17:53:13] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Title
+[2017-05-25T17:54:29] [Failed] Create_ValidFieldEntries_ArticleCreated
+  Expected string length 36 but was 59. Strings differ at index 0.
+  Expected: "885aa18e-0943-4a44-98a5-6a8752fe62de"
+  But was:  "Hello 885aa18e-0943-4a44-98a5-6a8752fe62de@uniqueemail.com!"
+  -----------^
+
+[2017-05-25T17:57:25] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //h2[contains(text(), '21622f2c-54f9-4e07-9490-ce8520af7434')]
+[2017-05-25T17:58:14] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//*h2[contains(text(), 'd8a0cf8f-c324-430b-bee2-f2c7da38ed46')]" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-05-25T17:59:10] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: *//h2[contains(text(), '13492722-709a-4b62-8205-266495afa23c')]
+[2017-05-25T18:13:29] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //h2[contains(text(), 'Article 1d278423-d033-4df4-9bd0-dd20d58e0650')]
+[2017-05-25T18:13:55] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//[contains(text(), 'Article 5e46e374-141f-465a-b6e5-22759e30435f')]" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-05-25T18:14:40] [Failed] Create_ValidFieldEntries_ArticleCreated
+  Expected string length 36 but was 44. Strings differ at index 0.
+  Expected: "6db46191-8a09-41e5-b7c6-90d990274a0f"
+  But was:  "Article 6db46191-8a09-41e5-b7c6-90d990274a0f"
+  -----------^
+
+[2017-05-25T18:16:47] [Failed] Create_ValidFieldEntries_ArticleCreated
+  Expected string length 43 but was 44. Strings differ at index 7.
+  Expected: "Articlea66c685c-cf9d-445e-a6f5-cc6f82a172c3"
+  But was:  "Article a66c685c-cf9d-445e-a6f5-cc6f82a172c3"
+  ------------------^
+
+[2017-05-25T18:17:52] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Article 8b2d9a52-108d-4d7a-9f5d-b326ee314b32')]
+[2017-05-25T18:18:25] [Passed] Create_ValidFieldEntries_ArticleCreated

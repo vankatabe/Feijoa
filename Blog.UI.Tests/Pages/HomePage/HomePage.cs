@@ -20,5 +20,10 @@ namespace Blog.UI.Tests.Pages.HomePage
                 return base.url;
             }
         }
+
+        public void OpenArticle(string Id)
+        {
+            ArticleTitle(Id).Click();
+        }
     }
 }

@@ -301,3 +301,22 @@ System.Reflection.TargetParameterCountException : Parameter count mismatch.
 [2017-05-25T18:30:20] [Failed] Create_ValidFieldEntries_ArticleCreated
 System.Reflection.TargetParameterCountException : Parameter count mismatch.
 [2017-05-25T18:33:17] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-25T18:41:37] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-25T18:41:37] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-25T18:41:38] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-25T18:41:39] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-25T18:41:40] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-25T19:17:11] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-25T21:20:47] [Failed] Edit_ChangeContent_ContentChanged
+  Expected string length 6 but was 16. Strings differ at index 0.
+  Expected: "Edited"
+  But was:  "Test 1 TEst edit"
+  -----------^
+
+[2017-05-25T21:26:06] [Failed] Edit_ChangeContent_ContentChanged
+  Expected string length 6 but was 16. Strings differ at index 0.
+  Expected: "Edited"
+  But was:  "Test 1 TEst edit"
+  -----------^
+
+[2017-05-25T21:27:52] [Passed] Edit_ChangeContent_ContentChanged

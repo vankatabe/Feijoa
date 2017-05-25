@@ -9,6 +9,8 @@ namespace Blog.UI.Tests.Pages.HomePage
 {
     public partial class HomePage
     {
+        private int articleNumber;
+
         public IWebElement Logo
         {
             get
@@ -50,10 +52,25 @@ namespace Blog.UI.Tests.Pages.HomePage
 
         public IWebElement ArticleTitle(string uniqId)
         {
-            
-                return this.Driver.FindElement(By.XPath(($"//*[contains(text(), 'Article{uniqId}')]")));
 
-            
+            return this.Driver.FindElement(By.XPath(($"//*[contains(text(), 'Article{uniqId}')]")));
+
+        }
+
+        public int GetArticleNumber(string uniqId)
+
+        {
+            var ArticleTitleLink = this.ArticleTitle(uniqId).GetAttribute("href");
+            List<string> ArticleTitleLinkItems = ArticleTitleLink.Split('/').ToList();
+            return articleNumber = int.Parse(ArticleTitleLinkItems[ArticleTitleLinkItems.Count - 1]);
+        }
+
+        public int ArticleNumber
+        {
+            get
+            {
+                return this.articleNumber;
+            }
         }
 
         public List<IWebElement> Titles

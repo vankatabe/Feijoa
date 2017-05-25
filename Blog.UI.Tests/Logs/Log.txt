@@ -296,3 +296,8 @@ OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//[contains(t
 [2017-05-25T18:17:52] [Failed] Create_ValidFieldEntries_ArticleCreated
 OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Article 8b2d9a52-108d-4d7a-9f5d-b326ee314b32')]
 [2017-05-25T18:18:25] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-25T18:27:14] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.Reflection.TargetParameterCountException : Parameter count mismatch.
+[2017-05-25T18:30:20] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.Reflection.TargetParameterCountException : Parameter count mismatch.
+[2017-05-25T18:33:17] [Passed] Create_ValidFieldEntries_ArticleCreated

@@ -79,11 +79,11 @@ namespace Blog.UI.Tests
             homePage.LogoffLink.Click(); // So we can assure that the new Article is visible even for non-logged user
             // homePage.OpenArticle(uniqId); // So we assure it it is possible the article to be opened
 
-            createPage.AssertArticleIsDisplayed(homePage.ArticleTitle(uniqId), "Article" + uniqId);
+            createPage.AssertArticleIsDisplayed(homePage.ArticleTitle(uniqId), page.Effect + uniqId);
             // for the DataDriven Asserter:
-         //   MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
-       //     asserter.Invoke(null, new object[] { loginPage, page.Effect + ' ' + page.UniqEmail(uniqId) + '!' });
+            asserter.Invoke(null, new object[] { createPage, homePage.ArticleTitle(uniqId), page.Effect + uniqId });
             testStatus = "passed";
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }

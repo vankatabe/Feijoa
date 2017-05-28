@@ -354,3 +354,23 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
 [2017-05-25T21:56:56] [Passed] Login_ValidCredentials_LoginSuccessful
 [2017-05-25T21:56:57] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
 [2017-05-25T21:56:58] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-27T23:28:18] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-28T11:03:17] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-28T11:03:22] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-28T11:03:22] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-28T11:03:24] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-28T11:03:26] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-28T11:03:27] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-28T11:06:27] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Article91f332f2-a8a3-47cf-96bb-324ebfc46823')]
+[2017-05-28T11:06:32] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-28T11:06:32] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-28T11:06:35] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-28T11:06:47] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-05-28T11:06:48] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 99309ef2-49a9-43d3-b53f-25ef883521be@uniqueemail.com!"
+  But was:  "Hello 19302b98-cfa8-4e5f-bf3b-88c59e08b076@uniqueemail.com!"
+  -----------------^
+

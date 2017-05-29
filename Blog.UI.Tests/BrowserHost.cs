@@ -18,11 +18,11 @@ namespace Blog.UI.Tests
         static BrowserHost()
         {
             // For Firefox:
-            // Instance.Run("Blog", 60639);
+             Instance.Run("Blog", 60639);
             // For Chrome:
             // Instance.Run("Blog", 60634, w => w.WithRemoteWebDriver(BrowserFactory.Chrome));
             // or:
-             Instance.Run("Blog", 60639, w => w.WithRemoteWebDriver(() => new ChromeDriver()));
+            // Instance.Run("Blog", 60639, w => w.WithRemoteWebDriver(() => new ChromeDriver()));
 
         }
     }

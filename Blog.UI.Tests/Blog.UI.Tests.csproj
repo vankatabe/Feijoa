@@ -105,11 +105,15 @@
     <Compile Include="Attributes\LogResultToFileAttribute.cs" />
     <Compile Include="BasePage.cs" />
     <Compile Include="BrowserHost.cs" />
+    <Compile Include="DeletePadeTests.cs" />
     <Compile Include="EditPageTests.cs" />
     <Compile Include="CreatePageTests.cs" />
     <Compile Include="LogoffTests.cs" />
     <Compile Include="Models\AccessExcelData.cs" />
     <Compile Include="Models\BlogPages.cs" />
+    <Compile Include="Pages\DeletePage\DeletePage.cs" />
+    <Compile Include="Pages\DeletePage\DeletePageAsserter.cs" />
+    <Compile Include="Pages\DeletePage\DeletePageMap.cs" />
     <Compile Include="Pages\EditPage\EditPage.cs" />
     <Compile Include="Pages\EditPage\EditPageAsserter.cs" />
     <Compile Include="Pages\EditPage\EditPageMap.cs" />

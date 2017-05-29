@@ -374,3 +374,12 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
   But was:  "Hello 19302b98-cfa8-4e5f-bf3b-88c59e08b076@uniqueemail.com!"
   -----------------^
 
+[2017-05-29T10:09:22] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-29T10:09:58] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-29T10:11:01] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-29T10:11:52] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-29T10:12:10] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection

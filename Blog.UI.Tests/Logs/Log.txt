@@ -533,3 +533,64 @@ System.Reflection.TargetInvocationException : Exception has been thrown by the t
 [2017-05-29T20:57:44] [Passed] Register_Without_Password
 [2017-05-29T20:58:17] [Passed] Register_UniqueCredentials_RegisterSuccessful
 [2017-05-29T20:59:31] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T21:11:34] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:19:31] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:20:23] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:23:15] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:23:54] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:30:44] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:33:00] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:34:35] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-29T21:40:09] [Failed] Login_InvalidEmail_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:49:34] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T22:09:31] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T22:09:32] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T22:09:33] [Passed] Register_Without_Email
+[2017-05-29T22:09:34] [Passed] Register_Without_FullName
+[2017-05-29T22:09:35] [Passed] Register_Without_Password
+[2017-05-29T22:11:41] [Failed] Login_InvalidEmail_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T22:11:41] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-29T22:11:44] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-29T22:12:52] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T22:48:02] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T22:59:59] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:00:43] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:08:43] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:09:10] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:12:53] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:14:17] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:17:03] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:17:59] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:27:33] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:29:33] [Failed] Login_Blank_Email_Login_Unsuccessful
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T23:30:59] [Failed] Login_Blank_Email_Login_Unsuccessful
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T23:31:48] [Passed] Login_Blank_Email_Login_Unsuccessful

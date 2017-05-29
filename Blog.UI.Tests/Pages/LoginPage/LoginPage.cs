@@ -29,6 +29,13 @@ namespace Blog.UI.Tests.Pages.LoginPage
             this.SubmitButton.Click();
         }
 
+        public void FillLoginFormNegative(BlogPages user)
+        {
+            Type(this.Email, user.Email);
+            Type(this.Password, user.Password);
+            this.SubmitButton.Click();
+        }
+
         private void Type(IWebElement element, string text)
         {
             element.Clear();

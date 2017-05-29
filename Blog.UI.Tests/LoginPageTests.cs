@@ -4,6 +4,7 @@ using Blog.UI.Tests.Pages.HomePage;
 using Blog.UI.Tests.Pages.LoginPage;
 using Blog.UI.Tests.Pages.RegisterPage;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Blog.UI.Tests
     public class LoginPageTests
     {
         private IWebDriver driver = BrowserHost.Instance.Application.Browser;
-        private string testStatus = "failed";
+        //private string testStatus = "failed";
         private string uniqId;
 
         [SetUp]
@@ -27,13 +28,16 @@ namespace Blog.UI.Tests
         {
             // this.driver = BrowserHost.Instance.Application.Browser; // void
             uniqId = Guid.NewGuid().ToString();
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
+            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
         }
 
         [TearDown]
         public void CleanUp()
         {
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            //This inserts the status of the latest test build into the UserData.xlsx file
+            AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
+            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
             // driver.Quit(); // causes Firefox to crash
             // The old-style logger for failed tests
             //    if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
@@ -81,36 +85,52 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { loginPage, page.Effect + ' ' + page.UniqEmail(uniqId) + '!' });
-            testStatus = "passed";
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            //testStatus = "passed";
+            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
 
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
-        [Description("Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed")]
-        [Author("vankatabe")]
+        [Description("Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message")]
+        [Author("intergalacticmule")]
         [LogResultToFileAttribute]
         public void Login_InvalidPassword_LoginUnsuccessful()
         {
-            HomePage homePage = new HomePage(this.driver);
-            RegisterPage registerPage = new RegisterPage(this.driver);
             LoginPage loginPage = new LoginPage(this.driver);
-            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
-            registerPage.NavigateTo(registerPage.URL);
-            registerPage.FillRegistrationForm(page, uniqId);
-            homePage.LogoffLink.Click();
-            Thread.Sleep(1000);
-
+            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
             loginPage.NavigateTo(loginPage.URL);
-            loginPage.FillLoginForm(page, uniqId);
+            loginPage.FillLoginFormNegative(page);
+            Thread.Sleep(300);
 
-            loginPage.AssertGreetingDisplayed(page.Effect + ' ' + page.UniqEmail(uniqId) + '!');
+            loginPage.AssertPasswordErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
-            asserter.Invoke(null, new object[] { loginPage, page.Effect + ' ' + page.UniqEmail(uniqId) + '!' });
-            testStatus = "passed";
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            asserter.Invoke(null, new object[] { loginPage, page.Effect });
+            //testStatus = "passed";
+            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Description("Navigate to Login page web address and enter an ibvalid Email but valid Password, expected: Login unsuccessful and Password field required message")]
+        [Author("intergalacticmule")]
+        [LogResultToFileAttribute]
+        public void Login_Blank_Email_Login_Unsuccessful()
+        {
+            LoginPage loginPage = new LoginPage(this.driver);
+            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            loginPage.NavigateTo(loginPage.URL);
+            loginPage.FillLoginFormNegative(page);
+            Thread.Sleep(1000);
+
+            loginPage.AssertEmailErrorMessageExists(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { loginPage, page.Effect });
+            //testStatus = "passed";
+            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
     }
 }

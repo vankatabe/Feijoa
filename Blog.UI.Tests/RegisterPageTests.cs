@@ -17,7 +17,7 @@ namespace Blog.UI.Tests
     public class RegisterPageTests
     {
         private IWebDriver driver = BrowserHost.Instance.Application.Browser;
-        private string testStatus = "failed";
+        //private string testStatus = "failed";
         private string uniqId;
 
         [SetUp]
@@ -25,13 +25,16 @@ namespace Blog.UI.Tests
         {
             // this.driver = BrowserHost.Instance.Application.Browser; // void
             uniqId = Guid.NewGuid().ToString();
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
+            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
         }
 
         [TearDown]
         public void CleanUp()
         {
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            //This inserts the status of the latest Test build into the UserData.xlsx file
+            AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
+            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
             // driver.Quit(); // causes Firefox to crash
             // The old-style logger for failed tests
             //    if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
@@ -56,6 +59,19 @@ namespace Blog.UI.Tests
         }
 
         [Test]
+        [Property ("Setup negative tests account", 0)]
+        [Description ("Sets up the test account for our negative tests in case it is not present in DB")]
+        public void Setup_Negative_Test_Account()
+        {
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name);
+
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationFormNegative(page);
+
+
+        }
+        [Test]
         [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 1)]
         [Description("Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially")]
         [Author("vankatabe")]
@@ -73,8 +89,8 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect + ' ' + page.UniqEmail(uniqId) + '!' });
-            testStatus = "passed";
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            //testStatus = "passed";
+            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
 
         [Test]
@@ -88,15 +104,15 @@ namespace Blog.UI.Tests
             BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
 
             registerPage.NavigateTo(registerPage.URL);
-            registerPage.FillRegistrationFormNegative(page, uniqId);
+            registerPage.FillRegistrationFormNegative(page);
             Thread.Sleep(300); // Necessary due to test execution speed.
             registerPage.AssertEmailErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect});
-            testStatus = "passed";
-            AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            //testStatus = "passed";
+            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
 
         [Test]
@@ -110,15 +126,15 @@ namespace Blog.UI.Tests
             BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
 
             registerPage.NavigateTo(registerPage.URL);
-            registerPage.FillRegistrationFormNegative(page, uniqId);
+            registerPage.FillRegistrationFormNegative(page);
             Thread.Sleep(300); // Necessary due to test execution speed.
             registerPage.AssertFullNameErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });
-            testStatus = "passed";
-            AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            //testStatus = "passed";
+            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
 
         [Test]
@@ -132,7 +148,7 @@ namespace Blog.UI.Tests
             BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
 
             registerPage.NavigateTo(registerPage.URL);
-            registerPage.FillRegistrationFormNegative(page, uniqId);
+            registerPage.FillRegistrationFormNegative(page);
             Thread.Sleep(300); // Necessary due to test execution speed.
             registerPage.AssertPasswordErrorMessageExists(page.Effect);
             registerPage.AssertPasswordMissmatchErrorMessageExists(page.Effect2);
@@ -142,12 +158,12 @@ namespace Blog.UI.Tests
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });
             asserter2.Invoke(null, new object[] { registerPage, page.Effect2 });
-            testStatus = "passed";
-            AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            //testStatus = "passed";
+            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 4)]
+        [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 5)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Confirm Passwordd field empty, exected: Account not registered and Password missmatch message displayed")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]
@@ -157,15 +173,15 @@ namespace Blog.UI.Tests
             BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
 
             registerPage.NavigateTo(registerPage.URL);
-            registerPage.FillRegistrationFormNegative(page, uniqId);
+            registerPage.FillRegistrationFormNegative(page);
             Thread.Sleep(300); // Necessary due to test execution speed.
             registerPage.AssertPasswordMissmatchErrorMessageExists2(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);           
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });            
-            testStatus = "passed";
-            AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+            //testStatus = "passed";
+            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
     }
 }

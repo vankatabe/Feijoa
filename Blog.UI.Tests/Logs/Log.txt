@@ -374,7 +374,31 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
   But was:  "Hello 19302b98-cfa8-4e5f-bf3b-88c59e08b076@uniqueemail.com!"
   -----------------^
 
+<<<<<<< HEAD
 [2017-05-28T20:10:34] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
   ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: a.navbar-brand
 [2017-05-28T22:56:47] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+=======
+[2017-05-29T10:09:22] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-29T10:09:58] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-29T10:11:01] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-29T10:11:52] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-29T10:12:10] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-29T10:18:43] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T17:14:02] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-05-29T17:15:50] [Failed] Delete_DeleteArticle_ArticleDeteted
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Article3587a4e7-cfb6-4be5-afb8-a1ee2424e71d')]
+[2017-05-29T17:18:05] [Failed] Delete_DeleteArticle_ArticleDeteted
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articlee58dd6ff-9e7f-4a1d-9c58-2ebeff565a5a')]
+[2017-05-29T17:19:38] [Failed] Delete_DeleteArticle_ArticleDeteted
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articled4c0bce5-295a-4d54-9f54-e249a1289150')]
+[2017-05-29T17:21:11] [Failed] Delete_DeleteArticle_ArticleDeteted
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articlec171ce80-7d01-4643-860b-46413de88ebf')]
+[2017-05-29T17:22:53] [Passed] Delete_DeleteArticle_ArticleDeteted
+>>>>>>> refs/remotes/vankatabe/master

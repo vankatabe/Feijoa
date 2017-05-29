@@ -1,3 +1,4 @@
+using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -16,9 +17,12 @@ namespace Blog.UI.Tests
 
         static BrowserHost()
         {
-            Instance.Run("Blog", 60639);
-            // For Chrome: Instance.Run("Blog", 60634, w => w.WithRemoteWebDriver(BrowserFactory.Chrome));
-            // or Instance.Run("Blog", 60634, w => w.WithRemoteWebDriver(() => new ChromeDriver()));
+            // For Firefox:
+             Instance.Run("Blog", 60639);
+            // For Chrome:
+            // Instance.Run("Blog", 60634, w => w.WithRemoteWebDriver(BrowserFactory.Chrome));
+            // or:
+            // Instance.Run("Blog", 60639, w => w.WithRemoteWebDriver(() => new ChromeDriver()));
 
         }
     }

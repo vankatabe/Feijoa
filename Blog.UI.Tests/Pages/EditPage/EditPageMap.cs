@@ -42,13 +42,13 @@ namespace Blog.UI.Tests.Pages.EditPage
             }
         }
 
-        public IWebElement EditArticleURL
+       /* public IWebElement EditArticleURL
         {
             get
             {
                 return this.Driver.FindElement(By.XPath("//div[4]/div/a"));
             }
-        }
+        } */
 
         public IWebElement ArticleContent
         {

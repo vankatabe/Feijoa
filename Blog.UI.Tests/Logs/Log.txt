@@ -374,3 +374,7 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
   But was:  "Hello 19302b98-cfa8-4e5f-bf3b-88c59e08b076@uniqueemail.com!"
   -----------------^
 
+[2017-05-28T20:10:34] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: a.navbar-brand
+[2017-05-28T22:56:47] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage

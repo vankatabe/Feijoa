@@ -383,3 +383,5 @@ System.InvalidOperationException : Tried to run command without establishing a c
 [2017-05-29T10:11:52] [Passed] Create_ValidFieldEntries_ArticleCreated
 [2017-05-29T10:12:10] [Failed] Create_ValidFieldEntries_ArticleCreated
 System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-29T10:18:43] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.NullReferenceException : Object reference not set to an instance of an object.

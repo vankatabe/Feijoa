@@ -526,3 +526,10 @@ System.Reflection.TargetInvocationException : Exception has been thrown by the t
 
 [2017-05-29T20:31:36] [Passed] Register_Without_Password
 [2017-05-29T20:42:58] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T20:57:40] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T20:57:41] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T20:57:42] [Passed] Register_Without_Email
+[2017-05-29T20:57:43] [Passed] Register_Without_FullName
+[2017-05-29T20:57:44] [Passed] Register_Without_Password
+[2017-05-29T20:58:17] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T20:59:31] [Passed] Register_Without_ConfirmPassword

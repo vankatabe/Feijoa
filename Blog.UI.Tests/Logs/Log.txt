@@ -594,3 +594,26 @@ System.NullReferenceException : Object reference not set to an instance of an ob
   -----------^
 
 [2017-05-29T23:31:48] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-29T23:59:11] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Article8688a525-b880-43c1-a656-920d93488e2a')]
+[2017-05-29T23:59:11] [Failed] Delete_DeleteArticle_ArticleDeteted
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:59:16] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-29T23:59:16] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-29T23:59:18] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-29T23:59:19] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-29T23:59:21] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-29T23:59:23] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-29T23:59:23] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T23:59:24] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T23:59:25] [Passed] Register_Without_Email
+[2017-05-29T23:59:26] [Passed] Register_Without_FullName
+[2017-05-29T23:59:27] [Passed] Register_Without_Password
+[2017-05-30T00:19:05] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-05-30T00:19:31] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T00:21:32] [Failed] Delete_DeleteArticle_ArticleDeteted
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T00:24:00] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articlea8f8b6ab-9eae-4639-8c1c-c1be9af95af7')]

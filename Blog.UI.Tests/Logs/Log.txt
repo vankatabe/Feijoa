@@ -402,3 +402,127 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(
 OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articlec171ce80-7d01-4643-860b-46413de88ebf')]
 [2017-05-29T17:22:53] [Passed] Delete_DeleteArticle_ArticleDeteted
 >>>>>>> refs/remotes/vankatabe/master
+[2017-05-29T18:38:16] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:39:05] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:40:53] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:46:58] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:52:53] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:53:20] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T18:54:47] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 59. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  "Hello e65c7f5c-2928-47e9-ba9a-d58e6be49f39@uniqueemail.com!"
+  -----------^
+
+[2017-05-29T18:55:23] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 59. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  "Hello d2708647-1cf0-45cd-a8e6-59b85cb06548@uniqueemail.com!"
+  -----------^
+
+[2017-05-29T18:59:52] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 59. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  "Hello e3e311f6-ff5a-4020-810d-711b0081eeeb@uniqueemail.com!"
+  -----------^
+
+[2017-05-29T19:10:50] [Failed] Register_With_Invalid_Email
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a
+[2017-05-29T19:11:50] [Failed] Register_With_Invalid_Email
+  Expected: True
+  But was:  False
+
+[2017-05-29T19:14:54] [Failed] Register_With_Invalid_Email
+  Expected: True
+  But was:  False
+
+[2017-05-29T19:15:52] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T19:20:04] [Passed] Register_With_Invalid_Email
+[2017-05-29T19:21:14] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T19:25:03] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T19:26:15] [Passed] Register_With_Invalid_Email
+[2017-05-29T19:27:22] [Passed] Register_With_Invalid_Email
+[2017-05-29T19:28:52] [Passed] Register_Without_Email
+[2017-05-29T19:33:11] [Passed] Register_Without_FullName
+[2017-05-29T19:53:05] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:00:58] [Failed] Register_Without_Password
+  Expected string length 31 but was 32. Strings differ at index 4.
+  Expected: "The Password field is required."
+  But was:  "The Full Name field is required."
+  ---------------^
+
+[2017-05-29T20:02:04] [Failed] Register_Without_Password
+  Expected string length 31 but was 32. Strings differ at index 4.
+  Expected: "The Password field is required."
+  But was:  "The Full Name field is required."
+  ---------------^
+
+[2017-05-29T20:04:57] [Failed] Register_Without_Password
+  Expected string length 31 but was 32. Strings differ at index 4.
+  Expected: "The Password field is required."
+  But was:  "The Full Name field is required."
+  ---------------^
+
+[2017-05-29T20:05:56] [Failed] Register_Without_Password
+  Expected string length 52 but was 31. Strings differ at index 4.
+  Expected: "The password and confirmation password do not match."
+  But was:  "The Password field is required."
+  ---------------^
+
+[2017-05-29T20:06:44] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:07:23] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:09:43] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:10:28] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:11:41] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:13:24] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:17:56] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:19:07] [Passed] Register_Without_Password
+[2017-05-29T20:20:01] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:21:07] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:21:40] [Passed] Register_Without_FullName
+[2017-05-29T20:29:42] [Passed] Register_Without_Password
+[2017-05-29T20:31:04] [Failed] Register_Without_Password
+System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
+  ----> NUnit.Framework.AssertionException :   Expected string length 31 but was 52. Strings differ at index 4.
+  Expected: "The Password field is required."
+  But was:  "The password and confirmation password do not match."
+  ---------------^
+
+[2017-05-29T20:31:36] [Passed] Register_Without_Password
+[2017-05-29T20:42:58] [Passed] Register_Without_ConfirmPassword

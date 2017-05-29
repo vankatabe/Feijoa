@@ -617,3 +617,30 @@ System.InvalidOperationException : Tried to run command without establishing a c
 System.NullReferenceException : Object reference not set to an instance of an object.
 [2017-05-30T00:24:00] [Failed] Create_ValidFieldEntries_ArticleCreated
 OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articlea8f8b6ab-9eae-4639-8c1c-c1be9af95af7')]
+[2017-05-30T00:55:14] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T00:55:15] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T00:55:17] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T00:55:18] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello bde4cab3-1ee2-46e7-af07-6b7eee0bf9a0@uniqueemail.com!"
+  But was:  "Hello 423701f3-4e80-41c7-80cb-ab2bda2f3a57@uniqueemail.com!"
+  -----------------^
+
+[2017-05-30T00:55:19] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T00:55:20] [Passed] Register_Without_Email
+[2017-05-30T00:55:21] [Passed] Register_Without_FullName
+[2017-05-30T00:55:21] [Passed] Register_Without_Password
+[2017-05-30T00:56:44] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-30T00:56:45] [Failed] Delete_DeleteArticle_ArticleDeteted
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T00:56:49] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-30T00:56:50] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-30T00:56:51] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T00:56:52] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T00:56:54] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T00:56:56] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-30T00:56:56] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T00:56:57] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T00:56:58] [Passed] Register_Without_Email
+[2017-05-30T00:56:59] [Passed] Register_Without_FullName
+[2017-05-30T00:57:00] [Passed] Register_Without_Password

@@ -111,7 +111,6 @@
     <Compile Include="LogoffTests.cs" />
     <Compile Include="Models\AccessExcelData.cs" />
     <Compile Include="Models\BlogPages.cs" />
-    <Compile Include="NegativeTests.cs" />
     <Compile Include="Pages\DeletePage\DeletePage.cs" />
     <Compile Include="Pages\DeletePage\DeletePageAsserter.cs" />
     <Compile Include="Pages\DeletePage\DeletePageMap.cs" />

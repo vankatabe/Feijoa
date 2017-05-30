@@ -22,14 +22,13 @@ namespace Blog.UI.Tests
         [SetUp]
         public void Init()
         {
-
         }
 
         [TearDown]
         public void CleanUp()
         {
             //This inserts the status of the latest test build into the UserData.xlsx file
-            AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
+            // for deletion AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
             AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
             //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
             // driver.Quit(); // causes Firefox to crash
@@ -63,7 +62,7 @@ namespace Blog.UI.Tests
         public void Register_Without_Email()
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
-            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
@@ -79,13 +78,13 @@ namespace Blog.UI.Tests
 
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 3)]
-        [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed")]
+        [Description("Navigate to Registration page web address and populate fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
         public void Register_Without_FullName()
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
-            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
@@ -107,7 +106,7 @@ namespace Blog.UI.Tests
         public void Register_Without_Password()
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
-            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
@@ -132,7 +131,7 @@ namespace Blog.UI.Tests
         public void Register_Without_ConfirmPassword()
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
-            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Register_UniqueCredentials_RegisterSuccessful) and use it as a Key in the xlsx file
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
@@ -154,7 +153,7 @@ namespace Blog.UI.Tests
         public void Login_InvalidPassword_LoginUnsuccessful()
         {
             LoginPage loginPage = new LoginPage(this.driver);
-            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginFormNegative(page);
             Thread.Sleep(1000);
@@ -176,7 +175,7 @@ namespace Blog.UI.Tests
         public void Login_Blank_Email_Login_Unsuccessful()
         {
             LoginPage loginPage = new LoginPage(this.driver);
-            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginFormNegative(page);
             Thread.Sleep(1000);

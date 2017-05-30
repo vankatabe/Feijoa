@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" total="8" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-30" time="13:22:24">
+<test-results name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" total="8" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-30" time="13:31:22">
   <environment nunit-version="3.5.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\BuildAgent\work\72fcba550db508b8" machine-name="VANETO-PC" user="vaneto" user-domain="vaneto-PC" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" executed="True" result="Success" success="True" time="34.778" asserts="15">
+  <test-suite type="Assembly" name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" executed="True" result="Success" success="True" time="34.693" asserts="15">
     <properties>
-      <property name="_PID" value="5468" />
+      <property name="_PID" value="8404" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
     <results>
-      <test-suite type="TestSuite" name="Blog" executed="True" result="Success" success="True" time="34.749" asserts="15">
+      <test-suite type="TestSuite" name="Blog" executed="True" result="Success" success="True" time="34.668" asserts="15">
         <results>
-          <test-suite type="TestSuite" name="UI" executed="True" result="Success" success="True" time="34.747" asserts="15">
+          <test-suite type="TestSuite" name="UI" executed="True" result="Success" success="True" time="34.666" asserts="15">
             <results>
-              <test-suite type="TestSuite" name="Tests" executed="True" result="Success" success="True" time="34.745" asserts="15">
+              <test-suite type="TestSuite" name="Tests" executed="True" result="Success" success="True" time="34.664" asserts="15">
                 <results>
-                  <test-suite type="TestFixture" name="CreatePageTests" executed="True" result="Success" success="True" time="9.813" asserts="2">
+                  <test-suite type="TestFixture" name="CreatePageTests" executed="True" result="Success" success="True" time="9.909" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated" description="User Register and Login, then navigate to Create page web address and enter valid data to create article, expected: Article created" executed="True" result="Success" success="True" time="3.178" asserts="2">
+                      <test-case name="Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated" description="User Register and Login, then navigate to Create page web address and enter valid data to create article, expected: Article created" executed="True" result="Success" success="True" time="3.111" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="4" />
@@ -28,9 +28,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="DeletePageTests" executed="True" result="Success" success="True" time="14.444" asserts="1">
+                  <test-suite type="TestFixture" name="DeletePageTests" executed="True" result="Success" success="True" time="14.303" asserts="1">
                     <results>
-                      <test-case name="Blog.UI.Tests.DeletePageTests.Delete_DeleteArticle_ArticleDeteted" description="User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List" executed="True" result="Success" success="True" time="14.442" asserts="1">
+                      <test-case name="Blog.UI.Tests.DeletePageTests.Delete_DeleteArticle_ArticleDeteted" description="User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List" executed="True" result="Success" success="True" time="14.301" asserts="1">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="8" />
@@ -41,9 +41,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="EditPageTests" executed="True" result="Success" success="True" time="4.480" asserts="2">
+                  <test-suite type="TestFixture" name="EditPageTests" executed="True" result="Success" success="True" time="4.533" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.EditPageTests.Edit_ChangeContent_ContentChanged" description="User Register and Login and Create Article, then navigate to Edit page and enter 'Edited' as Article content, expected: Article content changed to 'Edited'" executed="True" result="Success" success="True" time="4.479" asserts="2">
+                      <test-case name="Blog.UI.Tests.EditPageTests.Edit_ChangeContent_ContentChanged" description="User Register and Login and Create Article, then navigate to Edit page and enter 'Edited' as Article content, expected: Article content changed to 'Edited'" executed="True" result="Success" success="True" time="4.530" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="7" />
@@ -54,9 +54,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="HomePageTests" executed="True" result="Success" success="True" time="0.426" asserts="2">
+                  <test-suite type="TestFixture" name="HomePageTests" executed="True" result="Success" success="True" time="0.449" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Navigate to Blog web address, expected: Blog homepage open and Logo present" executed="True" result="Success" success="True" time="0.424" asserts="2">
+                      <test-case name="Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Navigate to Blog web address, expected: Blog homepage open and Logo present" executed="True" result="Success" success="True" time="0.447" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="9" />
@@ -67,9 +67,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="LoginPageTests" executed="True" result="Success" success="True" time="2.337" asserts="2">
+                  <test-suite type="TestFixture" name="LoginPageTests" executed="True" result="Success" success="True" time="2.191" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful" description="Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed" executed="True" result="Success" success="True" time="2.335" asserts="2">
+                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful" description="Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed" executed="True" result="Success" success="True" time="2.189" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="3" />
@@ -80,9 +80,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="LogoffTests" executed="True" result="Success" success="True" time="1.649" asserts="2">
+                  <test-suite type="TestFixture" name="LogoffTests" executed="True" result="Success" success="True" time="1.591" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful" description="Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed" executed="True" result="Success" success="True" time="1.647" asserts="2">
+                      <test-case name="Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful" description="Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed" executed="True" result="Success" success="True" time="1.589" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="6" />
@@ -93,9 +93,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="RegisterPageTests" executed="True" result="Success" success="True" time="0.895" asserts="2">
+                  <test-suite type="TestFixture" name="RegisterPageTests" executed="True" result="Success" success="True" time="0.796" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful" description="Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially" executed="True" result="Success" success="True" time="0.893" asserts="2">
+                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful" description="Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially" executed="True" result="Success" success="True" time="0.794" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="2" />
@@ -106,14 +106,14 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestSuite" name="SpecFlowTests" executed="True" result="Success" success="True" time="34.742" asserts="2">
+                  <test-suite type="TestSuite" name="SpecFlowTests" executed="True" result="Success" success="True" time="34.660" asserts="2">
                     <results>
-                      <test-suite type="TestFixture" name="OpenHomePageFeature" description="OpenHomePage" executed="True" result="Success" success="True" time="0.680" asserts="2">
+                      <test-suite type="TestFixture" name="OpenHomePageFeature" description="OpenHomePage" executed="True" result="Success" success="True" time="0.869" asserts="2">
                         <properties>
                           <property name="Description" value="OpenHomePage" />
                         </properties>
                         <results>
-                          <test-case name="Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Check WebSite Load _ Enter Blog URL _ Open Blog Home Page" executed="True" result="Success" success="True" time="0.511" asserts="2">
+                          <test-case name="Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Check WebSite Load _ Enter Blog URL _ Open Blog Home Page" executed="True" result="Success" success="True" time="0.703" asserts="2">
                             <categories>
                               <category name="Regression" />
                             </categories>

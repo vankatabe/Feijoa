@@ -12,7 +12,7 @@ namespace Blog.UI.Tests.Models
 
         public string Key { get; set; }
 
-        // Remains from the old way of reading Email and Fullname from the DataDriven. Now the Email and Fullname are uniquely generated
+        // Next two variables are used only for limited number of reading Email and Fullname from the DataDriven. In most cases the Email and Fullname are uniquely generated
         public string Email { get; set; }
         public string Fullname { get; set; }
 
@@ -33,13 +33,11 @@ namespace Blog.UI.Tests.Models
         public string UniqEmail(string uniqId)
         {
             return uniqId + "@uniqueemail.com";
-            // set { email = uniqueUser + "@uniqueemail.com"; }
         }
 
         public string UniqFullname(string uniqId)
         {
             return uniqId;
-            //set { fullname = uniqueUser; }
         }
 
         public string ArticleBodyText { get; set; }

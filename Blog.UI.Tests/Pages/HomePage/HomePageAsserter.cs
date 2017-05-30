@@ -23,7 +23,7 @@ namespace Blog.UI.Tests.Pages.HomePage
         public static void AssertArticleIsDeleted(this HomePage page, string uniqId)
         {
             Assert.Throws(typeof(NoSuchElementException), delegate { page.ArticleTitle(uniqId); });
-            /* Assert that Exception Message is the relevant one:
+            /* Another way - Assert that Exception Message is the relevant one:
               NoSuchElementException ex = Assert.Throws<NoSuchElementException>(
              delegate { throw new NoSuchElementException($"OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), '{page.ArticleTitle(uniqId)}')]"); });
              Assert.That(ex.Message, Is.StringContaining($"OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), '{page.ArticleTitle(uniqId)}')]"));

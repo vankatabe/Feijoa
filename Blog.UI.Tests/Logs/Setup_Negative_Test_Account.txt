@@ -1,0 +1,9 @@
+Test full name:	Blog.UI.Tests.RegisterPageTests.Setup_Negative_Test_Account
+
+Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	System.NullReferenceException : Object reference not set to an instance of an object.

@@ -1,0 +1,9 @@
+Test full name:	Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful
+
+Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink

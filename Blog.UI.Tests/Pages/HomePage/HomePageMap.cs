@@ -16,13 +16,14 @@ namespace Blog.UI.Tests.Pages.HomePage
             get
             {
                 return this.Wait.Until(w => w.FindElement(By.CssSelector("a.navbar-brand")));
-                // by xpath /html/body/div[1]/div/div[1]/a
-                // by xpath contains text: //a[contains(text(),'SOFTUNI BLOG')]
-                // by css selector: a.navbar-brand
-                // var logo = homePage.Wait.Until(w => w.FindElement(By.XPath("/html/body/div[1]/div/div[1]/a")));
-                // this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[1]/div/div[1]/a")));
-                // return this.Driver.FindElement(By.XPath("//*[@id='pie_register']/li[1]/div/div/span"));
-
+                /*other variants of FindBy:
+                  by xpath /html/body/div[1]/div/div[1]/a
+                  by xpath contains text: //a[contains(text(),'SOFTUNI BLOG')]
+                  by css selector: a.navbar-brand
+                  var logo = homePage.Wait.Until(w => w.FindElement(By.XPath("/html/body/div[1]/div/div[1]/a")));
+                  this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[1]/div/div[1]/a")));
+                  return this.Driver.FindElement(By.XPath("//*[@id='pie_register']/li[1]/div/div/span"));
+                  */
             }
         }
 
@@ -42,7 +43,7 @@ namespace Blog.UI.Tests.Pages.HomePage
             }
         }
 
-        public IWebElement CreateLink // We don't ned it for Regression / Smoke tests - we will navigate straight to the Create URL. Maybe we still need it for regression - for checking if the links are working among the site
+        public IWebElement CreateLink
         {
             get
             {

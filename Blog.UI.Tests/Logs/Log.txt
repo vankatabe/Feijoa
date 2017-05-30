@@ -411,3 +411,139 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Title
 [2017-05-29T18:04:44] [Passed] Login_ValidCredentials_LoginSuccessful
 [2017-05-29T18:04:46] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
 [2017-05-29T18:04:46] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T16:31:32] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-30T16:31:47] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-05-30T16:31:51] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-30T16:31:52] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-30T16:31:54] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T16:31:55] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-30T16:31:56] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T16:42:18] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-30T16:42:32] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-05-30T16:42:37] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-30T16:42:38] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-30T16:42:39] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T16:42:41] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T16:42:43] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T16:42:44] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-30T16:42:46] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T16:42:47] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T16:42:49] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T16:42:51] [Passed] Register_Without_Email
+[2017-05-30T16:42:52] [Passed] Register_Without_FullName
+[2017-05-30T16:42:54] [Passed] Register_Without_Password
+[2017-05-30T16:42:55] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T18:09:36] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-30T18:09:50] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-05-30T18:09:55] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-30T18:09:56] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-30T18:09:56] [Failed] Login_Blank_Email_Login_Unsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T18:09:56] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T18:09:59] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T18:10:00] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-30T18:10:01] [Failed] Login_Blank_Email_Login_Unsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T18:10:01] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T18:10:01] [Failed] Register_Without_ConfirmPassword
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T18:10:02] [Failed] Register_Without_Email
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T18:10:02] [Failed] Register_Without_FullName
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T18:10:02] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T18:10:03] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T18:35:01] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-30T18:35:15] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-05-30T18:35:19] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-30T18:35:20] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-30T18:35:21] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T18:35:23] [Failed] Login_InvalidPassword_LoginUnsuccessful
+  Expected string length 31 but was 0. Strings differ at index 0.
+  Expected: "The Password field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-30T18:35:25] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T18:35:37] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-05-30T18:35:39] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T18:35:40] [Failed] Login_InvalidPassword_LoginUnsuccessful
+  Expected string length 31 but was 0. Strings differ at index 0.
+  Expected: "The Password field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-30T18:35:51] [Failed] Register_Without_ConfirmPassword
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li
+[2017-05-30T18:35:53] [Passed] Register_Without_Email
+[2017-05-30T18:36:05] [Failed] Register_Without_FullName
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li
+[2017-05-30T18:36:16] [Failed] Register_Without_Password
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li[1]
+[2017-05-30T18:36:17] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 7ca3a1ab-8cce-4afd-99dd-3af1ed3acae7@uniqueemail.com!"
+  But was:  "Hello 50eda285-14bf-4c5d-b65e-b7e3349e8dd3@uniqueemail.com!"
+  -----------------^
+
+[2017-05-30T18:37:37] [Failed] Register_Without_ConfirmPassword
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li
+[2017-05-30T18:39:53] [Passed] Register_Without_Email
+[2017-05-30T18:40:45] [Failed] Login_InvalidPassword_LoginUnsuccessful
+  Expected string length 31 but was 0. Strings differ at index 0.
+  Expected: "The Password field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-30T18:40:47] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-30T18:40:48] [Failed] Login_InvalidPassword_LoginUnsuccessful
+  Expected string length 31 but was 0. Strings differ at index 0.
+  Expected: "The Password field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-30T18:41:00] [Failed] Register_Without_ConfirmPassword
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li
+[2017-05-30T18:41:11] [Failed] Register_Without_FullName
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li
+[2017-05-30T18:41:23] [Failed] Register_Without_Password
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li[1]
+[2017-05-30T18:41:24] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T18:42:33] [Failed] Login_InvalidPassword_LoginUnsuccessful
+  Expected string length 31 but was 0. Strings differ at index 0.
+  Expected: "The Password field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-30T18:43:07] [Failed] Register_Without_ConfirmPassword
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li
+[2017-05-30T18:51:04] [Passed] Register_Without_FullName
+[2017-05-30T18:52:03] [Failed] Login_InvalidPassword_LoginUnsuccessful
+  Expected string length 31 but was 0. Strings differ at index 0.
+  Expected: "The Password field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-30T18:52:05] [Failed] Login_InvalidPassword_LoginUnsuccessful
+  Expected string length 31 but was 0. Strings differ at index 0.
+  Expected: "The Password field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-30T18:52:06] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T18:52:08] [Passed] Register_Without_Password
+[2017-05-30T18:53:41] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T18:53:59] [Passed] Login_InvalidPassword_LoginUnsuccessful

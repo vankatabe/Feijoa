@@ -8,6 +8,8 @@ using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -20,45 +22,38 @@ namespace Blog.UI.Tests
     public class LoginPageTests
     {
         private IWebDriver driver = BrowserHost.Instance.Application.Browser;
-        //private string testStatus = "failed";
         private string uniqId;
 
         [SetUp]
         public void Init()
         {
-            // this.driver = BrowserHost.Instance.Application.Browser; // void
             uniqId = Guid.NewGuid().ToString();
-            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
         }
 
         [TearDown]
         public void CleanUp()
         {
-            //This inserts the status of the latest test build into the UserData.xlsx file
-            AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
-            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());
-            // driver.Quit(); // causes Firefox to crash
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString()); // Write actual test result status in xlsx
             // The old-style logger for failed tests
-            //    if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
-            //    {
-            //        string filenameTxt = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".txt";
-            //        if (File.Exists(filenameTxt))
-            //        {
-            //            File.Delete(filenameTxt);
-            //        }
-            //        File.WriteAllText(filenameTxt,
-            //            "Test full name:\t" + TestContext.CurrentContext.Test.FullName + "\r\n\r\n"
-            //            + "Work directory:\t" + TestContext.CurrentContext.WorkDirectory + "\r\n\r\n"
-            //            + "Pass count:\t" + TestContext.CurrentContext.Result.PassCount + "\r\n\r\n"
-            //            + "Result:\t" + TestContext.CurrentContext.Result.Outcome.ToString() + "\r\n\r\n"
-            //            + "Message:\t" + TestContext.CurrentContext.Result.Message);
-            //
-            //        var screenshot = ((ITakesScreenshot)this.driver).GetScreenshot();
-            //        var filenameJpg = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".jpg";
-            //        screenshot.SaveAsFile(filenameJpg, ScreenshotImageFormat.Jpeg);
-            //    }
-            //
+            if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
+            {
+                string filenameTxt = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".txt";
+                if (File.Exists(filenameTxt))
+                {
+                    File.Delete(filenameTxt);
+                }
+
+                File.WriteAllText(filenameTxt,
+                    "Test full name:\t" + TestContext.CurrentContext.Test.FullName + "\r\n\r\n"
+                    + "Work directory:\t" + TestContext.CurrentContext.WorkDirectory + "\r\n\r\n"
+                    + "Pass count:\t" + TestContext.CurrentContext.Result.PassCount + "\r\n\r\n"
+                    + "Result:\t" + TestContext.CurrentContext.Result.Outcome.ToString() + "\r\n\r\n"
+                    + "Message:\t" + TestContext.CurrentContext.Result.Message);
+
+                var screenshot = ((ITakesScreenshot)this.driver).GetScreenshot();
+                var filenameJpg = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".jpg";
+                screenshot.SaveAsFile(filenameJpg, ScreenshotImageFormat.Jpeg);
+            }
         }
 
         [Test]
@@ -85,8 +80,6 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { loginPage, page.Effect + ' ' + page.UniqEmail(uniqId) + '!' });
-            //testStatus = "passed";
-            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
 
         [Test]
@@ -97,7 +90,7 @@ namespace Blog.UI.Tests
         public void Login_InvalidPassword_LoginUnsuccessful()
         {
             LoginPage loginPage = new LoginPage(this.driver);
-            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginFormNegative(page);
             Thread.Sleep(1000);
@@ -107,8 +100,6 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { loginPage, page.Effect });
-            //testStatus = "passed";
-            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
 
         [Test]
@@ -119,7 +110,7 @@ namespace Blog.UI.Tests
         public void Login_Blank_Email_Login_Unsuccessful()
         {
             LoginPage loginPage = new LoginPage(this.driver);
-            BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginFormNegative(page);
             Thread.Sleep(1000);
@@ -129,8 +120,6 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { loginPage, page.Effect });
-            //testStatus = "passed";
-            //AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
     }
 }

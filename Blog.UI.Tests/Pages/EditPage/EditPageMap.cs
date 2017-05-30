@@ -17,7 +17,6 @@ namespace Blog.UI.Tests.Pages.EditPage
             }
         }
 
-
         public IWebElement Content
         {
             get
@@ -41,14 +40,6 @@ namespace Blog.UI.Tests.Pages.EditPage
                 return this.Driver.FindElement(By.XPath("//div[4]/div/a"));
             }
         }
-
-       /* public IWebElement EditArticleURL
-        {
-            get
-            {
-                return this.Driver.FindElement(By.XPath("//div[4]/div/a"));
-            }
-        } */
 
         public IWebElement ArticleContent
         {

@@ -9,6 +9,6 @@
 Given that the Visitor opens a web browser
 -> done: OpenHomePageSteps.GivenThatTheVisitorOpensAWebBrowser() (0.1s)
 When the Visitor navigates to the Online Blog Website address
--> done: OpenHomePageSteps.WhenTheVisitorNavigatesToTheOnlineBlogWebsiteAddress() (0.1s)
+-> done: OpenHomePageSteps.WhenTheVisitorNavigatesToTheOnlineBlogWebsiteAddress() (0.3s)
 Then the Blog Home Page is open
--> done: OpenHomePageSteps.ThenTheBlogHomePageIsOpen() (0.1s)
+-> done: OpenHomePageSteps.ThenTheBlogHomePageIsOpen() (0.2s)

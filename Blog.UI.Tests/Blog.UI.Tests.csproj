@@ -105,7 +105,7 @@
     <Compile Include="Attributes\LogResultToFileAttribute.cs" />
     <Compile Include="BasePage.cs" />
     <Compile Include="BrowserHost.cs" />
-    <Compile Include="DeletePadeTests.cs" />
+    <Compile Include="DeletePageTests.cs" />
     <Compile Include="EditPageTests.cs" />
     <Compile Include="CreatePageTests.cs" />
     <Compile Include="LogoffTests.cs" />

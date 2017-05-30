@@ -2,11 +2,14 @@
 using Blog.UI.Tests.Models;
 using Blog.UI.Tests.Pages.HomePage;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -18,40 +21,36 @@ namespace Blog.UI.Tests
     public class HomePageTests
     {
         private IWebDriver driver = BrowserHost.Instance.Application.Browser;
-        private string testStatus = "failed";
 
         [SetUp]
         public void Init()
         {
-            // this.driver = BrowserHost.Instance.Application.Browser; // void
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus); // First, write in xlsx 'failed' against the test
         }
 
         [TearDown]
         public void CleanUp()
         {
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
-            // driver.Quit(); // causes Firefox to crash
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString()); // Write actual test result status in xlsx
             // The old-style logger for failed tests
-            //    if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
-            //    {
-            //        string filenameTxt = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".txt";
-            //        if (File.Exists(filenameTxt))
-            //        {
-            //            File.Delete(filenameTxt);
-            //        }
-            //        File.WriteAllText(filenameTxt,
-            //            "Test full name:\t" + TestContext.CurrentContext.Test.FullName + "\r\n\r\n"
-            //            + "Work directory:\t" + TestContext.CurrentContext.WorkDirectory + "\r\n\r\n"
-            //            + "Pass count:\t" + TestContext.CurrentContext.Result.PassCount + "\r\n\r\n"
-            //            + "Result:\t" + TestContext.CurrentContext.Result.Outcome.ToString() + "\r\n\r\n"
-            //            + "Message:\t" + TestContext.CurrentContext.Result.Message);
-            //
-            //        var screenshot = ((ITakesScreenshot)this.driver).GetScreenshot();
-            //        var filenameJpg = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".jpg";
-            //        screenshot.SaveAsFile(filenameJpg, ScreenshotImageFormat.Jpeg);
-            //    }
-            //
+            if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
+            {
+                string filenameTxt = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".txt";
+                if (File.Exists(filenameTxt))
+                {
+                    File.Delete(filenameTxt);
+                }
+
+                File.WriteAllText(filenameTxt,
+                    "Test full name:\t" + TestContext.CurrentContext.Test.FullName + "\r\n\r\n"
+                    + "Work directory:\t" + TestContext.CurrentContext.WorkDirectory + "\r\n\r\n"
+                    + "Pass count:\t" + TestContext.CurrentContext.Result.PassCount + "\r\n\r\n"
+                    + "Result:\t" + TestContext.CurrentContext.Result.Outcome.ToString() + "\r\n\r\n"
+                    + "Message:\t" + TestContext.CurrentContext.Result.Message);
+
+                var screenshot = ((ITakesScreenshot)this.driver).GetScreenshot();
+                var filenameJpg = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".jpg";
+                screenshot.SaveAsFile(filenameJpg, ScreenshotImageFormat.Jpeg);
+            }
         }
 
         [Test]
@@ -71,8 +70,6 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { homePage, page.Effect });
-            testStatus = "passed";
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
     }
 }

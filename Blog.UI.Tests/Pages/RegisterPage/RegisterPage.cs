@@ -31,7 +31,6 @@ namespace Blog.UI.Tests.Pages.RegisterPage
             this.SubmitButton.Click();
         }
 
-
         public void FillRegistrationFormNegative(BlogPages user)
         {
             Type(this.Email, user.Email);

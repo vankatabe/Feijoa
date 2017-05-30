@@ -17,7 +17,6 @@ namespace Blog.UI.Tests.Pages.CreatePage
             }
         }
 
-
         public IWebElement Content
         {
             get

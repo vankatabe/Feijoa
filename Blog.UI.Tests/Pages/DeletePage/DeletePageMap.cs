@@ -17,7 +17,6 @@ namespace Blog.UI.Tests.Pages.DeletePage
             }
         }
 
-
         public IWebElement Content
         {
             get

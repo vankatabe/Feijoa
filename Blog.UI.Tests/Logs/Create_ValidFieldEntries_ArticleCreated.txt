@@ -1,0 +1,12 @@
+Test full name:	Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated
+
+Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed
+
+Message:	  Expected string length 2 but was 43. Strings differ at index 0.
+  Expected: "as"
+  But was:  "Article28ad00ce-1a05-439e-9541-f3e9e49deb82"
+  -----------^

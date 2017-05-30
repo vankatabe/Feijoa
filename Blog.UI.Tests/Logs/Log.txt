@@ -547,3 +547,9 @@ OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
 [2017-05-30T18:52:08] [Passed] Register_Without_Password
 [2017-05-30T18:53:41] [Passed] Login_InvalidPassword_LoginUnsuccessful
 [2017-05-30T18:53:59] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T19:58:33] [Failed] Create_ValidFieldEntries_ArticleCreated
+  Expected string length 2 but was 43. Strings differ at index 0.
+  Expected: "as"
+  But was:  "Article28ad00ce-1a05-439e-9541-f3e9e49deb82"
+  -----------^
+

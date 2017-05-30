@@ -584,3 +584,18 @@ System.InvalidOperationException : Tried to run command without establishing a c
 System.InvalidOperationException : Tried to run command without establishing a connection
 [2017-05-30T20:03:42] [Failed] Register_UniqueCredentials_RegisterSuccessful
 System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:17:36] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-05-30T20:17:51] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-05-30T20:17:55] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-30T20:17:55] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-30T20:17:57] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T20:17:58] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T20:18:00] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T20:18:02] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-30T20:18:02] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T20:18:04] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T20:18:05] [Passed] Register_Without_Email
+[2017-05-30T20:18:07] [Passed] Register_Without_FullName
+[2017-05-30T20:18:08] [Passed] Register_Without_Password
+[2017-05-30T20:18:44] [Passed] Create_ValidFieldEntries_ArticleCreated

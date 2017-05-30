@@ -1,9 +1,9 @@
 Test full name:	Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated
 
-Work directory:	C:\BuildAgent\work\72fcba550db508b8
+Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
 
 Pass count:	0
 
 Result:	Failed:Error
 
-Message:	System.InvalidOperationException : Tried to run command without establishing a connection
+Message:	OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed

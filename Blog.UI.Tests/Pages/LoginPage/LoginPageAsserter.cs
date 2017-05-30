@@ -13,5 +13,15 @@ namespace Blog.UI.Tests.Pages.LoginPage
         {
             Assert.AreEqual(text, page.GreetingMessage.Text);
         }
+
+        public static void AssertPasswordErrorMessageExists(this LoginPage page, string text)
+        {
+            Assert.AreEqual(text, page.PasswordErrorMessage.Text);
+        }
+
+        public static void AssertEmailErrorMessageExists(this LoginPage page, string text)
+        {
+            Assert.AreEqual(text, page.EmailErrorMessage.Text);
+        }
     }
 }

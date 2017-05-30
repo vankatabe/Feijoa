@@ -34,3 +34,39 @@ C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleto
 C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\TechTalk.SpecFlow.dll
 C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Config\Environment.config
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll.config
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.pdb
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Castle.Core.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Dapper.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\nunit.framework.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.Helpers.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.Mvc.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.Razor.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.WebPages.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\TechTalk.SpecFlow.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\TestStack.Seleno.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\WebDriver.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\WebDriver.Support.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Castle.Core.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Dapper.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\nunit.framework.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.Helpers.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.Mvc.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.Razor.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.WebPages.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\TestStack.Seleno.pdb
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\TestStack.Seleno.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\WebDriver.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug\WebDriver.Support.xml
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\obj\Debug\Blog.UI.Tests.csprojResolveAssemblyReference.cache
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\obj\Debug\Blog.UI.Tests.dll
+E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\obj\Debug\Blog.UI.Tests.pdb

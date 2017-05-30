@@ -374,6 +374,12 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
   But was:  "Hello 19302b98-cfa8-4e5f-bf3b-88c59e08b076@uniqueemail.com!"
   -----------------^
 
+<<<<<<< HEAD
+[2017-05-28T20:10:34] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: a.navbar-brand
+[2017-05-28T22:56:47] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+=======
 [2017-05-29T10:09:22] [Failed] Create_ValidFieldEntries_ArticleCreated
 System.InvalidOperationException : Tried to run command without establishing a connection
 [2017-05-29T10:09:58] [Failed] Create_ValidFieldEntries_ArticleCreated
@@ -395,3 +401,276 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(
 [2017-05-29T17:21:11] [Failed] Delete_DeleteArticle_ArticleDeteted
 OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articlec171ce80-7d01-4643-860b-46413de88ebf')]
 [2017-05-29T17:22:53] [Passed] Delete_DeleteArticle_ArticleDeteted
+>>>>>>> refs/remotes/vankatabe/master
+[2017-05-29T18:38:16] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:39:05] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:40:53] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:46:58] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:52:53] [Failed] Register_With_Invalid_Email
+System.Data.OleDb.OleDbException : No value given for one or more required parameters.
+[2017-05-29T18:53:20] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T18:54:47] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 59. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  "Hello e65c7f5c-2928-47e9-ba9a-d58e6be49f39@uniqueemail.com!"
+  -----------^
+
+[2017-05-29T18:55:23] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 59. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  "Hello d2708647-1cf0-45cd-a8e6-59b85cb06548@uniqueemail.com!"
+  -----------^
+
+[2017-05-29T18:59:52] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 59. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  "Hello e3e311f6-ff5a-4020-810d-711b0081eeeb@uniqueemail.com!"
+  -----------^
+
+[2017-05-29T19:10:50] [Failed] Register_With_Invalid_Email
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id='logoutForm']/ul/li[2]/a
+[2017-05-29T19:11:50] [Failed] Register_With_Invalid_Email
+  Expected: True
+  But was:  False
+
+[2017-05-29T19:14:54] [Failed] Register_With_Invalid_Email
+  Expected: True
+  But was:  False
+
+[2017-05-29T19:15:52] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T19:20:04] [Passed] Register_With_Invalid_Email
+[2017-05-29T19:21:14] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T19:25:03] [Failed] Register_With_Invalid_Email
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T19:26:15] [Passed] Register_With_Invalid_Email
+[2017-05-29T19:27:22] [Passed] Register_With_Invalid_Email
+[2017-05-29T19:28:52] [Passed] Register_Without_Email
+[2017-05-29T19:33:11] [Passed] Register_Without_FullName
+[2017-05-29T19:53:05] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:00:58] [Failed] Register_Without_Password
+  Expected string length 31 but was 32. Strings differ at index 4.
+  Expected: "The Password field is required."
+  But was:  "The Full Name field is required."
+  ---------------^
+
+[2017-05-29T20:02:04] [Failed] Register_Without_Password
+  Expected string length 31 but was 32. Strings differ at index 4.
+  Expected: "The Password field is required."
+  But was:  "The Full Name field is required."
+  ---------------^
+
+[2017-05-29T20:04:57] [Failed] Register_Without_Password
+  Expected string length 31 but was 32. Strings differ at index 4.
+  Expected: "The Password field is required."
+  But was:  "The Full Name field is required."
+  ---------------^
+
+[2017-05-29T20:05:56] [Failed] Register_Without_Password
+  Expected string length 52 but was 31. Strings differ at index 4.
+  Expected: "The password and confirmation password do not match."
+  But was:  "The Password field is required."
+  ---------------^
+
+[2017-05-29T20:06:44] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:07:23] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:09:43] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:10:28] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:11:41] [Failed] Register_Without_Password
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-05-29T20:13:24] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:17:56] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:19:07] [Passed] Register_Without_Password
+[2017-05-29T20:20:01] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:21:07] [Failed] Register_Without_Password
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T20:21:40] [Passed] Register_Without_FullName
+[2017-05-29T20:29:42] [Passed] Register_Without_Password
+[2017-05-29T20:31:04] [Failed] Register_Without_Password
+System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
+  ----> NUnit.Framework.AssertionException :   Expected string length 31 but was 52. Strings differ at index 4.
+  Expected: "The Password field is required."
+  But was:  "The password and confirmation password do not match."
+  ---------------^
+
+[2017-05-29T20:31:36] [Passed] Register_Without_Password
+[2017-05-29T20:42:58] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T20:57:40] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T20:57:41] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T20:57:42] [Passed] Register_Without_Email
+[2017-05-29T20:57:43] [Passed] Register_Without_FullName
+[2017-05-29T20:57:44] [Passed] Register_Without_Password
+[2017-05-29T20:58:17] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T20:59:31] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T21:11:34] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:19:31] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:20:23] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:23:15] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:23:54] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:30:44] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:33:00] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:34:35] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-29T21:40:09] [Failed] Login_InvalidEmail_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T21:49:34] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T22:09:31] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T22:09:32] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T22:09:33] [Passed] Register_Without_Email
+[2017-05-29T22:09:34] [Passed] Register_Without_FullName
+[2017-05-29T22:09:35] [Passed] Register_Without_Password
+[2017-05-29T22:11:41] [Failed] Login_InvalidEmail_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T22:11:41] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-29T22:11:44] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-29T22:12:52] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T22:48:02] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T22:59:59] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:00:43] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:08:43] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:09:10] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:12:53] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:14:17] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:17:03] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:17:59] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:27:33] [Failed] Login_Blank_Email_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:29:33] [Failed] Login_Blank_Email_Login_Unsuccessful
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T23:30:59] [Failed] Login_Blank_Email_Login_Unsuccessful
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-05-29T23:31:48] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-29T23:59:11] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Article8688a525-b880-43c1-a656-920d93488e2a')]
+[2017-05-29T23:59:11] [Failed] Delete_DeleteArticle_ArticleDeteted
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-29T23:59:16] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-29T23:59:16] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-29T23:59:18] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-29T23:59:19] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-29T23:59:21] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-29T23:59:23] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-29T23:59:23] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T23:59:24] [Passed] Register_Without_ConfirmPassword
+[2017-05-29T23:59:25] [Passed] Register_Without_Email
+[2017-05-29T23:59:26] [Passed] Register_Without_FullName
+[2017-05-29T23:59:27] [Passed] Register_Without_Password
+[2017-05-30T00:19:05] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-05-30T00:19:31] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T00:21:32] [Failed] Delete_DeleteArticle_ArticleDeteted
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T00:24:00] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articlea8f8b6ab-9eae-4639-8c1c-c1be9af95af7')]
+[2017-05-30T00:55:14] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T00:55:15] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T00:55:17] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T00:55:18] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello bde4cab3-1ee2-46e7-af07-6b7eee0bf9a0@uniqueemail.com!"
+  But was:  "Hello 423701f3-4e80-41c7-80cb-ab2bda2f3a57@uniqueemail.com!"
+  -----------------^
+
+[2017-05-30T00:55:19] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T00:55:20] [Passed] Register_Without_Email
+[2017-05-30T00:55:21] [Passed] Register_Without_FullName
+[2017-05-30T00:55:21] [Passed] Register_Without_Password
+[2017-05-30T00:56:44] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-30T00:56:45] [Failed] Delete_DeleteArticle_ArticleDeteted
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-05-30T00:56:49] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-30T00:56:50] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-30T00:56:51] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T00:56:52] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T00:56:54] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T00:56:56] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-30T00:56:56] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T00:56:57] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T00:56:58] [Passed] Register_Without_Email
+[2017-05-30T00:56:59] [Passed] Register_Without_FullName
+[2017-05-30T00:57:00] [Passed] Register_Without_Password
+[2017-05-30T11:56:43] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T11:56:44] [Failed] Register_Without_ConfirmPassword
+  Expected: null
+  But was:  "The password and confirmation password do not match."
+
+[2017-05-30T11:56:45] [Failed] Register_Without_Email
+  Expected: null
+  But was:  "The Email field is required."
+
+[2017-05-30T11:56:46] [Passed] Register_Without_FullName
+[2017-05-30T11:56:47] [Passed] Register_Without_Password
+[2017-05-30T12:10:46] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T12:10:47] [Failed] Register_Without_ConfirmPassword
+  Expected: null
+  But was:  "The password and confirmation password do not match."
+
+[2017-05-30T12:10:48] [Failed] Register_Without_Email
+  Expected: null
+  But was:  "The Email field is required."
+
+[2017-05-30T12:10:49] [Passed] Register_Without_FullName
+[2017-05-30T12:10:50] [Passed] Register_Without_Password
+[2017-05-30T12:12:07] [Passed] Register_Without_Email
+[2017-05-30T12:18:47] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T16:11:44] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T16:11:46] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T16:11:47] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T16:11:49] [Passed] Register_Without_Email
+[2017-05-30T16:11:50] [Passed] Register_Without_FullName
+[2017-05-30T16:11:52] [Passed] Register_Without_Password

@@ -35,6 +35,18 @@ namespace Blog.UI.Tests.Models
             }
         }
 
+        public static BlogPages GetNegativeTestData(string keyName)
+        {
+            using (var connection = new OleDbConnection(TestDataFileConnection()))
+            {
+                connection.Open();
+                var query = string.Format("select * from [NegativeTests$] where key = '{0}'", keyName); // DataSet - name of the xlsx sheet where our data is
+                var value = connection.Query<BlogPages>(query).FirstOrDefault();
+                connection.Close();
+                return value;
+            }
+        }
+
         public static void WriteTestResult(string keyName, string testStatus)
         {
             using (var connection = new OleDbConnection(TestDataFileConnection()))
@@ -43,6 +55,20 @@ namespace Blog.UI.Tests.Models
                 connection.Open();
                 writeResult.Connection = connection;
                 string sqlWrite = string.Format("Update [DataSet$] set Status = '{1}' where Key = '{0}'", keyName,testStatus);
+                writeResult.CommandText = sqlWrite;
+                writeResult.ExecuteNonQuery();
+                connection.Close();
+            }
+        }
+
+        public static void WriteNegativeTestResult(string keyName, string testStatus)
+        {
+            using (var connection = new OleDbConnection(TestDataFileConnection()))
+            {
+                OleDbCommand writeResult = new OleDbCommand();
+                connection.Open();
+                writeResult.Connection = connection;
+                string sqlWrite = string.Format("Update [NegativeTests$] set Status = '{1}' where Key = '{0}'", keyName, testStatus);
                 writeResult.CommandText = sqlWrite;
                 writeResult.ExecuteNonQuery();
                 connection.Close();

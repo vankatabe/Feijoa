@@ -22,7 +22,11 @@ namespace Blog.UI.Tests.Models
 
         public string Effect { get; set; }
 
+        public string Effect2 { get; set; }
+
         public string Asserter { get; set; }
+
+        public string Asserter2 { get; set; }
 
         public string Status { get; set; }
 

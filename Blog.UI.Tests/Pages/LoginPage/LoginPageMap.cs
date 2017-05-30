@@ -41,5 +41,21 @@ namespace Blog.UI.Tests.Pages.LoginPage
                 return this.Driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li[2]/a"));
             }
         }
+
+        public IWebElement PasswordErrorMessage
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/div/form/div[3]/div/span"));
+            }
+        }
+
+        public IWebElement EmailErrorMessage
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/div/form/div[2]/div/span"));
+            }
+        }
     }
 }

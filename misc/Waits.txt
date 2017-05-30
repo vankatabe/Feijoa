@@ -1,0 +1,12 @@
+Waits:
+
+in *Map.cs:
+this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id='pie_register']/li[1]/div/div/span")));
+                return this.Driver.FindElement(By.XPath("//*[@id='pie_register']/li[1]/div/div/span"));
+
+in *Asserter.cs:
+page.Wait.Until(w => page.Position == element.Location);
+            Assert.AreEqual(page.Position, element.Location);
+
+page.Wait.Until(w => text.Contains(page.DraggableSortableElement5.Text));
+            StringAssert.Contains(text, page.DraggableSortableElement5.Text);

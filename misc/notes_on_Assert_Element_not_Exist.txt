@@ -1,0 +1,35 @@
+/* Another way to do the above, so you get a meaningful Exception message instead of "Time out" and "No such element {some Xpath}":
+         * Try it!
+        public IWebElement ErrorMessageForName
+        {
+            get
+            {
+                try
+                {
+                    this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id='pie_register']/li[1]/div/div/span")));
+                    return this.Driver.FindElement(By.XPath("//*[@id='pie_register']/li[1]/div/div/span"));
+                }
+                catch (WebDriverTimeoutException ex)
+                {
+                    throw new NoSuchElementException(string.Format("There is no Error Message in the Reg form"), ex);
+                }
+            }
+	    }
+        */
+
+
+
+
+public IWebElement ArticleTitle(string uniqId)
+        {
+
+            return this.Driver.FindElement(By.XPath(($"//*[contains(text(), 'Article{uniqId}')]")));
+
+        }
+
+
+
+
+An exception of type 'OpenQA.Selenium.NoSuchElementException' occurred in WebDriver.dll but was not handled in user code
+
+Additional information: Unable to locate element: //*[contains(text(), 'Article632c8066-664e-4014-8697-641646e854be')]

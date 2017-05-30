@@ -395,3 +395,19 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(
 [2017-05-29T17:21:11] [Failed] Delete_DeleteArticle_ArticleDeteted
 OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articlec171ce80-7d01-4643-860b-46413de88ebf')]
 [2017-05-29T17:22:53] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-05-29T17:54:29] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-29T17:54:40] [Failed] Delete_DeleteArticle_ArticleDeteted
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Title
+[2017-05-29T17:54:45] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-29T17:54:46] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-29T17:54:48] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-29T17:54:50] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-29T17:54:51] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-29T18:04:26] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-29T18:04:37] [Failed] Delete_DeleteArticle_ArticleDeteted
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Title
+[2017-05-29T18:04:41] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-29T18:04:42] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-29T18:04:44] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-29T18:04:46] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-29T18:04:46] [Passed] Register_UniqueCredentials_RegisterSuccessful

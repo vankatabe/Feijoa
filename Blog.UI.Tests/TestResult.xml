@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" total="7" errors="2" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-28" time="08:06:07">
+<test-results name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" total="8" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-29" time="15:04:16">
   <environment nunit-version="3.5.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\BuildAgent\work\72fcba550db508b8" machine-name="VANETO-PC" user="vaneto" user-domain="vaneto-PC" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" executed="True" result="Failure" success="False" time="40.713" asserts="9">
+  <test-suite type="Assembly" name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" executed="True" result="Failure" success="False" time="30.175" asserts="14">
     <properties>
-      <property name="_PID" value="8040" />
+      <property name="_PID" value="9496" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
     <failure>
@@ -13,31 +13,27 @@
       <stack-trace />
     </failure>
     <results>
-      <test-suite type="TestSuite" name="Blog" executed="True" result="Failure" success="False" time="40.686" asserts="9">
+      <test-suite type="TestSuite" name="Blog" executed="True" result="Failure" success="False" time="30.147" asserts="14">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
           <stack-trace />
         </failure>
         <results>
-          <test-suite type="TestSuite" name="UI" executed="True" result="Failure" success="False" time="40.684" asserts="9">
+          <test-suite type="TestSuite" name="UI" executed="True" result="Failure" success="False" time="30.145" asserts="14">
             <failure>
               <message><![CDATA[One or more child tests had errors]]></message>
               <stack-trace />
             </failure>
             <results>
-              <test-suite type="TestSuite" name="Tests" executed="True" result="Failure" success="False" time="40.682" asserts="9">
+              <test-suite type="TestSuite" name="Tests" executed="True" result="Failure" success="False" time="30.143" asserts="14">
                 <failure>
                   <message><![CDATA[One or more child tests had errors]]></message>
                   <stack-trace />
                 </failure>
                 <results>
-                  <test-suite type="TestFixture" name="CreatePageTests" executed="True" result="Failure" success="False" time="19.264" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="CreatePageTests" executed="True" result="Success" success="True" time="9.144" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated" description="User Register and Login, then navigate to Create page web address and enter valid data to create article, expected: Article created" executed="True" result="Error" success="False" time="12.858" asserts="0">
+                      <test-case name="Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated" description="User Register and Login, then navigate to Create page web address and enter valid data to create article, expected: Article created" executed="True" result="Success" success="True" time="3.006" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="4" />
@@ -45,21 +41,38 @@
                           <property name="Description" value="User Register and Login, then navigate to Create page web address and enter valid data to create article, expected: Article created" />
                           <property name="Author" value="vankatabe" />
                         </properties>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="DeletePageTests" executed="True" result="Failure" success="False" time="10.689" asserts="0">
+                    <failure>
+                      <message><![CDATA[One or more child tests had errors]]></message>
+                      <stack-trace />
+                    </failure>
+                    <results>
+                      <test-case name="Blog.UI.Tests.DeletePageTests.Delete_DeleteArticle_ArticleDeteted" description="User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List" executed="True" result="Error" success="False" time="10.688" asserts="0">
+                        <properties>
+                          <property name="Priority" value="1" />
+                          <property name="Test scenario number:" value="8" />
+                          <property name="Delete test number:" value="1" />
+                          <property name="Description" value="User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List" />
+                          <property name="Author" value="vankatabe" />
+                        </properties>
                         <failure>
-                          <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Article91f332f2-a8a3-47cf-96bb-324ebfc46823')]]]></message>
+                          <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Title]]></message>
                           <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
    at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
    at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.HomePage.HomePage.ArticleTitle(String uniqId) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageMap.cs:line 56
-   at Blog.UI.Tests.Pages.HomePage.HomePage.OpenArticle(String Id) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePage.cs:line 26
-   at Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\CreatePageTests.cs:line 80]]></stack-trace>
+   at Blog.UI.Tests.Pages.CreatePage.CreatePage.get_Title() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\CreatePage\CreatePageMap.cs:line 16
+   at Blog.UI.Tests.Pages.CreatePage.CreatePage.CreateArticle(BlogPages user, String uniqId) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\CreatePage\CreatePage.cs:line 27
+   at Blog.UI.Tests.DeletePageTests.Delete_DeleteArticle_ArticleDeteted() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\DeletePadeTests.cs:line 79]]></stack-trace>
                         </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="EditPageTests" executed="True" result="Success" success="True" time="4.831" asserts="2">
+                  <test-suite type="TestFixture" name="EditPageTests" executed="True" result="Success" success="True" time="4.557" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.EditPageTests.Edit_ChangeContent_ContentChanged" description="User Register and Login and Create Article, then navigate to Edit page and enter 'Edited' as Article content, expected: Article content changed to 'Edited'" executed="True" result="Success" success="True" time="4.829" asserts="2">
+                      <test-case name="Blog.UI.Tests.EditPageTests.Edit_ChangeContent_ContentChanged" description="User Register and Login and Create Article, then navigate to Edit page and enter 'Edited' as Article content, expected: Article content changed to 'Edited'" executed="True" result="Success" success="True" time="4.555" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="7" />
@@ -70,9 +83,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="HomePageTests" executed="True" result="Success" success="True" time="0.474" asserts="2">
+                  <test-suite type="TestFixture" name="HomePageTests" executed="True" result="Success" success="True" time="0.408" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Navigate to Blog web address, expected: Blog homepage open and Logo present" executed="True" result="Success" success="True" time="0.468" asserts="2">
+                      <test-case name="Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Navigate to Blog web address, expected: Blog homepage open and Logo present" executed="True" result="Success" success="True" time="0.406" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="9" />
@@ -83,9 +96,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="LoginPageTests" executed="True" result="Success" success="True" time="2.508" asserts="2">
+                  <test-suite type="TestFixture" name="LoginPageTests" executed="True" result="Success" success="True" time="2.190" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful" description="Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed" executed="True" result="Success" success="True" time="2.506" asserts="2">
+                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful" description="Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed" executed="True" result="Success" success="True" time="2.188" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="3" />
@@ -96,13 +109,9 @@
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="LogoffTests" executed="True" result="Failure" success="False" time="11.743" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="LogoffTests" executed="True" result="Success" success="True" time="1.655" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful" description="Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed" executed="True" result="Error" success="False" time="11.741" asserts="0">
+                      <test-case name="Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful" description="Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed" executed="True" result="Success" success="True" time="1.653" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="6" />
@@ -110,25 +119,12 @@
                           <property name="Description" value="Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.HomePage.HomePage.get_LoginLink() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageMap.cs:line 41
-   at Blog.UI.Tests.Pages.HomePage.HomePageAsserter.AssertLoginDisplayed(HomePage page, String text) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageAsserter.cs:line 19
-   at Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LogoffTests.cs:line 80]]></stack-trace>
-                        </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="RegisterPageTests" executed="True" result="Failure" success="False" time="0.994" asserts="1">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="RegisterPageTests" executed="True" result="Success" success="True" time="0.866" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful" description="Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially" executed="True" result="Failure" success="False" time="0.991" asserts="1">
+                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful" description="Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially" executed="True" result="Success" success="True" time="0.864" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="2" />
@@ -136,27 +132,17 @@
                           <property name="Description" value="Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[  String lengths are both 59. Strings differ at index 6.
-  Expected: "Hello 99309ef2-49a9-43d3-b53f-25ef883521be@uniqueemail.com!"
-  But was:  "Hello 19302b98-cfa8-4e5f-bf3b-88c59e08b076@uniqueemail.com!"
-  -----------------^
-]]></message>
-                          <stack-trace><![CDATA[at Blog.UI.Tests.Pages.RegisterPage.RegisterPageAsserter.AssertGreetingDisplayed(RegisterPage page, String text) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageAsserter.cs:line 14
-at Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\RegisterPageTests.cs:line 70
-]]></stack-trace>
-                        </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestSuite" name="SpecFlowTests" executed="True" result="Success" success="True" time="40.679" asserts="2">
+                  <test-suite type="TestSuite" name="SpecFlowTests" executed="True" result="Success" success="True" time="30.139" asserts="2">
                     <results>
-                      <test-suite type="TestFixture" name="OpenHomePageFeature" description="OpenHomePage" executed="True" result="Success" success="True" time="0.850" asserts="2">
+                      <test-suite type="TestFixture" name="OpenHomePageFeature" description="OpenHomePage" executed="True" result="Success" success="True" time="0.613" asserts="2">
                         <properties>
                           <property name="Description" value="OpenHomePage" />
                         </properties>
                         <results>
-                          <test-case name="Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Check WebSite Load _ Enter Blog URL _ Open Blog Home Page" executed="True" result="Success" success="True" time="0.614" asserts="2">
+                          <test-case name="Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Check WebSite Load _ Enter Blog URL _ Open Blog Home Page" executed="True" result="Success" success="True" time="0.474" asserts="2">
                             <categories>
                               <category name="Regression" />
                             </categories>

@@ -19,6 +19,8 @@ namespace Blog.UI.Tests
         private IWebDriver driver = BrowserHost.Instance.Application.Browser;
         //private string testStatus = "failed";
         private string uniqId;
+        
+
 
         [SetUp]
         public void Init()
@@ -59,8 +61,9 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property ("Setup negative tests account", 0)]
-        [Description ("Sets up the test account for our negative tests in case it is not present in DB")]
+        [Property("Setup negative tests account", 0)]
+        [Author("Mario Georgiev")]
+        [Description("Sets up the test account for our negative tests in case it is not present in DB")]
         public void Setup_Negative_Test_Account()
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
@@ -69,8 +72,8 @@ namespace Blog.UI.Tests
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
 
-
         }
+
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 1)]
         [Description("Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially")]
@@ -96,7 +99,7 @@ namespace Blog.UI.Tests
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 2)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Email field empty, exected: Account not registered and Email field required message displayed")]
-        [Author("vankatabe")]
+        [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
         public void Register_Without_Email()
         {
@@ -105,7 +108,7 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
-            Thread.Sleep(300); // Necessary due to test execution speed.
+            Thread.Sleep(1000); // Necessary due to test execution speed.
             registerPage.AssertEmailErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
@@ -118,7 +121,7 @@ namespace Blog.UI.Tests
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 3)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed")]
-        [Author("vankatabe")]
+        [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
         public void Register_Without_FullName()
         {
@@ -127,7 +130,7 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
-            Thread.Sleep(300); // Necessary due to test execution speed.
+            Thread.Sleep(1000); // Necessary due to test execution speed.
             registerPage.AssertFullNameErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
@@ -140,7 +143,7 @@ namespace Blog.UI.Tests
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 4)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Passwordd field empty, exected: Account not registered and Password field required message displayed, and Password missmatch message displayed")]
-        [Author("vankatabe")]
+        [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
         public void Register_Without_Password()
         {
@@ -149,7 +152,7 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
-            Thread.Sleep(300); // Necessary due to test execution speed.
+            Thread.Sleep(1000); // Necessary due to test execution speed.
             registerPage.AssertPasswordErrorMessageExists(page.Effect);
             registerPage.AssertPasswordMissmatchErrorMessageExists(page.Effect2);
             // for the DataDriven Asserter:
@@ -165,7 +168,7 @@ namespace Blog.UI.Tests
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 5)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Confirm Passwordd field empty, exected: Account not registered and Password missmatch message displayed")]
-        [Author("vankatabe")]
+        [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
         public void Register_Without_ConfirmPassword()
         {
@@ -174,7 +177,7 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
-            Thread.Sleep(300); // Necessary due to test execution speed.
+            Thread.Sleep(1000); // Necessary due to test execution speed.
             registerPage.AssertPasswordMissmatchErrorMessageExists2(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);           

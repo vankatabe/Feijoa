@@ -644,3 +644,27 @@ System.NullReferenceException : Object reference not set to an instance of an ob
 [2017-05-30T00:56:58] [Passed] Register_Without_Email
 [2017-05-30T00:56:59] [Passed] Register_Without_FullName
 [2017-05-30T00:57:00] [Passed] Register_Without_Password
+[2017-05-30T11:56:43] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T11:56:44] [Failed] Register_Without_ConfirmPassword
+  Expected: null
+  But was:  "The password and confirmation password do not match."
+
+[2017-05-30T11:56:45] [Failed] Register_Without_Email
+  Expected: null
+  But was:  "The Email field is required."
+
+[2017-05-30T11:56:46] [Passed] Register_Without_FullName
+[2017-05-30T11:56:47] [Passed] Register_Without_Password
+[2017-05-30T12:10:46] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T12:10:47] [Failed] Register_Without_ConfirmPassword
+  Expected: null
+  But was:  "The password and confirmation password do not match."
+
+[2017-05-30T12:10:48] [Failed] Register_Without_Email
+  Expected: null
+  But was:  "The Email field is required."
+
+[2017-05-30T12:10:49] [Passed] Register_Without_FullName
+[2017-05-30T12:10:50] [Passed] Register_Without_Password
+[2017-05-30T12:12:07] [Passed] Register_Without_Email
+[2017-05-30T12:18:47] [Passed] Register_Without_ConfirmPassword

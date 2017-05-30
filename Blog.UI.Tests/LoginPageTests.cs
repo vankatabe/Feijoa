@@ -92,7 +92,7 @@ namespace Blog.UI.Tests
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
         [Description("Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message")]
-        [Author("intergalacticmule")]
+        [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
         public void Login_InvalidPassword_LoginUnsuccessful()
         {
@@ -100,7 +100,7 @@ namespace Blog.UI.Tests
             BlogPages page = AccessExcelData.GetNegativeTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginFormNegative(page);
-            Thread.Sleep(300);
+            Thread.Sleep(1000);
 
             loginPage.AssertPasswordErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
@@ -114,7 +114,7 @@ namespace Blog.UI.Tests
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
         [Description("Navigate to Login page web address and enter an ibvalid Email but valid Password, expected: Login unsuccessful and Password field required message")]
-        [Author("intergalacticmule")]
+        [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
         public void Login_Blank_Email_Login_Unsuccessful()
         {

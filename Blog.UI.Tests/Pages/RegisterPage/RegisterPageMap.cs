@@ -102,6 +102,7 @@ namespace Blog.UI.Tests.Pages.RegisterPage
             {
                 this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/div/form/div[1]/ul/li")));
                 return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/div/form/div[1]/ul/li"));
+                //html/body/div[2]/div/div/form/div[1]/ul/li
             }
         }
 

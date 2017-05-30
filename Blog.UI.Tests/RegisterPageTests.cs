@@ -37,19 +37,6 @@ namespace Blog.UI.Tests
             homePage.YeOldeFailedTestsLogger(); // The old-style logger for failed tests
         }
 
-        //[Test]
-        //[Property("Setup negative tests account", 0)]
-        //[Author("Mario Georgiev")]
-        //[Description("Sets up the test account for our negative tests in case it is not present in DB")]
-        //public void Setup_Negative_Test_Account()
-        //{
-        //    RegisterPage registerPage = new RegisterPage(this.driver);
-        //    BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name);
-
-        //    registerPage.NavigateTo(registerPage.URL);
-        //    registerPage.FillRegistrationFormNegative(page);
-        //}
-
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 1)]
         [Description("Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially")]
@@ -88,8 +75,7 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });
-            //testStatus = "passed";
-            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+
         }
 
         [Test]
@@ -110,8 +96,7 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });
-            //testStatus = "passed";
-            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
+
         }
 
         [Test]
@@ -135,8 +120,6 @@ namespace Blog.UI.Tests
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });
             asserter2.Invoke(null, new object[] { registerPage, page.Effect2 });
-            //testStatus = "passed";
-            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
 
         [Test]
@@ -157,8 +140,6 @@ namespace Blog.UI.Tests
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });
-            //testStatus = "passed";
-            //AccessExcelData.WriteNegativeTestResult(TestContext.CurrentContext.Test.Name, testStatus);
         }
     }
 }

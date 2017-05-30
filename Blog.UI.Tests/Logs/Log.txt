@@ -553,3 +553,34 @@ OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
   But was:  "Article28ad00ce-1a05-439e-9541-f3e9e49deb82"
   -----------^
 
+
+[2017-05-30T20:03:40] [Failed] Create_ValidFieldEntries_ArticleCreated
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:41] [Failed] Delete_DeleteArticle_ArticleDeteted
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:41] [Failed] Edit_ChangeContent_ContentChanged
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:41] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:41] [Failed] Login_Blank_Email_Login_Unsuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:41] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:41] [Failed] Login_ValidCredentials_LoginSuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:41] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:41] [Failed] Login_Blank_Email_Login_Unsuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:42] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:42] [Failed] Register_Without_ConfirmPassword
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:42] [Failed] Register_Without_Email
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:42] [Failed] Register_Without_FullName
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:42] [Failed] Register_Without_Password
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-05-30T20:03:42] [Failed] Register_UniqueCredentials_RegisterSuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection

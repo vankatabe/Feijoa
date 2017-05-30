@@ -1,12 +1,9 @@
 Test full name:	Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated
 
-Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
+Work directory:	C:\BuildAgent\work\72fcba550db508b8
 
 Pass count:	0
 
-Result:	Failed
+Result:	Failed:Error
 
-Message:	  Expected string length 2 but was 43. Strings differ at index 0.
-  Expected: "as"
-  But was:  "Article28ad00ce-1a05-439e-9541-f3e9e49deb82"
-  -----------^
+Message:	System.InvalidOperationException : Tried to run command without establishing a connection

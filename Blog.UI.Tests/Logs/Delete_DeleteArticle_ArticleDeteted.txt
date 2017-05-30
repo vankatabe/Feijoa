@@ -1,4 +1,4 @@
-Test full name:	Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful
+Test full name:	Blog.UI.Tests.DeletePageTests.Delete_DeleteArticle_ArticleDeteted
 
 Work directory:	C:\BuildAgent\work\72fcba550db508b8
 

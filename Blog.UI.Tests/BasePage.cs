@@ -1,8 +1,11 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,6 +43,30 @@ namespace Blog.UI.Tests
         public void NavigateTo(string url)
         {
             this.Driver.Navigate().GoToUrl(url);
+        }
+
+        // The old-style logger for failed tests
+        public void YeOldeFailedTestsLogger()
+        {
+            if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
+            {
+                string filenameTxt = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".txt";
+                if (File.Exists(filenameTxt))
+                {
+                    File.Delete(filenameTxt);
+                }
+
+                File.WriteAllText(filenameTxt,
+                    "Test full name:\t" + TestContext.CurrentContext.Test.FullName + "\r\n\r\n"
+                    + "Work directory:\t" + TestContext.CurrentContext.WorkDirectory + "\r\n\r\n"
+                    + "Pass count:\t" + TestContext.CurrentContext.Result.PassCount + "\r\n\r\n"
+                    + "Result:\t" + TestContext.CurrentContext.Result.Outcome.ToString() + "\r\n\r\n"
+                    + "Message:\t" + TestContext.CurrentContext.Result.Message);
+
+                var screenshot = ((ITakesScreenshot)this.driver).GetScreenshot();
+                var filenameJpg = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".jpg";
+                screenshot.SaveAsFile(filenameJpg, ScreenshotImageFormat.Jpeg);
+            }
         }
     }
 }

@@ -30,27 +30,9 @@ namespace Blog.UI.Tests
         [TearDown]
         public void CleanUp()
         {
-            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString()); // Write actual test result status in xlsx
-            // The old-style logger for failed tests
-            if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
-            {
-                string filenameTxt = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".txt";
-                if (File.Exists(filenameTxt))
-                {
-                    File.Delete(filenameTxt);
-                }
-
-                File.WriteAllText(filenameTxt,
-                    "Test full name:\t" + TestContext.CurrentContext.Test.FullName + "\r\n\r\n"
-                    + "Work directory:\t" + TestContext.CurrentContext.WorkDirectory + "\r\n\r\n"
-                    + "Pass count:\t" + TestContext.CurrentContext.Result.PassCount + "\r\n\r\n"
-                    + "Result:\t" + TestContext.CurrentContext.Result.Outcome.ToString() + "\r\n\r\n"
-                    + "Message:\t" + TestContext.CurrentContext.Result.Message);
-
-                var screenshot = ((ITakesScreenshot)this.driver).GetScreenshot();
-                var filenameJpg = AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\Debug\\", string.Empty) + ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".jpg";
-                screenshot.SaveAsFile(filenameJpg, ScreenshotImageFormat.Jpeg);
-            }
+            AccessExcelData.WriteTestResult(TestContext.CurrentContext.Test.Name, TestContext.CurrentContext.Result.Outcome.Status.ToString());// Write actual test result status in xlsx
+            HomePage homePage = new HomePage(this.driver);
+            homePage.YeOldeFailedTestsLogger(); // The old-style logger for failed tests
         }
 
         [Test]

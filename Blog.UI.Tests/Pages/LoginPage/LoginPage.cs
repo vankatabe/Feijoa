@@ -45,5 +45,10 @@ namespace Blog.UI.Tests.Pages.LoginPage
             }
             element.SendKeys(text);
         }
+        
+        public void ManageLinkClick()
+        {
+            ManageLink.Click();
+        }
     }
 }

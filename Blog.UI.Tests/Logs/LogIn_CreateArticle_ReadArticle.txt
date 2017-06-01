@@ -1,0 +1,10 @@
+Test full name:	Blog.UI.Tests.CreatePageTests.LogIn_CreateArticle_ReadArticle
+
+Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	System.ArgumentNullException : Value cannot be null.
+Parameter name: name

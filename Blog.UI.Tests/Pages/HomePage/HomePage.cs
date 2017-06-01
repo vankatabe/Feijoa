@@ -25,5 +25,21 @@ namespace Blog.UI.Tests.Pages.HomePage
         {
             ArticleTitle(Id).Click();
         }
+
+        public void OpenLoginPage()
+        {
+            LoginLink.Click();
+        }
+
+        public void OpenRegistrationPage()
+        {
+            RegisterLink.Click();
+        }
+
+        public void ClickLogo()
+        {
+            Logo.Click();
+        }
+
     }
 }

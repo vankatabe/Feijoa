@@ -109,6 +109,7 @@
     <Compile Include="EditPageTests.cs" />
     <Compile Include="CreatePageTests.cs" />
     <Compile Include="LogoffTests.cs" />
+    <Compile Include="ManagePageTests.cs" />
     <Compile Include="Models\AccessExcelData.cs" />
     <Compile Include="Models\BlogPages.cs" />
     <Compile Include="Pages\DeletePage\DeletePage.cs" />
@@ -127,6 +128,8 @@
     <Compile Include="Pages\HomePage\HomePageAsserter.cs" />
     <Compile Include="Pages\HomePage\HomePageMap.cs" />
     <Compile Include="HomePageTests.cs" />
+    <Compile Include="Pages\ManagePage\ManagePage.cs" />
+    <Compile Include="Pages\ManagePage\ManagePageMap.cs" />
     <Compile Include="Pages\RegisterPage\RegisterPage.cs" />
     <Compile Include="Pages\RegisterPage\RegisterPageAsserter.cs" />
     <Compile Include="Pages\RegisterPage\RegisterPageMap.cs" />

@@ -25,6 +25,14 @@ namespace Blog.UI.Tests.Pages.DeletePage
             }
         }
 
+        public IWebElement Delete
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("//div[3]/div/input"));
+            }
+        }
+
         public IWebElement DeleteButton
         {
             get

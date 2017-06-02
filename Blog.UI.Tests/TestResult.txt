@@ -6,18 +6,15 @@
 => Blog.UI.Tests.LoginPageTests.Login_InvalidPassword_LoginUnsuccessful
 => Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful
 => Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful
-=> Blog.UI.Tests.NegativeTests.Login_Blank_Email_Login_Unsuccessful
-=> Blog.UI.Tests.NegativeTests.Login_InvalidPassword_LoginUnsuccessful
-=> Blog.UI.Tests.NegativeTests.Register_Without_ConfirmPassword
-=> Blog.UI.Tests.NegativeTests.Register_Without_Email
-=> Blog.UI.Tests.NegativeTests.Register_Without_FullName
-=> Blog.UI.Tests.NegativeTests.Register_Without_Password
 => Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful
-=> Blog.UI.Tests.RegisterPageTests.Setup_Negative_Test_Account
+=> Blog.UI.Tests.RegisterPageTests.Register_Without_ConfirmPassword
+=> Blog.UI.Tests.RegisterPageTests.Register_Without_Email
+=> Blog.UI.Tests.RegisterPageTests.Register_Without_FullName
+=> Blog.UI.Tests.RegisterPageTests.Register_Without_Password
 => Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
 Given that the Visitor opens a web browser
--> done: OpenHomePageSteps.GivenThatTheVisitorOpensAWebBrowser() (0.1s)
+-> done: OpenHomePageSteps.GivenThatTheVisitorOpensAWebBrowser() (0.0s)
 When the Visitor navigates to the Online Blog Website address
--> done: OpenHomePageSteps.WhenTheVisitorNavigatesToTheOnlineBlogWebsiteAddress() (0.0s)
+-> done: OpenHomePageSteps.WhenTheVisitorNavigatesToTheOnlineBlogWebsiteAddress() (0.2s)
 Then the Blog Home Page is open
--> error: Tried to run command without establishing a connection
+-> done: OpenHomePageSteps.ThenTheBlogHomePageIsOpen() (0.1s)

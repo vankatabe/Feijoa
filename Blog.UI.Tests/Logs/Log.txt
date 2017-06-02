@@ -599,3 +599,16 @@ OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> st
 [2017-05-30T20:18:07] [Passed] Register_Without_FullName
 [2017-05-30T20:18:08] [Passed] Register_Without_Password
 [2017-05-30T20:18:44] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-30T20:32:19] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-05-30T20:32:33] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-05-30T20:32:37] [Passed] Edit_ChangeContent_ContentChanged
+[2017-05-30T20:32:38] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-05-30T20:32:39] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-05-30T20:32:41] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-05-30T20:32:43] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-05-30T20:32:44] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-05-30T20:32:45] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-05-30T20:32:47] [Passed] Register_Without_ConfirmPassword
+[2017-05-30T20:32:48] [Passed] Register_Without_Email
+[2017-05-30T20:32:49] [Passed] Register_Without_FullName
+[2017-05-30T20:32:51] [Passed] Register_Without_Password

@@ -1,43 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" total="17" errors="17" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-30" time="17:03:35">
+<test-results name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" total="14" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-05-30" time="17:32:09">
   <environment nunit-version="3.5.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\BuildAgent\work\72fcba550db508b8" machine-name="VANETO-PC" user="vaneto" user-domain="vaneto-PC" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" executed="True" result="Failure" success="False" time="7.417" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug\Blog.UI.Tests.dll" executed="True" result="Success" success="True" time="42.086" asserts="29">
     <properties>
-      <property name="_PID" value="8264" />
+      <property name="_PID" value="7364" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
-    <failure>
-      <message><![CDATA[One or more child tests had errors]]></message>
-      <stack-trace />
-    </failure>
     <results>
-      <test-suite type="TestSuite" name="Blog" executed="True" result="Failure" success="False" time="7.393" asserts="0">
-        <failure>
-          <message><![CDATA[One or more child tests had errors]]></message>
-          <stack-trace />
-        </failure>
+      <test-suite type="TestSuite" name="Blog" executed="True" result="Success" success="True" time="42.059" asserts="29">
         <results>
-          <test-suite type="TestSuite" name="UI" executed="True" result="Failure" success="False" time="7.391" asserts="0">
-            <failure>
-              <message><![CDATA[One or more child tests had errors]]></message>
-              <stack-trace />
-            </failure>
+          <test-suite type="TestSuite" name="UI" executed="True" result="Success" success="True" time="42.057" asserts="29">
             <results>
-              <test-suite type="TestSuite" name="Tests" executed="True" result="Failure" success="False" time="7.389" asserts="0">
-                <failure>
-                  <message><![CDATA[One or more child tests had errors]]></message>
-                  <stack-trace />
-                </failure>
+              <test-suite type="TestSuite" name="Tests" executed="True" result="Success" success="True" time="42.055" asserts="29">
                 <results>
-                  <test-suite type="TestFixture" name="CreatePageTests" executed="True" result="Failure" success="False" time="5.076" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="CreatePageTests" executed="True" result="Success" success="True" time="9.394" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated" description="User Register and Login, then navigate to Create page web address and enter valid data to create article, expected: Article created" executed="True" result="Error" success="False" time="0.562" asserts="0">
+                      <test-case name="Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated" description="User Register and Login, then navigate to Create page web address and enter valid data to create article, expected: Article created" executed="True" result="Success" success="True" time="2.897" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="4" />
@@ -45,32 +25,12 @@
                           <property name="Description" value="User Register and Login, then navigate to Create page web address and enter valid data to create article, expected: Article created" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationForm(BlogPages user, String uniqId) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 27
-   at Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\CreatePageTests.cs:line 55
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.CreatePageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\CreatePageTests.cs:line 39]]></stack-trace>
-                        </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="DeletePageTests" executed="True" result="Failure" success="False" time="0.116" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="DeletePageTests" executed="True" result="Success" success="True" time="14.097" asserts="1">
                     <results>
-                      <test-case name="Blog.UI.Tests.DeletePageTests.Delete_DeleteArticle_ArticleDeteted" description="User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List" executed="True" result="Error" success="False" time="0.114" asserts="0">
+                      <test-case name="Blog.UI.Tests.DeletePageTests.Delete_DeleteArticle_ArticleDeteted" description="User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List" executed="True" result="Success" success="True" time="14.095" asserts="1">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="8" />
@@ -78,32 +38,12 @@ TearDown : System.InvalidOperationException : Tried to run command without estab
                           <property name="Description" value="User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationForm(BlogPages user, String uniqId) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 27
-   at Blog.UI.Tests.DeletePageTests.Delete_DeleteArticle_ArticleDeteted() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\DeletePageTests.cs:line 57
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.DeletePageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\DeletePageTests.cs:line 40]]></stack-trace>
-                        </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="EditPageTests" executed="True" result="Failure" success="False" time="0.110" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="EditPageTests" executed="True" result="Success" success="True" time="4.358" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.EditPageTests.Edit_ChangeContent_ContentChanged" description="User Register and Login and Create Article, then navigate to Edit page and enter 'Edited' as Article content, expected: Article content changed to 'Edited'" executed="True" result="Error" success="False" time="0.109" asserts="0">
+                      <test-case name="Blog.UI.Tests.EditPageTests.Edit_ChangeContent_ContentChanged" description="User Register and Login and Create Article, then navigate to Edit page and enter 'Edited' as Article content, expected: Article content changed to 'Edited'" executed="True" result="Success" success="True" time="4.356" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="7" />
@@ -111,32 +51,12 @@ TearDown : System.InvalidOperationException : Tried to run command without estab
                           <property name="Description" value="User Register and Login and Create Article, then navigate to Edit page and enter 'Edited' as Article content, expected: Article content changed to 'Edited'" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationForm(BlogPages user, String uniqId) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 27
-   at Blog.UI.Tests.EditPageTests.Edit_ChangeContent_ContentChanged() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\EditPageTests.cs:line 57
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.EditPageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\EditPageTests.cs:line 40]]></stack-trace>
-                        </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="HomePageTests" executed="True" result="Failure" success="False" time="0.129" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="HomePageTests" executed="True" result="Success" success="True" time="0.293" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Navigate to Blog web address, expected: Blog homepage open and Logo present" executed="True" result="Error" success="False" time="0.128" asserts="0">
+                      <test-case name="Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Navigate to Blog web address, expected: Blog homepage open and Logo present" executed="True" result="Success" success="True" time="0.291" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="9" />
@@ -144,34 +64,12 @@ TearDown : System.InvalidOperationException : Tried to run command without estab
                           <property name="Description" value="Navigate to Blog web address, expected: Blog homepage open and Logo present" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.HomePage.HomePage.<>c.<get_Logo>b__6_0(IWebDriver w) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageMap.cs:line 18
-   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
-   at Blog.UI.Tests.Pages.HomePage.HomePage.get_Logo() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageMap.cs:line 18
-   at Blog.UI.Tests.Pages.HomePage.HomePageAsserter.AssertHomePageLogoDisplayed(HomePage page, String text) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageAsserter.cs:line 15
-   at Blog.UI.Tests.HomePageTests.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\HomePageTests.cs:line 50
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.HomePageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\HomePageTests.cs:line 35]]></stack-trace>
-                        </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="LoginPageTests" executed="True" result="Failure" success="False" time="0.326" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="LoginPageTests" executed="True" result="Success" success="True" time="4.978" asserts="6">
                     <results>
-                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_Blank_Email_Login_Unsuccessful" description="Navigate to Login page web address and enter an ibvalid Email but valid Password, expected: Login unsuccessful and Password field required message" executed="True" result="Error" success="False" time="0.099" asserts="0">
+                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_Blank_Email_Login_Unsuccessful" description="Navigate to Login page web address and enter an ibvalid Email but valid Password, expected: Login unsuccessful and Password field required message" executed="True" result="Success" success="True" time="1.540" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="3" />
@@ -179,24 +77,8 @@ TearDown : System.InvalidOperationException : Tried to run command without estab
                           <property name="Description" value="Navigate to Login page web address and enter an ibvalid Email but valid Password, expected: Login unsuccessful and Password field required message" />
                           <property name="Author" value="Mario Georgiev" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.LoginPage.LoginPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\LoginPage\LoginPageMap.cs:line 16
-   at Blog.UI.Tests.Pages.LoginPage.LoginPage.FillLoginFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\LoginPage\LoginPage.cs:line 34
-   at Blog.UI.Tests.LoginPageTests.Login_Blank_Email_Login_Unsuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LoginPageTests.cs:line 97
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.LoginPageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LoginPageTests.cs:line 38]]></stack-trace>
-                        </failure>
                       </test-case>
-                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_InvalidPassword_LoginUnsuccessful" description="Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message" executed="True" result="Error" success="False" time="0.101" asserts="0">
+                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_InvalidPassword_LoginUnsuccessful" description="Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message" executed="True" result="Success" success="True" time="1.425" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="3" />
@@ -204,24 +86,8 @@ TearDown : System.InvalidOperationException : Tried to run command without estab
                           <property name="Description" value="Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message" />
                           <property name="Author" value="Mario Georgiev" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.LoginPage.LoginPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\LoginPage\LoginPageMap.cs:line 16
-   at Blog.UI.Tests.Pages.LoginPage.LoginPage.FillLoginFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\LoginPage\LoginPage.cs:line 34
-   at Blog.UI.Tests.LoginPageTests.Login_InvalidPassword_LoginUnsuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LoginPageTests.cs:line 77
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.LoginPageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LoginPageTests.cs:line 38]]></stack-trace>
-                        </failure>
                       </test-case>
-                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful" description="Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed" executed="True" result="Error" success="False" time="0.120" asserts="0">
+                      <test-case name="Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful" description="Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed" executed="True" result="Success" success="True" time="2.007" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="3" />
@@ -229,32 +95,12 @@ TearDown : System.InvalidOperationException : Tried to run command without estab
                           <property name="Description" value="Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationForm(BlogPages user, String uniqId) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 27
-   at Blog.UI.Tests.LoginPageTests.Login_ValidCredentials_LoginSuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LoginPageTests.cs:line 53
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.LoginPageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LoginPageTests.cs:line 38]]></stack-trace>
-                        </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="LogoffTests" executed="True" result="Failure" success="False" time="0.120" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="LogoffTests" executed="True" result="Success" success="True" time="1.585" asserts="2">
                     <results>
-                      <test-case name="Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful" description="Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed" executed="True" result="Error" success="False" time="0.118" asserts="0">
+                      <test-case name="Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful" description="Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed" executed="True" result="Success" success="True" time="1.583" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="6" />
@@ -262,148 +108,12 @@ TearDown : System.InvalidOperationException : Tried to run command without estab
                           <property name="Description" value="Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationForm(BlogPages user, String uniqId) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 27
-   at Blog.UI.Tests.LogoffTests.Logoff_ClickLogoffLink_LogoffSuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LogoffTests.cs:line 53
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.LogoffTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\LogoffTests.cs:line 38]]></stack-trace>
-                        </failure>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestFixture" name="NegativeTests" executed="True" result="Failure" success="False" time="0.755" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestFixture" name="RegisterPageTests" executed="True" result="Success" success="True" time="6.717" asserts="12">
                     <results>
-                      <test-case name="Blog.UI.Tests.NegativeTests.Login_Blank_Email_Login_Unsuccessful" description="Navigate to Login page web address and enter an ibvalid Email but valid Password, expected: Login unsuccessful and Password field required message" executed="True" result="Error" success="False" time="0.122" asserts="0">
-                        <properties>
-                          <property name="Priority" value="1" />
-                          <property name="Test scenario number:" value="3" />
-                          <property name="Login test number:" value="2" />
-                          <property name="Description" value="Navigate to Login page web address and enter an ibvalid Email but valid Password, expected: Login unsuccessful and Password field required message" />
-                          <property name="Author" value="Mario Georgiev" />
-                        </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.LoginPage.LoginPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\LoginPage\LoginPageMap.cs:line 16
-   at Blog.UI.Tests.Pages.LoginPage.LoginPage.FillLoginFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\LoginPage\LoginPage.cs:line 34
-   at Blog.UI.Tests.NegativeTests.Login_Blank_Email_Login_Unsuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\NegativeTests.cs:line 180]]></stack-trace>
-                        </failure>
-                      </test-case>
-                      <test-case name="Blog.UI.Tests.NegativeTests.Login_InvalidPassword_LoginUnsuccessful" description="Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message" executed="True" result="Error" success="False" time="0.150" asserts="0">
-                        <properties>
-                          <property name="Priority" value="1" />
-                          <property name="Test scenario number:" value="3" />
-                          <property name="Login test number:" value="2" />
-                          <property name="Description" value="Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message" />
-                          <property name="Author" value="Mario Georgiev" />
-                        </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.LoginPage.LoginPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\LoginPage\LoginPageMap.cs:line 16
-   at Blog.UI.Tests.Pages.LoginPage.LoginPage.FillLoginFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\LoginPage\LoginPage.cs:line 34
-   at Blog.UI.Tests.NegativeTests.Login_InvalidPassword_LoginUnsuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\NegativeTests.cs:line 158]]></stack-trace>
-                        </failure>
-                      </test-case>
-                      <test-case name="Blog.UI.Tests.NegativeTests.Register_Without_ConfirmPassword" description="Navigate to Registration page web address and popualte fields with valid data while leaving Confirm Passwordd field empty, exected: Account not registered and Password missmatch message displayed" executed="True" result="Error" success="False" time="0.122" asserts="0">
-                        <properties>
-                          <property name="Priority" value="1" />
-                          <property name="Test scenario number:" value="2" />
-                          <property name="Registration test number:" value="5" />
-                          <property name="Description" value="Navigate to Registration page web address and popualte fields with valid data while leaving Confirm Passwordd field empty, exected: Account not registered and Password missmatch message displayed" />
-                          <property name="Author" value="Mario Georgiev" />
-                        </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 36
-   at Blog.UI.Tests.NegativeTests.Register_Without_ConfirmPassword() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\NegativeTests.cs:line 137]]></stack-trace>
-                        </failure>
-                      </test-case>
-                      <test-case name="Blog.UI.Tests.NegativeTests.Register_Without_Email" description="Navigate to Registration page web address and popualte fields with valid data while leaving Email field empty, exected: Account not registered and Email field required message displayed" executed="True" result="Error" success="False" time="0.132" asserts="0">
-                        <properties>
-                          <property name="Priority" value="1" />
-                          <property name="Test scenario number:" value="2" />
-                          <property name="Registration test number:" value="2" />
-                          <property name="Description" value="Navigate to Registration page web address and popualte fields with valid data while leaving Email field empty, exected: Account not registered and Email field required message displayed" />
-                          <property name="Author" value="Mario Georgiev" />
-                        </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 36
-   at Blog.UI.Tests.NegativeTests.Register_Without_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\NegativeTests.cs:line 68]]></stack-trace>
-                        </failure>
-                      </test-case>
-                      <test-case name="Blog.UI.Tests.NegativeTests.Register_Without_FullName" description="Navigate to Registration page web address and populate fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed" executed="True" result="Error" success="False" time="0.108" asserts="0">
-                        <properties>
-                          <property name="Priority" value="1" />
-                          <property name="Test scenario number:" value="2" />
-                          <property name="Registration test number:" value="3" />
-                          <property name="Description" value="Navigate to Registration page web address and populate fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed" />
-                          <property name="Author" value="Mario Georgiev" />
-                        </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 36
-   at Blog.UI.Tests.NegativeTests.Register_Without_FullName() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\NegativeTests.cs:line 90]]></stack-trace>
-                        </failure>
-                      </test-case>
-                      <test-case name="Blog.UI.Tests.NegativeTests.Register_Without_Password" description="Navigate to Registration page web address and popualte fields with valid data while leaving Passwordd field empty, exected: Account not registered and Password field required message displayed, and Password missmatch message displayed" executed="True" result="Error" success="False" time="0.108" asserts="0">
-                        <properties>
-                          <property name="Priority" value="1" />
-                          <property name="Test scenario number:" value="2" />
-                          <property name="Registration test number:" value="4" />
-                          <property name="Description" value="Navigate to Registration page web address and popualte fields with valid data while leaving Passwordd field empty, exected: Account not registered and Password field required message displayed, and Password missmatch message displayed" />
-                          <property name="Author" value="Mario Georgiev" />
-                        </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 36
-   at Blog.UI.Tests.NegativeTests.Register_Without_Password() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\NegativeTests.cs:line 112]]></stack-trace>
-                        </failure>
-                      </test-case>
-                    </results>
-                  </test-suite>
-                  <test-suite type="TestFixture" name="RegisterPageTests" executed="True" result="Failure" success="False" time="0.255" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
-                    <results>
-                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful" description="Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially" executed="True" result="Error" success="False" time="0.122" asserts="0">
+                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful" description="Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially" executed="True" result="Success" success="True" time="0.818" asserts="2">
                         <properties>
                           <property name="Priority" value="1" />
                           <property name="Test scenario number:" value="2" />
@@ -411,87 +121,59 @@ TearDown : System.InvalidOperationException : Tried to run command without estab
                           <property name="Description" value="Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially" />
                           <property name="Author" value="vankatabe" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationForm(BlogPages user, String uniqId) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 27
-   at Blog.UI.Tests.RegisterPageTests.Register_UniqueCredentials_RegisterSuccessful() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\RegisterPageTests.cs:line 64
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.RegisterPageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\RegisterPageTests.cs:line 37]]></stack-trace>
-                        </failure>
                       </test-case>
-                      <test-case name="Blog.UI.Tests.RegisterPageTests.Setup_Negative_Test_Account" description="Sets up the test account for our negative tests in case it is not present in DB" executed="True" result="Error" success="False" time="0.130" asserts="0">
+                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_Without_ConfirmPassword" description="Navigate to Registration page web address and popualte fields with valid data while leaving Confirm Passwordd field empty, exected: Account not registered and Password missmatch message displayed" executed="True" result="Success" success="True" time="1.452" asserts="2">
                         <properties>
-                          <property name="Setup negative tests account" value="0" />
+                          <property name="Priority" value="1" />
+                          <property name="Test scenario number:" value="2" />
+                          <property name="Registration test number:" value="5" />
+                          <property name="Description" value="Navigate to Registration page web address and popualte fields with valid data while leaving Confirm Passwordd field empty, exected: Account not registered and Password missmatch message displayed" />
                           <property name="Author" value="Mario Georgiev" />
-                          <property name="Description" value="Sets up the test account for our negative tests in case it is not present in DB" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection
-TearDown : System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.get_Email() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPageMap.cs:line 17
-   at Blog.UI.Tests.Pages.RegisterPage.RegisterPage.FillRegistrationFormNegative(BlogPages user) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\RegisterPage\RegisterPage.cs:line 36
-   at Blog.UI.Tests.RegisterPageTests.Setup_Negative_Test_Account() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\RegisterPageTests.cs:line 50
---TearDown
-   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
-   at Blog.UI.Tests.BasePage.YeOldeFailedTestsLogger() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\BasePage.cs:line 66
-   at Blog.UI.Tests.RegisterPageTests.CleanUp() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\RegisterPageTests.cs:line 37]]></stack-trace>
-                        </failure>
+                      </test-case>
+                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_Without_Email" description="Navigate to Registration page web address and popualte fields with valid data while leaving Email field empty, exected: Account not registered and Email field required message displayed" executed="True" result="Success" success="True" time="1.433" asserts="2">
+                        <properties>
+                          <property name="Priority" value="1" />
+                          <property name="Test scenario number:" value="2" />
+                          <property name="Registration test number:" value="2" />
+                          <property name="Description" value="Navigate to Registration page web address and popualte fields with valid data while leaving Email field empty, exected: Account not registered and Email field required message displayed" />
+                          <property name="Author" value="Mario Georgiev" />
+                        </properties>
+                      </test-case>
+                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_Without_FullName" description="Navigate to Registration page web address and populate fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed" executed="True" result="Success" success="True" time="1.439" asserts="2">
+                        <properties>
+                          <property name="Priority" value="1" />
+                          <property name="Test scenario number:" value="2" />
+                          <property name="Registration test number:" value="3" />
+                          <property name="Description" value="Navigate to Registration page web address and populate fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed" />
+                          <property name="Author" value="Mario Georgiev" />
+                        </properties>
+                      </test-case>
+                      <test-case name="Blog.UI.Tests.RegisterPageTests.Register_Without_Password" description="Navigate to Registration page web address and popualte fields with valid data while leaving Passwordd field empty, exected: Account not registered and Password field required message displayed, and Password missmatch message displayed" executed="True" result="Success" success="True" time="1.566" asserts="4">
+                        <properties>
+                          <property name="Priority" value="1" />
+                          <property name="Test scenario number:" value="2" />
+                          <property name="Registration test number:" value="4" />
+                          <property name="Description" value="Navigate to Registration page web address and popualte fields with valid data while leaving Passwordd field empty, exected: Account not registered and Password field required message displayed, and Password missmatch message displayed" />
+                          <property name="Author" value="Mario Georgiev" />
+                        </properties>
                       </test-case>
                     </results>
                   </test-suite>
-                  <test-suite type="TestSuite" name="SpecFlowTests" executed="True" result="Failure" success="False" time="7.386" asserts="0">
-                    <failure>
-                      <message><![CDATA[One or more child tests had errors]]></message>
-                      <stack-trace />
-                    </failure>
+                  <test-suite type="TestSuite" name="SpecFlowTests" executed="True" result="Success" success="True" time="42.049" asserts="2">
                     <results>
-                      <test-suite type="TestFixture" name="OpenHomePageFeature" description="OpenHomePage" executed="True" result="Failure" success="False" time="0.480" asserts="0">
+                      <test-suite type="TestFixture" name="OpenHomePageFeature" description="OpenHomePage" executed="True" result="Success" success="True" time="0.609" asserts="2">
                         <properties>
                           <property name="Description" value="OpenHomePage" />
                         </properties>
-                        <failure>
-                          <message><![CDATA[One or more child tests had errors]]></message>
-                          <stack-trace />
-                        </failure>
                         <results>
-                          <test-case name="Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Check WebSite Load _ Enter Blog URL _ Open Blog Home Page" executed="True" result="Error" success="False" time="0.279" asserts="0">
+                          <test-case name="Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage" description="Check WebSite Load _ Enter Blog URL _ Open Blog Home Page" executed="True" result="Success" success="True" time="0.474" asserts="2">
                             <categories>
                               <category name="Regression" />
                             </categories>
                             <properties>
                               <property name="Description" value="Check WebSite Load _ Enter Blog URL _ Open Blog Home Page" />
                             </properties>
-                            <failure>
-                              <message><![CDATA[System.InvalidOperationException : Tried to run command without establishing a connection]]></message>
-                              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
-   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
-   at Blog.UI.Tests.Pages.HomePage.HomePage.<>c.<get_Logo>b__6_0(IWebDriver w) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageMap.cs:line 18
-   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
-   at Blog.UI.Tests.Pages.HomePage.HomePage.get_Logo() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageMap.cs:line 18
-   at Blog.UI.Tests.Pages.HomePage.HomePageAsserter.AssertHomePageLogoDisplayed(HomePage page, String text) in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\Pages\HomePage\HomePageAsserter.cs:line 15
-   at Blog.UI.Tests.SpecFlowTests.OpenHomePageSteps.ThenTheBlogHomePageIsOpen() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\SpecFlowTests\OpenHomePageSteps.cs:line 34
-   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
-   at Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.ScenarioCleanup()
-   at Blog.UI.Tests.SpecFlowTests.OpenHomePageFeature.CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage() in C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\SpecFlowTests\OpenHomePage.feature:line 10]]></stack-trace>
-                            </failure>
                           </test-case>
                         </results>
                       </test-suite>

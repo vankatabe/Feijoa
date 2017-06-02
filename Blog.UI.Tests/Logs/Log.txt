@@ -1219,54 +1219,153 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/di
 [2017-06-02T11:25:56] [Passed] Register_Without_Email
 [2017-06-02T11:25:59] [Passed] Register_Without_FullName
 [2017-06-02T11:26:00] [Passed] Register_Without_Password
-[2017-06-02T17:36:17] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
-[2017-06-02T17:36:21] [Passed] Create_ValidFieldEntries_ArticleCreated
-[2017-06-02T17:36:26] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
-[2017-06-02T17:36:40] [Passed] Delete_DeleteArticle_ArticleDeteted
-[2017-06-02T17:36:46] [Passed] Edit_ChangeContent_ContentChanged
-[2017-06-02T17:36:51] [Passed] Edit_ClickEdit_EditPageLoaded
-[2017-06-02T17:36:51] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
-[2017-06-02T17:37:03] [Failed] Home_ClickLogin_LoginLoaded
+[2017-06-02T17:54:46] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T17:54:50] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T17:54:55] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T17:55:11] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T17:55:17] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T17:55:23] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T17:55:24] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T17:55:36] [Failed] Home_ClickLogin_LoginLoaded
 OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
   ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
-[2017-06-02T17:37:14] [Failed] Home_ClickRegister_RegisterLoaded
+[2017-06-02T17:55:49] [Failed] Home_ClickRegister_RegisterLoaded
 OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
   ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
-[2017-06-02T17:37:18] [Failed] Home_CreateArticle_ReadArticle
+[2017-06-02T17:55:54] [Failed] Home_CreateArticle_ReadArticle
 OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
-[2017-06-02T17:37:30] [Failed] Home_LogoClick_HomePageLoaded
+[2017-06-02T17:56:07] [Failed] Home_LogoClick_HomePageLoaded
 OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
   ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
-[2017-06-02T17:37:39] [Passed] Manage_ClickAccount_NavigateToManagePage
-[2017-06-02T17:37:41] [Failed] Login_Blank_Email_Login_Unsuccessful
-  Expected string length 28 but was 0. Strings differ at index 0.
-  Expected: "The Email field is required."
-  But was:  <string.Empty>
-  -----------^
-
-[2017-06-02T17:37:41] [Failed] Login_InvalidPassword_LoginUnsuccessful
-System.NullReferenceException : Object reference not set to an instance of an object.
-[2017-06-02T17:37:44] [Passed] Login_ValidCredentials_LoginSuccessful
-[2017-06-02T17:37:47] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
-[2017-06-02T17:37:52] [Failed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-02T17:56:17] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T17:56:20] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T17:56:24] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T17:56:27] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-02T17:56:34] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T17:56:40] [Failed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
   Expected: null
   But was:  "http://localhost:60639/Manage"
 
-[2017-06-02T17:37:54] [Passed] Register_UniqueCredentials_RegisterSuccessful
-[2017-06-02T17:37:57] [Passed] Register_Without_ConfirmPassword
-[2017-06-02T17:38:01] [Passed] Register_Without_Email
-[2017-06-02T17:38:03] [Passed] Register_Without_FullName
-[2017-06-02T17:38:04] [Passed] Register_Without_Password
-[2017-06-02T17:38:28] [Passed] Home_ClickLogin_LoginLoaded
-[2017-06-02T17:38:49] [Passed] Home_ClickRegister_RegisterLoaded
-[2017-06-02T17:39:08] [Passed] Home_CreateArticle_ReadArticle
-[2017-06-02T17:39:28] [Passed] Home_LogoClick_HomePageLoaded
-[2017-06-02T17:39:46] [Failed] Login_Blank_Email_Login_Unsuccessful
-  Expected string length 28 but was 0. Strings differ at index 0.
-  Expected: "The Email field is required."
-  But was:  <string.Empty>
-  -----------^
+[2017-06-02T17:56:43] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T17:56:46] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T17:56:49] [Passed] Register_Without_Email
+[2017-06-02T17:56:51] [Passed] Register_Without_FullName
+[2017-06-02T17:56:54] [Passed] Register_Without_Password
+[2017-06-02T17:57:24] [Failed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+  Expected: null
+  But was:  "http://localhost:60639/Manage"
 
-[2017-06-02T17:42:25] [Failed] Login_WithoutPassword_LoginUnsuccessful
-OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[3]/div/span
-[2017-06-02T17:46:16] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-02T17:58:42] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-02T17:59:15] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T17:59:20] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T17:59:25] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T17:59:41] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T17:59:47] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T17:59:52] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T17:59:53] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T18:00:06] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T18:00:19] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T18:00:24] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T18:00:37] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T18:00:43] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T18:00:46] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T18:00:51] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T18:00:53] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-02T18:00:57] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T18:01:03] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-02T18:01:07] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T18:01:09] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T18:01:12] [Passed] Register_Without_Email
+[2017-06-02T18:01:14] [Passed] Register_Without_FullName
+[2017-06-02T18:01:17] [Passed] Register_Without_Password
+[2017-06-02T18:05:00] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T18:05:24] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T18:05:29] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T18:05:35] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T18:05:51] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T18:05:57] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T18:06:02] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T18:06:04] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T18:06:16] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T18:06:29] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T18:06:34] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T18:06:48] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T18:06:54] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T18:06:57] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T18:07:02] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T18:07:04] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-02T18:07:08] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T18:07:15] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-02T18:07:18] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T18:07:21] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T18:07:24] [Passed] Register_Without_Email
+[2017-06-02T18:07:27] [Passed] Register_Without_FullName
+[2017-06-02T18:07:30] [Passed] Register_Without_Password
+[2017-06-02T18:10:12] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T18:11:29] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T18:12:40] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T18:13:10] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T18:13:15] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T18:13:21] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T18:13:37] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T18:13:44] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T18:13:50] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T18:13:51] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T18:13:55] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T18:13:59] [Passed] Home_ClickRegister_RegisterLoaded
+[2017-06-02T18:14:04] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T18:14:18] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T18:14:24] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T18:14:27] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T18:14:32] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T18:14:35] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-02T18:14:38] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T18:14:45] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-02T18:14:47] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T18:14:50] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T18:14:53] [Passed] Register_Without_Email
+[2017-06-02T18:14:56] [Passed] Register_Without_FullName
+[2017-06-02T18:15:00] [Passed] Register_Without_Password
+[2017-06-02T18:17:46] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-02T18:19:30] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T18:19:36] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T18:19:41] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T18:19:57] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T18:20:04] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T18:20:10] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T18:20:12] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T18:20:24] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T18:20:37] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T18:20:42] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T18:20:47] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-02T18:20:58] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T18:21:00] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T18:21:05] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T18:21:07] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-02T18:21:12] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T18:21:18] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-02T18:21:21] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T18:21:24] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T18:21:27] [Passed] Register_Without_Email
+[2017-06-02T18:21:30] [Passed] Register_Without_FullName
+[2017-06-02T18:21:33] [Passed] Register_Without_Password

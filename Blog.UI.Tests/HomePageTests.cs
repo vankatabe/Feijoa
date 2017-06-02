@@ -74,6 +74,18 @@ namespace Blog.UI.Tests
             // homePage.LogoffLink.Click(); // Make sure User is Logged-off
 
             homePage.NavigateTo(homePage.URL);
+            try
+            {
+                if(homePage.LogoffLink.Displayed == true)
+                {
+                    homePage.LogoffLink.Click();
+                }
+            }
+            catch (NoSuchElementException)
+            {
+
+            }
+            homePage.NavigateTo(homePage.URL);
             Thread.Sleep(1000);
             homePage.OpenLoginPage();
             Thread.Sleep(1000);
@@ -136,7 +148,8 @@ namespace Blog.UI.Tests
         [Description("Register with valid User credentials where User Logs-in automatically and press his Account Name link, expected: User navigates to Manage page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
-        public void Manage_ClickAccount_NavigateToManagePage()
+        public void Manage_ClickAccount_NavigateToManagePage
+()
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
             ManagePage managePage = new ManagePage(this.driver);
@@ -165,7 +178,19 @@ namespace Blog.UI.Tests
             HomePage homePage = new HomePage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
             // homePage.LogoffLink.Click(); // Make sure User is Logged-off
+            homePage.NavigateTo(homePage.URL);
+            Thread.Sleep(1000);
+            try
+            {
+                if(homePage.LogoffLink.Displayed == true)
+                {
+                    homePage.LogoffLink.Click();
+                }
+            }
+            catch (NoSuchElementException ex)
+            {
 
+            }
             homePage.NavigateTo(homePage.URL);
             Thread.Sleep(1000);
             homePage.ClickLogo();

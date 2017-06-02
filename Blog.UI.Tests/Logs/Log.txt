@@ -1184,3 +1184,38 @@ OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
 [2017-06-02T11:15:10] [Passed] Home_ClickRegister_RegisterLoaded
 [2017-06-02T11:15:25] [Passed] Home_CreateArticle_ReadArticle
 [2017-06-02T11:15:28] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-02T11:23:55] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T11:23:59] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T11:24:05] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T11:24:20] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T11:24:26] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T11:24:31] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T11:24:32] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T11:24:43] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T11:24:53] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T11:25:05] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T11:25:10] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T11:25:23] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T11:25:25] [Failed] Login_Blank_Email_Login_Unsuccessful
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T11:25:37] [Failed] Login_InvalidPassword_LoginUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[3]/div/span
+[2017-06-02T11:25:41] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T11:25:45] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T11:25:50] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T11:25:53] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T11:25:54] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T11:25:56] [Passed] Register_Without_Email
+[2017-06-02T11:25:59] [Passed] Register_Without_FullName
+[2017-06-02T11:26:00] [Passed] Register_Without_Password

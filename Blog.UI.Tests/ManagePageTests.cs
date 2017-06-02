@@ -41,7 +41,7 @@ namespace Blog.UI.Tests
         [Description("User creates an account, logs in and enters Manage panel, then selects Change password, expected: Navigate to Change password page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
-        public void Manage_ClickAccount_NavigateToManagePage()
+        public void Account_ClickOnChangePassword_ChangePasswordPageLoaded()
         {
             RegisterPage regPage = new RegisterPage(this.driver);
             LoginPage loginPage = new LoginPage(this.driver);

@@ -136,7 +136,7 @@ namespace Blog.UI.Tests
         [Description("Register with valid User credentials where User Logs-in automatically and press his Account Name link, expected: User navigates to Manage page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
-        public void Home_ClickOnAccount_ManagePageLoaded()
+        public void Manage_ClickAccount_NavigateToManagePage()
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
             ManagePage managePage = new ManagePage(this.driver);

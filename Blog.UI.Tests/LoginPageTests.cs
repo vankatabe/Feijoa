@@ -71,7 +71,7 @@ namespace Blog.UI.Tests
         [Description("Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
-        public void Login_InvalidPassword_LoginUnsuccessful()
+        public void Login_WithoutPassword_LoginUnsuccessful()
         {
             LoginPage loginPage = new LoginPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file

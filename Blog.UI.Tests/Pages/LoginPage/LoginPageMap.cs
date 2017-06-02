@@ -45,7 +45,7 @@ namespace Blog.UI.Tests.Pages.LoginPage
         {
             get
             {
-                return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/div/form/div[3]/div/span"));
+                return this.Driver.FindElement(By.XPath("//*[@id=\"Password-error\"]"));
             }
         }
 

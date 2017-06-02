@@ -1219,3 +1219,54 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/di
 [2017-06-02T11:25:56] [Passed] Register_Without_Email
 [2017-06-02T11:25:59] [Passed] Register_Without_FullName
 [2017-06-02T11:26:00] [Passed] Register_Without_Password
+[2017-06-02T17:36:17] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T17:36:21] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T17:36:26] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T17:36:40] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T17:36:46] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T17:36:51] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T17:36:51] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T17:37:03] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T17:37:14] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T17:37:18] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T17:37:30] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T17:37:39] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T17:37:41] [Failed] Login_Blank_Email_Login_Unsuccessful
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T17:37:41] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T17:37:44] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T17:37:47] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T17:37:52] [Failed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+  Expected: null
+  But was:  "http://localhost:60639/Manage"
+
+[2017-06-02T17:37:54] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T17:37:57] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T17:38:01] [Passed] Register_Without_Email
+[2017-06-02T17:38:03] [Passed] Register_Without_FullName
+[2017-06-02T17:38:04] [Passed] Register_Without_Password
+[2017-06-02T17:38:28] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T17:38:49] [Passed] Home_ClickRegister_RegisterLoaded
+[2017-06-02T17:39:08] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T17:39:28] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-02T17:39:46] [Failed] Login_Blank_Email_Login_Unsuccessful
+  Expected string length 28 but was 0. Strings differ at index 0.
+  Expected: "The Email field is required."
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T17:42:25] [Failed] Login_WithoutPassword_LoginUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[3]/div/span
+[2017-06-02T17:46:16] [Passed] Login_WithoutPassword_LoginUnsuccessful

@@ -72,5 +72,34 @@ namespace Blog.UI.Tests
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { editPage, page.Effect });
         }
+
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and enter valid data to create article, then navigates to his article and clicks Edit, expected: Navigates to Edit page")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Edit_ClickEdit_EditPageLoaded()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            EditPage editPage = new EditPage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name);
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.CreateArticle(page, uniqId);
+            homePage.OpenArticle(uniqId);
+            Thread.Sleep(1000);
+
+            editPage.EditButton.Click();
+            Thread.Sleep(1000);
+
+            Assert.IsTrue(createPage.SubmitButton.Displayed);
+        }
     }
 }

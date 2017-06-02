@@ -599,16 +599,248 @@ OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> st
 [2017-05-30T20:18:07] [Passed] Register_Without_FullName
 [2017-05-30T20:18:08] [Passed] Register_Without_Password
 [2017-05-30T20:18:44] [Passed] Create_ValidFieldEntries_ArticleCreated
-[2017-05-30T20:32:19] [Passed] Create_ValidFieldEntries_ArticleCreated
-[2017-05-30T20:32:33] [Passed] Delete_DeleteArticle_ArticleDeteted
-[2017-05-30T20:32:37] [Passed] Edit_ChangeContent_ContentChanged
-[2017-05-30T20:32:38] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
-[2017-05-30T20:32:39] [Passed] Login_Blank_Email_Login_Unsuccessful
-[2017-05-30T20:32:41] [Passed] Login_InvalidPassword_LoginUnsuccessful
-[2017-05-30T20:32:43] [Passed] Login_ValidCredentials_LoginSuccessful
-[2017-05-30T20:32:44] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
-[2017-05-30T20:32:45] [Passed] Register_UniqueCredentials_RegisterSuccessful
-[2017-05-30T20:32:47] [Passed] Register_Without_ConfirmPassword
-[2017-05-30T20:32:48] [Passed] Register_Without_Email
-[2017-05-30T20:32:49] [Passed] Register_Without_FullName
-[2017-05-30T20:32:51] [Passed] Register_Without_Password
+[2017-06-01T15:43:59] [Failed] Navigate_To_Login_page
+  Expected string length 35 but was 36. Strings differ at index 21.
+  Expected: "http://localhost:60639/Article/List"
+  But was:  "http://localhost:60634/Account/Login"
+  --------------------------------^
+
+[2017-06-01T15:45:57] [Failed] Navigate_To_Login_page
+  Expected string length 36 but was 35. Strings differ at index 21.
+  Expected: "http://localhost:60634/Account/Login"
+  But was:  "http://localhost:60639/Article/List"
+  --------------------------------^
+
+[2017-06-01T15:46:44] [Failed] Navigate_To_Login_page
+  String lengths are both 36. Strings differ at index 21.
+  Expected: "http://localhost:60634/Account/Login"
+  But was:  "http://localhost:60639/Account/Login"
+  --------------------------------^
+
+[2017-06-01T15:47:39] [Passed] Navigate_To_Login_page
+[2017-06-01T15:56:53] [Failed] Navigate_To_Register_page
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-01T15:57:52] [Failed] Navigate_To_Register_page
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T15:58:12] [Passed] Navigate_To_Register_page
+[2017-06-01T16:09:06] [Failed] Navigate_To_Home_Page_Logo_Button
+  Expected: null
+  But was:  "http://localhost:60639/Article/List"
+
+[2017-06-01T16:09:44] [Passed] Navigate_To_Home_Page_Logo_Button
+[2017-06-01T16:36:21] [Failed] Login_Manage_Account
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id="logoutForm"]/ul/li[2]/a
+[2017-06-01T16:37:45] [Failed] Login_Manage_Account
+  Expected string length 29 but was 35. Strings differ at index 23.
+  Expected: "http://localhost:60639/Manage"
+  But was:  "http://localhost:60639/Article/List"
+  ----------------------------------^
+
+[2017-06-01T16:38:19] [Failed] Login_Manage_Account
+  Expected string length 29 but was 35. Strings differ at index 23.
+  Expected: "http://localhost:60639/Manage"
+  But was:  "http://localhost:60639/Article/List"
+  ----------------------------------^
+
+[2017-06-01T16:40:14] [Passed] Login_Manage_Account
+[2017-06-01T16:47:22] [Failed] Create_Article_Cancel_Button
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Title
+[2017-06-01T16:48:12] [Failed] Create_Article_Cancel_Button
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T16:49:54] [Failed] Create_Article_Cancel_Button
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T16:56:14] [Failed] Create_Article_Cancel_Button
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T16:57:32] [Failed] Create_Article_Cancel_Button
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T16:58:51] [Passed] Create_Article_Cancel_Button
+[2017-06-01T16:59:51] [Failed] Create_Article_Cancel_Button
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T17:00:55] [Failed] Create_Article_Cancel_Button
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T17:02:23] [Failed] Create_Article_Cancel_Button
+  Expected string length 35 but was 38. Strings differ at index 31.
+  Expected: "http://localhost:60639/Article/List"
+  But was:  "http://localhost:60639/Article/Create/"
+  ------------------------------------------^
+
+[2017-06-01T17:04:06] [Passed] Create_Article_Cancel_Button
+[2017-06-01T17:39:58] [Passed] Navigate_To_Login_page
+[2017-06-01T17:41:53] [Failed] Navigate_To_Login_page
+  Expected string length 12 but was 0. Strings differ at index 0.
+  Expected: "SOFTUNI BLOG"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-01T17:43:06] [Failed] Navigate_To_Login_page
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Log in"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-01T17:43:36] [Failed] Navigate_To_Login_page
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Log in"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-01T17:46:21] [Failed] Navigate_To_Login_page
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Log in"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-01T17:47:32] [Failed] Navigate_To_Login_page
+  Expected: "True"
+  But was:  True
+
+[2017-06-01T17:48:41] [Passed] Navigate_To_Login_page
+[2017-06-01T17:51:18] [Passed] Navigate_To_Login_page
+[2017-06-01T17:51:41] [Failed] Navigate_To_Register_page
+  Expected string length 39 but was 4. Strings differ at index 0.
+  Expected: "http://localhost:60639/Account/Register"
+  But was:  "True"
+  -----------^
+
+[2017-06-01T17:52:11] [Passed] Navigate_To_Register_page
+[2017-06-01T17:59:15] [Failed] Login_Manage_Account
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id="logoutForm"]/ul/li[2]/a
+[2017-06-01T18:00:03] [Failed] Login_Manage_Account
+  Expected string length 29 but was 35. Strings differ at index 23.
+  Expected: "http://localhost:60639/Manage"
+  But was:  "http://localhost:60639/Article/List"
+  ----------------------------------^
+
+[2017-06-01T18:02:44] [Passed] Login_Manage_Account
+[2017-06-01T18:03:26] [Passed] Login_Manage_Account
+[2017-06-01T18:07:04] [Passed] Login_Manage_Account
+[2017-06-01T18:24:28] [Failed] LogIn_CreateArticle_ReadArticle
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Email
+[2017-06-01T18:25:15] [Failed] LogIn_CreateArticle_ReadArticle
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-01T18:26:57] [Failed] LogIn_CreateArticle_ReadArticle
+  Expected string length 36 but was 43. Strings differ at index 0.
+  Expected: "ee96f208-1583-4ee9-b70a-28b00f205be0"
+  But was:  "Articleee96f208-1583-4ee9-b70a-28b00f205be0"
+  -----------^
+
+[2017-06-01T18:30:24] [Failed] LogIn_CreateArticle_ReadArticle
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-06-01T18:32:07] [Failed] LogIn_CreateArticle_ReadArticle
+System.ArgumentNullException : Value cannot be null.
+Parameter name: name
+[2017-06-01T18:36:32] [Passed] LogIn_CreateArticle_ReadArticle
+[2017-06-01T18:59:16] [Failed] Delete_NavigateToArticle_Click_Delete
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[3]/div/input
+[2017-06-01T19:02:27] [Failed] Delete_NavigateToArticle_Click_Delete
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T19:03:22] [Failed] Delete_NavigateToArticle_Click_Delete
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T19:05:46] [Failed] Delete_NavigateToArticle_Click_Delete
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[3]/div/input
+[2017-06-01T19:06:17] [Failed] Delete_NavigateToArticle_Click_Delete
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-01T19:07:03] [Failed] Delete_NavigateToArticle_Click_Delete
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T19:09:12] [Failed] Delete_NavigateToArticle_Click_Delete
+  Expected string length 7 but was 4. Strings differ at index 0.
+  Expected: "Article"
+  But was:  "True"
+  -----------^
+
+[2017-06-01T19:10:01] [Passed] Delete_NavigateToArticle_Click_Delete
+[2017-06-01T19:18:37] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T19:20:32] [Failed] Login_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-01T19:21:19] [Failed] Login_NavigateToManagePage
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/dl/dd/a
+[2017-06-01T19:22:10] [Passed] Login_NavigateToManagePage
+[2017-06-01T19:35:26] [Passed] Delete_NavigateToArticle_ClickDelete
+[2017-06-01T19:38:08] [Failed] LogIn_CreateArticle_EditArticle
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Title
+[2017-06-01T19:38:37] [Failed] LogIn_CreateArticle_EditArticle
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T19:39:08] [Failed] LogIn_CreateArticle_EditArticle
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T19:39:33] [Passed] LogIn_CreateArticle_EditArticle
+[2017-06-01T20:12:03] [Failed] Create_CreateArticleCancelButton_NavigateToHomePage
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T20:12:07] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-01T20:12:11] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-01T20:12:26] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-01T20:12:31] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-01T20:12:36] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-01T20:12:37] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-01T20:12:48] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-01T20:12:53] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-01T20:13:04] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-01T20:13:07] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-01T20:13:19] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-01T20:13:21] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-01T20:13:23] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-01T20:13:26] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-01T20:13:39] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-01T20:13:45] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-01T20:13:46] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 458f2eef-06d5-4a05-b79b-16c1b54291b7@uniqueemail.com!"
+  But was:  "Hello a9cba8b0-dbf2-4a05-aa52-f513f6b57197@uniqueemail.com!"
+  -----------------^
+
+[2017-06-01T20:13:50] [Passed] Register_Without_ConfirmPassword
+[2017-06-01T20:13:52] [Passed] Register_Without_Email
+[2017-06-01T20:13:54] [Passed] Register_Without_FullName
+[2017-06-01T20:13:57] [Passed] Register_Without_Password
+[2017-06-01T20:15:09] [Failed] Create_CreateArticleCancelButton_NavigateToHomePage
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T20:15:43] [Failed] Create_CreateArticleCancelButton_NavigateToHomePage
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T20:19:26] [Failed] Create_CreateArticleCancelButton_NavigateToHomePage
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T20:20:19] [Failed] Create_CreateArticleCancelButton_NavigateToHomePage
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-01T20:21:17] [Failed] Create_CreateArticleCancelButton_NavigateToHomePage
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //div[4]/div/a
+[2017-06-01T20:23:35] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-01T20:24:03] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-01T20:24:06] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-01T20:24:10] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-01T20:24:24] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-01T20:24:28] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-01T20:24:32] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-01T20:24:33] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-01T20:24:43] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-01T20:24:52] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-01T20:25:02] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-01T20:25:05] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-01T20:25:16] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-01T20:25:18] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-01T20:25:19] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-01T20:25:21] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-01T20:25:33] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-01T20:25:37] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-01T20:25:38] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 76ad4d54-bc60-4a4c-bc3f-92b3bbdd889f@uniqueemail.com!"
+  But was:  "Hello 26397455-a2c3-462a-b22e-ea075e201625@uniqueemail.com!"
+  -----------------^
+
+[2017-06-01T20:25:40] [Passed] Register_Without_ConfirmPassword
+[2017-06-01T20:25:41] [Passed] Register_Without_Email
+[2017-06-01T20:25:43] [Passed] Register_Without_FullName
+[2017-06-01T20:25:44] [Passed] Register_Without_Password
+[2017-06-01T20:28:43] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-01T20:29:15] [Passed] Home_ClickRegister_RegisterLoaded
+[2017-06-01T20:29:42] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-01T20:30:04] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-01T20:30:28] [Passed] Register_UniqueCredentials_RegisterSuccessful

@@ -2,6 +2,7 @@
 using Blog.UI.Tests.Models;
 using Blog.UI.Tests.Pages.HomePage;
 using Blog.UI.Tests.Pages.LoginPage;
+using Blog.UI.Tests.Pages.ManagePage;
 using Blog.UI.Tests.Pages.RegisterPage;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
@@ -103,5 +104,7 @@ namespace Blog.UI.Tests
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { loginPage, page.Effect });
         }
+
+        
     }
 }

@@ -66,5 +66,31 @@ namespace Blog.UI.Tests
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { createPage, homePage.ArticleTitle(uniqId), page.Effect + uniqId });
         }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and clicks cancel button, expected: Redirected to Home page")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Create_CreateArticleCancelButton_NavigateToHomePage()
+        {
+            LoginPage loginPage = new LoginPage(this.driver);
+            RegisterPage regPage = new RegisterPage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name);
+
+            regPage.NavigateTo(regPage.URL);
+            regPage.FillRegistrationForm(page, uniqId);
+
+            loginPage.NavigateTo(loginPage.URL);
+            loginPage.FillLoginForm(page, uniqId);
+            Thread.Sleep(1000);
+
+            CreatePage createPage = new CreatePage(this.driver);
+            createPage.NavigateTo(createPage.URL);
+            createPage.CancelButtonClick();
+            Thread.Sleep(2000);
+
+            Assert.AreEqual(page.Effect, driver.Url);
+        }        
     }
 }

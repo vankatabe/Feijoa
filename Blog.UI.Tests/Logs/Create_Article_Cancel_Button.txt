@@ -1,0 +1,12 @@
+Test full name:	Blog.UI.Tests.CreatePageTests.Create_Article_Cancel_Button
+
+Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed
+
+Message:	  Expected string length 35 but was 38. Strings differ at index 31.
+  Expected: "http://localhost:60639/Article/List"
+  But was:  "http://localhost:60639/Article/Create/"
+  ------------------------------------------^

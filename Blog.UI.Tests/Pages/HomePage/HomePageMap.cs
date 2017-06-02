@@ -11,6 +11,8 @@ namespace Blog.UI.Tests.Pages.HomePage
     {
         private int articleNumber;
 
+
+
         public IWebElement Logo
         {
             get
@@ -40,6 +42,14 @@ namespace Blog.UI.Tests.Pages.HomePage
             get
             {
                 return this.Driver.FindElement(By.Id("loginLink"));
+            }
+        }
+
+        public IWebElement RegisterLink
+        {
+            get
+            {
+                return this.Driver.FindElement(By.Id("registerLink"));
             }
         }
 
@@ -79,6 +89,14 @@ namespace Blog.UI.Tests.Pages.HomePage
             get
             {
                 return this.Driver.FindElements(By.ClassName("h2")).ToList();
+            }
+        }
+
+        public IWebElement SubmitButton
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("//div[4]/div/input"));
             }
         }
     }

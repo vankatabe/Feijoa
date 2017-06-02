@@ -55,7 +55,7 @@ namespace Blog.UI.Tests
             loginPage.ManageLinkClick();
             Thread.Sleep(3000);
             managePage.ChangePasswordLink.Click();
-
+            //cannot for the life of me make the data driven asserter work
             Assert.AreEqual(page.Effect, driver.Url);
             Assert.AreEqual(page.Asserter, managePage.SubmitButton.Displayed.ToString());
 

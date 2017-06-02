@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,11 @@ namespace Blog.UI.Tests.Pages.LoginPage
         public static void AssertEmailErrorMessageExists(this LoginPage page, string text)
         {
             Assert.AreEqual(text, page.EmailErrorMessage.Text);
+        }
+
+        public static void AssertManagePageUrl(this LoginPage page, IWebDriver driver, string text)
+        {
+            Assert.AreEqual(text, driver.Url);
         }
     }
 }

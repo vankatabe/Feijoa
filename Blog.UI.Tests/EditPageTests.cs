@@ -99,7 +99,7 @@ namespace Blog.UI.Tests
 
             editPage.EditButton.Click();
             Thread.Sleep(1000);
-
+            //Cannot for the life of me make the data driven asserter work here
             Assert.IsTrue(createPage.SubmitButton.Displayed);
         }
     }

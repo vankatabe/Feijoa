@@ -14,5 +14,10 @@ namespace Blog.UI.Tests.Pages.CreatePage
         {
             Assert.AreEqual(text, title.Text);
         }
+
+        public static void AssertHomePageUrl(this CreatePage page, IWebDriver driver, string text)
+        {
+            Assert.AreEqual(text, driver.Url);
+        }
     }
 }

@@ -129,6 +129,7 @@
     <Compile Include="Pages\HomePage\HomePageMap.cs" />
     <Compile Include="HomePageTests.cs" />
     <Compile Include="Pages\ManagePage\ManagePage.cs" />
+    <Compile Include="Pages\ManagePage\ManagePageAsserter.cs" />
     <Compile Include="Pages\ManagePage\ManagePageMap.cs" />
     <Compile Include="Pages\RegisterPage\RegisterPage.cs" />
     <Compile Include="Pages\RegisterPage\RegisterPageAsserter.cs" />

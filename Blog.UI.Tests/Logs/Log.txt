@@ -1369,3 +1369,163 @@ OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> st
 [2017-06-02T18:21:27] [Passed] Register_Without_Email
 [2017-06-02T18:21:30] [Passed] Register_Without_FullName
 [2017-06-02T18:21:33] [Passed] Register_Without_Password
+[2017-06-02T18:42:47] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 36 but was 37. Strings differ at index 36.
+  Expected: "http://localhost:60639/Account/Login"
+  But was:  "http://localhost:60639/Account/Login/"
+  -----------------------------------------------^
+
+[2017-06-02T18:43:50] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id="logoutForm"]/ul/li[2]/a
+[2017-06-02T18:44:40] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id="logoutForm"]/ul/li[2]/a
+[2017-06-02T18:46:16] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 5 but was 0. Strings differ at index 0.
+  Expected: "Login"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T18:51:10] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Log in"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T18:54:54] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Log in"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T18:55:39] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Log in"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T18:59:51] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 37 but was 23. Strings differ at index 23.
+  Expected: "http://localhost:60639/Account/Login/"
+  But was:  "http://localhost:60639/"
+  ----------------------------------^
+
+[2017-06-02T19:07:47] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 37 but was 36. Strings differ at index 36.
+  Expected: "http://localhost:60639/Account/Login/"
+  But was:  "http://localhost:60639/Account/Login"
+  -----------------------------------------------^
+
+[2017-06-02T19:08:34] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Log in"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T19:18:04] [Failed] Home_ClickLogin_LoginLoaded
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Log in"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T19:23:54] [Failed] Home_ClickLogin_LoginLoaded
+System.Reflection.TargetParameterCountException : Parameter count mismatch.
+[2017-06-02T19:27:24] [Failed] Home_ClickLogin_LoginLoaded
+System.Reflection.TargetParameterCountException : Parameter count mismatch.
+[2017-06-02T19:29:47] [Failed] Home_ClickLogin_LoginLoaded
+System.ArgumentException : Object of type 'System.String' cannot be converted to type 'OpenQA.Selenium.IWebDriver'.
+[2017-06-02T19:31:10] [Failed] Home_ClickLogin_LoginLoaded
+System.ArgumentException : Object of type 'System.String' cannot be converted to type 'OpenQA.Selenium.IWebDriver'.
+[2017-06-02T19:39:03] [Failed] Home_ClickLogin_LoginLoaded
+System.ArgumentException : Object of type 'System.String' cannot be converted to type 'OpenQA.Selenium.IWebDriver'.
+[2017-06-02T19:40:55] [Failed] Home_ClickLogin_LoginLoaded
+System.ArgumentException : Object of type 'System.String' cannot be converted to type 'OpenQA.Selenium.IWebDriver'.
+[2017-06-02T19:41:24] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T19:43:57] [Failed] Home_ClickRegister_RegisterLoaded
+System.ArgumentException : Object of type 'System.String' cannot be converted to type 'OpenQA.Selenium.IWebDriver'.
+[2017-06-02T19:44:31] [Passed] Home_ClickRegister_RegisterLoaded
+[2017-06-02T19:44:49] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T19:48:28] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T19:48:58] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T19:49:33] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T19:52:10] [Failed] Home_LogoClick_HomePageLoaded
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T19:53:32] [Failed] Home_LogoClick_HomePageLoaded
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T19:54:09] [Failed] Home_LogoClick_HomePageLoaded
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T19:57:58] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-02T20:11:32] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:12:28] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:13:30] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:17:35] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:25:27] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:26:18] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:26:47] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:28:27] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:31:28] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:34:03] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T20:39:48] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T20:40:15] [Failed] Create_CreateArticleCancelButton_NavigateToHomePage
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-02T20:43:02] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T20:52:02] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T20:52:33] [Failed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+  Expected string length 6 but was 0. Strings differ at index 0.
+  Expected: "Delete"
+  But was:  <string.Empty>
+  -----------^
+
+[2017-06-02T20:58:44] [Failed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/article/footer/a[2]
+[2017-06-02T21:01:09] [Failed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/article/footer/a[2]
+[2017-06-02T21:03:54] [Failed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T21:04:35] [Failed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Article2cbb8ff1-ef58-4c50-be40-a11d8b1f6749')]
+[2017-06-02T21:05:14] [Failed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+  String lengths are both 41. Strings differ at index 21.
+  Expected: "http://localhost:60634/Article/Delete/180"
+  But was:  "http://localhost:60639/Article/Delete/180"
+  --------------------------------^
+
+[2017-06-02T21:05:55] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T21:07:12] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T21:08:30] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T21:08:35] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T21:08:41] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T21:08:57] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T21:09:03] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T21:09:09] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T21:09:11] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T21:09:23] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T21:09:37] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T21:09:42] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T21:09:46] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-02T21:09:52] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T21:09:55] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T21:10:00] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T21:10:03] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-02T21:10:07] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T21:10:12] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-02T21:10:15] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T21:10:19] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T21:10:25] [Passed] Register_Without_Email
+[2017-06-02T21:10:27] [Passed] Register_Without_FullName
+[2017-06-02T21:10:30] [Passed] Register_Without_Password
+[2017-06-02T21:10:52] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T21:11:12] [Passed] Home_ClickRegister_RegisterLoaded

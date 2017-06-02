@@ -28,5 +28,14 @@ namespace Blog.UI.Tests.Pages.ManagePage
                 return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/div/form/div[5]/div/input"));
             }
         }
+
+        public IWebElement ChangePassword
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/dl/dd/a"));
+            }
+        }
+
     }
 }

@@ -6,5 +6,4 @@ Pass count:	0
 
 Result:	Failed:Error
 
-Message:	OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
-  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+Message:	System.NullReferenceException : Object reference not set to an instance of an object.

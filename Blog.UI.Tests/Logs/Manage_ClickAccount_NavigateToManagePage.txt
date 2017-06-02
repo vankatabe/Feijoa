@@ -1,9 +1,9 @@
-Test full name:	Blog.UI.Tests.ManagePageTests.Manage_ClickAccount_NavigateToManagePage
+Test full name:	Blog.UI.Tests.HomePageTests.Manage_ClickAccount_NavigateToManagePage
 
-Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
+Work directory:	E:\GitHub\Feijoa\Blog.UI.Tests\bin\Debug
 
 Pass count:	0
 
 Result:	Failed:Error
 
-Message:	System.InvalidOperationException : Tried to run command without establishing a connection
+Message:	System.NullReferenceException : Object reference not set to an instance of an object.

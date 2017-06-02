@@ -91,7 +91,9 @@ namespace Blog.UI.Tests
             createPage.CancelButtonClick();
             Thread.Sleep(2000);
 
-            Assert.AreEqual(page.Effect, driver.Url);
+            createPage.AssertHomePageUrl(this.driver, page.Effect);
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
+            asserter.Invoke(null, new object[] { createPage, this.driver, page.Effect });
         }        
     }
 }

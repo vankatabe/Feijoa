@@ -63,6 +63,7 @@ namespace Blog.UI.Tests
             editPage.NavigateTo(editPage.URL + homePage.ArticleNumber);
 
             editPage.EditArticle(page.ArticleBodyText);
+            Thread.Sleep(1000);
             homePage.OpenArticle(uniqId);
             Thread.Sleep(1000);
 

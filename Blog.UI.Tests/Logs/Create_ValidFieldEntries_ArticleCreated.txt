@@ -1,9 +1,9 @@
 Test full name:	Blog.UI.Tests.CreatePageTests.Create_ValidFieldEntries_ArticleCreated
 
-Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
+Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
 
 Pass count:	0
 
 Result:	Failed:Error
 
-Message:	OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+Message:	OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Email

@@ -49,6 +49,7 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
 
             registerPage.AssertGreetingDisplayed(page.Effect + ' ' + page.UniqEmail(uniqId) + '!');
             // for the DataDriven Asserter:

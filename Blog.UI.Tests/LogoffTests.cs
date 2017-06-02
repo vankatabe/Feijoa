@@ -54,6 +54,7 @@ namespace Blog.UI.Tests
             // Assert that User is Logged-in - good to have but breaks the test
             // loginPage.AssertGreetingDisplayed("Hello " + page.UniqEmail(uniqId) + '!');
 
+            Thread.Sleep(1000);
             homePage.LogoffLink.Click(); // Press Logoff link
             Thread.Sleep(1000);
 

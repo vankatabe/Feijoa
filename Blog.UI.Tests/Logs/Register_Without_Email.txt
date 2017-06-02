@@ -1,0 +1,9 @@
+Test full name:	Blog.UI.Tests.RegisterPageTests.Register_Without_Email
+
+Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	System.InvalidOperationException : Tried to run command without establishing a connection

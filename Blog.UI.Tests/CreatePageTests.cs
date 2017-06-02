@@ -59,6 +59,7 @@ namespace Blog.UI.Tests
             createPage.CreateArticle(page, uniqId);
             homePage.LogoffLink.Click(); // To assure that the new Article is visible even for non-logged user
             homePage.OpenArticle(uniqId); // To assure it is possible the article to be opened
+            Thread.Sleep(1000);
 
             createPage.AssertArticleIsDisplayed(homePage.ArticleTitle(uniqId), page.Effect + uniqId);
             // for the DataDriven Asserter:

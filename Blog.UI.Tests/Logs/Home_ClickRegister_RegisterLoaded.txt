@@ -1,9 +1,10 @@
 Test full name:	Blog.UI.Tests.HomePageTests.Home_ClickRegister_RegisterLoaded
 
-Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
+Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
 
 Pass count:	0
 
 Result:	Failed:Error
 
-Message:	OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+Message:	OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink

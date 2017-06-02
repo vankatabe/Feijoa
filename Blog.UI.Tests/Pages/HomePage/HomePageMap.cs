@@ -41,7 +41,7 @@ namespace Blog.UI.Tests.Pages.HomePage
         {
             get
             {
-                return this.Driver.FindElement(By.Id("loginLink"));
+                return this.Wait.Until(w => w.FindElement(By.Id("loginLink")));
             }
         }
 
@@ -49,7 +49,7 @@ namespace Blog.UI.Tests.Pages.HomePage
         {
             get
             {
-                return this.Driver.FindElement(By.Id("registerLink"));
+                return this.Wait.Until(w => w.FindElement(By.Id("registerLink")));
             }
         }
 

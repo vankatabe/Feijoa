@@ -71,8 +71,10 @@ namespace Blog.UI.Tests
             HomePage homePage = new HomePage(this.driver);
             LoginPage loginPage = new LoginPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
+            // homePage.LogoffLink.Click(); // Make sure User is Logged-off
 
             homePage.NavigateTo(homePage.URL);
+            Thread.Sleep(1000);
             homePage.OpenLoginPage();
             Thread.Sleep(1000);
 
@@ -90,8 +92,10 @@ namespace Blog.UI.Tests
             HomePage homePage = new HomePage(this.driver);
             RegisterPage regPage = new RegisterPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
+            // homePage.LogoffLink.Click(); // Make sure User is Logged-off
 
             homePage.NavigateTo(homePage.URL);
+            Thread.Sleep(1000);
             homePage.OpenRegistrationPage();
             Thread.Sleep(1000);
 
@@ -117,6 +121,7 @@ namespace Blog.UI.Tests
 
             createPage.NavigateTo(createPage.URL);
             createPage.CreateArticle(page, uniqId);
+            Thread.Sleep(1000);
             homePage.OpenArticle(uniqId);
 
             createPage.AssertArticleIsDisplayed(homePage.ArticleTitle(uniqId), page.Effect + uniqId);
@@ -159,8 +164,10 @@ namespace Blog.UI.Tests
         {
             HomePage homePage = new HomePage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
+            // homePage.LogoffLink.Click(); // Make sure User is Logged-off
 
             homePage.NavigateTo(homePage.URL);
+            Thread.Sleep(1000);
             homePage.ClickLogo();
             Thread.Sleep(1000);
 

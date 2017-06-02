@@ -57,6 +57,7 @@ namespace Blog.UI.Tests
 
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginForm(page, uniqId);
+            Thread.Sleep(1000);
 
             loginPage.AssertGreetingDisplayed(page.Effect + ' ' + page.UniqEmail(uniqId) + '!');
             // for the DataDriven Asserter:

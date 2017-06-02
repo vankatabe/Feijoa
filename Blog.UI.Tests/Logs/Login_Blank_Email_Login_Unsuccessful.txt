@@ -1,6 +1,6 @@
 Test full name:	Blog.UI.Tests.LoginPageTests.Login_Blank_Email_Login_Unsuccessful
 
-Work directory:	C:\BuildAgent\work\72fcba550db508b8
+Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
 
 Pass count:	0
 

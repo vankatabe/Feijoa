@@ -844,3 +844,292 @@ OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
 [2017-06-01T20:29:42] [Passed] Home_LogoClick_HomePageLoaded
 [2017-06-01T20:30:04] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
 [2017-06-01T20:30:28] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T09:48:47] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T09:49:17] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T09:49:19] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T09:49:24] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T09:49:38] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T09:49:42] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T09:49:47] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T09:49:47] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T09:49:57] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T09:50:06] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T09:50:16] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T09:50:19] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T09:50:31] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T09:50:32] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T09:50:34] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T09:50:36] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T09:50:38] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T09:50:42] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T09:50:43] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 43b99737-0bd1-40d8-bd47-34af27a8fd55@uniqueemail.com!"
+  But was:  "Hello e7bd3b6a-8241-481e-82e5-47dde586d803@uniqueemail.com!"
+  -----------------^
+
+[2017-06-02T09:50:44] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T09:50:46] [Passed] Register_Without_Email
+[2017-06-02T09:50:48] [Passed] Register_Without_FullName
+[2017-06-02T09:50:49] [Passed] Register_Without_Password
+[2017-06-02T09:52:18] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T09:53:17] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T09:53:24] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T09:53:33] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T09:53:51] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T09:54:01] [Failed] Edit_ChangeContent_ContentChanged
+  Expected string length 6 but was 16. Strings differ at index 0.
+  Expected: "Edited"
+  But was:  "Test 1 TEst edit"
+  -----------^
+
+[2017-06-02T09:54:12] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T09:54:14] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T09:54:25] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T09:54:35] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T09:54:46] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T09:54:54] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T09:55:08] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T09:55:12] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T09:55:15] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T09:55:21] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T09:55:34] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T09:55:44] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T09:55:46] [Failed] Register_UniqueCredentials_RegisterSuccessful
+  String lengths are both 59. Strings differ at index 6.
+  Expected: "Hello 16dbba00-88c6-4cf3-bfd0-fea887450d02@uniqueemail.com!"
+  But was:  "Hello 4d086828-e047-4925-af84-baf5590cc407@uniqueemail.com!"
+  -----------------^
+
+[2017-06-02T09:55:51] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T09:55:55] [Passed] Register_Without_Email
+[2017-06-02T09:55:58] [Passed] Register_Without_FullName
+[2017-06-02T09:56:02] [Passed] Register_Without_Password
+[2017-06-02T10:03:40] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T10:03:43] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T10:03:47] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T10:04:02] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T10:04:08] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T10:04:13] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T10:04:13] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T10:04:24] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:04:28] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T10:04:39] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T10:04:42] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T10:04:54] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:04:56] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T10:04:57] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T10:05:00] [Failed] Login_ValidCredentials_LoginSuccessful
+System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
+  ----> OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T10:05:01] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T10:05:06] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T10:05:08] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T10:05:10] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T10:05:11] [Passed] Register_Without_Email
+[2017-06-02T10:05:13] [Passed] Register_Without_FullName
+[2017-06-02T10:05:15] [Passed] Register_Without_Password
+[2017-06-02T10:09:02] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T10:09:05] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T10:09:09] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T10:09:24] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T10:09:29] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T10:09:34] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T10:09:34] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T10:09:44] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:09:49] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T10:09:59] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T10:10:02] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T10:10:14] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:10:15] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T10:10:17] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T10:10:20] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T10:10:22] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T10:10:26] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T10:10:28] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T10:10:29] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T10:10:31] [Passed] Register_Without_Email
+[2017-06-02T10:10:33] [Passed] Register_Without_FullName
+[2017-06-02T10:10:34] [Passed] Register_Without_Password
+[2017-06-02T10:12:23] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T10:12:26] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T10:12:31] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T10:12:45] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T10:12:50] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T10:12:54] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T10:12:55] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T10:13:06] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:13:10] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T10:13:22] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T10:13:25] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T10:13:37] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:13:39] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T10:13:41] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T10:13:44] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T10:13:56] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:14:00] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T10:14:02] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T10:14:03] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T10:14:05] [Passed] Register_Without_Email
+[2017-06-02T10:14:06] [Passed] Register_Without_FullName
+[2017-06-02T10:14:08] [Passed] Register_Without_Password
+[2017-06-02T10:19:48] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T10:19:52] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T10:19:56] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T10:20:10] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T10:20:16] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T10:20:20] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T10:20:21] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T10:20:32] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:20:36] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T10:20:48] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T10:20:50] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T10:21:03] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:21:05] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T10:21:06] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T10:21:09] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T10:21:12] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T10:21:16] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T10:21:18] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T10:21:19] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T10:21:21] [Passed] Register_Without_Email
+[2017-06-02T10:21:22] [Passed] Register_Without_FullName
+[2017-06-02T10:21:24] [Passed] Register_Without_Password
+[2017-06-02T10:30:44] [Failed] Create_CreateArticleCancelButton_NavigateToHomePage
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Email
+[2017-06-02T10:30:56] [Failed] Create_ValidFieldEntries_ArticleCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Email
+[2017-06-02T10:30:57] [Failed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:57] [Failed] Delete_DeleteArticle_ArticleDeteted
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:57] [Failed] Edit_ChangeContent_ContentChanged
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:57] [Failed] Edit_ClickEdit_EditPageLoaded
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:58] [Failed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:58] [Failed] Home_ClickLogin_LoginLoaded
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:58] [Failed] Home_ClickOnAccount_ManagePageLoaded
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:58] [Failed] Home_ClickRegister_RegisterLoaded
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:58] [Failed] Home_CreateArticle_ReadArticle
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:58] [Failed] Home_LogoClick_HomePageLoaded
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:58] [Failed] Login_Blank_Email_Login_Unsuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:58] [Failed] Login_InvalidPassword_LoginUnsuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:59] [Failed] Login_ValidCredentials_LoginSuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:59] [Failed] Logoff_ClickLogoffLink_LogoffSuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:59] [Failed] Manage_ClickAccount_NavigateToManagePage
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:59] [Failed] Register_UniqueCredentials_RegisterSuccessful
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:59] [Failed] Register_Without_ConfirmPassword
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:59] [Failed] Register_Without_Email
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:59] [Failed] Register_Without_FullName
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:30:59] [Failed] Register_Without_Password
+System.InvalidOperationException : Tried to run command without establishing a connection
+[2017-06-02T10:31:59] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T10:32:03] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T10:32:07] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T10:32:21] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T10:32:26] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T10:32:31] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T10:32:31] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T10:32:43] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:32:47] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T10:32:58] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T10:33:02] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T10:33:15] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:33:16] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T10:33:18] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T10:33:21] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T10:33:23] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T10:33:28] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T10:33:29] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T10:33:31] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T10:33:33] [Passed] Register_Without_Email
+[2017-06-02T10:33:34] [Passed] Register_Without_FullName
+[2017-06-02T10:33:36] [Passed] Register_Without_Password
+[2017-06-02T10:35:42] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(),'Log off')]
+[2017-06-02T10:40:17] [Passed] Home_ClickRegister_RegisterLoaded
+[2017-06-02T10:40:34] [Passed] Home_ClickLogin_LoginLoaded
+[2017-06-02T10:41:33] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-02T10:41:46] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:43:29] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-02T10:43:33] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-02T10:43:38] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-02T10:43:52] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-02T10:43:57] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-02T10:44:02] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-02T10:44:02] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-02T10:44:14] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:44:18] [Passed] Home_ClickOnAccount_ManagePageLoaded
+[2017-06-02T10:44:29] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-02T10:44:33] [Failed] Home_CreateArticle_ReadArticle
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-02T10:44:45] [Failed] Home_LogoClick_HomePageLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-02T10:44:47] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-02T10:44:48] [Passed] Login_InvalidPassword_LoginUnsuccessful
+[2017-06-02T10:44:51] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-02T10:44:54] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-02T10:44:58] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-02T10:45:00] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-02T10:45:02] [Passed] Register_Without_ConfirmPassword
+[2017-06-02T10:45:03] [Passed] Register_Without_Email
+[2017-06-02T10:45:05] [Passed] Register_Without_FullName
+[2017-06-02T10:45:06] [Passed] Register_Without_Password

@@ -33,6 +33,15 @@ namespace Blog.UI.Tests.Pages.EditPage
             }
         }
 
+        public IWebElement EditButton
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/article/footer/a[1]"));
+            }
+        }
+
+
         public IWebElement CancelButton
         {
             get

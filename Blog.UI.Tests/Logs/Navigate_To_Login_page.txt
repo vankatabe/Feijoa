@@ -1,0 +1,10 @@
+Test full name:	Blog.UI.Tests.HomePageTests.Navigate_To_Login_page
+
+Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed
+
+Message:	  Expected: "True"
+  But was:  True

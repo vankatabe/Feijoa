@@ -56,5 +56,13 @@ namespace Blog.UI.Tests.Pages.LoginPage
                 return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/div/form/div[2]/div/span"));
             }
         }
+
+        public IWebElement ManageLink
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("//*[@id=\"logoutForm\"]/ul/li[2]/a"));
+            }
+        }
     }
 }

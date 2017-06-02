@@ -1,0 +1,10 @@
+Test full name:	Blog.UI.Tests.HomePageTests.Navigate_To_Home_Page_Logo_Button
+
+Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed
+
+Message:	  Expected: null
+  But was:  "http://localhost:60639/Article/List"

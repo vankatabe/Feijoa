@@ -38,5 +38,10 @@ namespace Blog.UI.Tests.Pages.CreatePage
             }
             element.SendKeys(text);
         }
+
+        public void CancelButtonClick()
+        {
+            CancelButton.Click();
+        }
     }
 }

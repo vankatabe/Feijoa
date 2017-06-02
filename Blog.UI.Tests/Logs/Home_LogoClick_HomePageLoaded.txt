@@ -1,0 +1,9 @@
+Test full name:	Blog.UI.Tests.HomePageTests.Home_LogoClick_HomePageLoaded
+
+Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink

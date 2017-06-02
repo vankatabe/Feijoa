@@ -1,0 +1,12 @@
+Test full name:	Blog.UI.Tests.HomePageTests.Navigate_To_Register_page
+
+Work directory:	E:\GitHub\FeijoaFork\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed
+
+Message:	  Expected string length 39 but was 4. Strings differ at index 0.
+  Expected: "http://localhost:60639/Account/Register"
+  But was:  "True"
+  -----------^

@@ -69,5 +69,33 @@ namespace Blog.UI.Tests
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
         }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 8), Property("Delete test number:", 1)]
+        [Description("User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Delete_ClickDeleteButton_ConfirmationPageLoaded()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            DeletePage deletePage = new DeletePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.CreateArticle(page, uniqId);
+            Thread.Sleep(1000);
+
+            homePage.GetArticleNumber(uniqId);
+            deletePage.NavigateTo(deletePage.URL + homePage.ArticleNumber);            
+            Thread.Sleep(1000);
+
+            Assert.AreEqual(page.Asserter, deletePage.DeleteButton.Displayed.ToString());
+        }
     }
 }

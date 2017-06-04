@@ -88,7 +88,7 @@ namespace Blog.UI.Tests
 
         [Test]
         [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
-        [Description("Navigate to Login page web address and enter an ibvalid Email but valid Password, expected: Login unsuccessful and Password field required message")]
+        [Description("Navigate to Login page web address and enter an invalid Email but valid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
         public void Login_Blank_Email_Login_Unsuccessful()
@@ -106,6 +106,53 @@ namespace Blog.UI.Tests
             asserter.Invoke(null, new object[] { loginPage, page.Effect });
         }
 
-        
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Description("Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Login_WithInvalidPassword_LoginUnsuccessful()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            homePage.LogoffLink.Click();
+            Thread.Sleep(1000);
+
+            loginPage.NavigateTo(loginPage.URL);
+            loginPage.FillLoginForm2(page, uniqId);
+            Thread.Sleep(1000);
+
+            loginPage.AssertInvalidPasswordErrorMessageExists(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { loginPage, page.Effect });
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Description("Navigate to Login page web address and enter an invalid Email format but valid Password, expected: Login unsuccessful and Password field required message")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Login_WithInvalidEmail_LoginUnsuccessful()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+
+            loginPage.NavigateTo(loginPage.URL);
+            loginPage.FillLoginFormNegative(page);
+            Thread.Sleep(1000);
+
+            loginPage.AssertInvalidEmailErrorMessageExists(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(LoginPageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { loginPage, page.Effect });
+        }
     }
 }

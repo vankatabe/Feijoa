@@ -29,5 +29,15 @@ namespace Blog.UI.Tests.Pages.LoginPage
         {
             Assert.AreEqual(text, driver.Url);
         }
+
+        public static void AssertInvalidPasswordErrorMessageExists(this LoginPage page, string text)
+        {
+            Assert.AreEqual(text, page.InvalidPasswordErrorMessage.Text);
+        }
+
+        public static void AssertInvalidEmailErrorMessageExists(this LoginPage page, string text)
+        {
+            Assert.AreEqual(text, page.InvalidEmailErrorMessage.Text);
+        }
     }
 }

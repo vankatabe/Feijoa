@@ -94,6 +94,184 @@ namespace Blog.UI.Tests
             createPage.AssertHomePageUrl(this.driver, page.Effect);
             MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
             asserter.Invoke(null, new object[] { createPage, this.driver, page.Effect });
-        }        
-    }
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and enter invalid article title but valid body, expected: Article not created")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Create_ArticleWIthoutTitle_ArticleNotCreated()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.Content.SendKeys(page.ArticleBodyText);
+            createPage.SubmitButton.Click();
+            Thread.Sleep(1000);
+
+            createPage.AssertTitleErrorMessageDisplayed(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { createPage, page.Effect });
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and enter valid article title but invalid body, expected: Article not created")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Create_ArticleWithoutContent_ArticleNotCreated()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.Title.SendKeys("TestTitle");
+            createPage.SubmitButton.Click();
+            Thread.Sleep(1000);
+
+            createPage.AssertContentErrorMessageDisplayed(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { createPage, page.Effect });
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and enter article title exceeding 50 characters but valid body, expected: Article not created")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Create_ArticleWithTitleOutsideRange_ArticleNotCreated()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.Title.SendKeys(page.ArticleBodyText);
+            createPage.Content.SendKeys(page.ArticleBodyText);
+            createPage.SubmitButton.Click();
+            Thread.Sleep(1000);
+
+            createPage.AssertTitleOutsideRangeErrorMessageDisplayed(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { createPage, page.Effect });
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Comment_CommentArticle_CommentButtonExists()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.CreateArticle(page, uniqId);
+            homePage.NavigateTo(homePage.URL);
+            homePage.OpenArticle(uniqId); // To assure it is possible the article to be opened
+            Thread.Sleep(1000);
+
+            createPage.AssertCommentButtonExists(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { createPage, page.Effect });
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Create_NavigateToArticle_ArticleAuthorExists()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.CreateArticle(page, uniqId);
+            homePage.NavigateTo(homePage.URL);
+            homePage.OpenArticle(uniqId); // To assure it is possible the article to be opened
+            Thread.Sleep(1000);
+
+            createPage.AssertArticleAuthorExists(page.Effect + "" + uniqId);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { createPage, page.Effect });
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Comment_CommentAnArticle_CommentCreated()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.CreateArticle(page, uniqId);
+            homePage.NavigateTo(homePage.URL);
+            homePage.OpenArticle(uniqId); // To assure it is possible the article to be opened
+            createPage.CommentButton.Click();
+            createPage.CommentField.SendKeys("Test Comment");
+            createPage.SubmitCommentButton.Click();
+            Thread.Sleep(1000);
+
+            createPage.AssertCommentButtonExists(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { createPage, page.Effect });
+        }
+    }      
 }

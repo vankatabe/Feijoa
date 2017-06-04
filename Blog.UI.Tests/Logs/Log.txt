@@ -1529,3 +1529,184 @@ OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
 [2017-06-02T21:10:30] [Passed] Register_Without_Password
 [2017-06-02T21:10:52] [Passed] Home_ClickLogin_LoginLoaded
 [2017-06-02T21:11:12] [Passed] Home_ClickRegister_RegisterLoaded
+[2017-06-04T10:40:07] [Failed] Create_ArticleWIthoutTitle_ArticleNotCreated
+  Expected: "The Title field is required."
+  But was:  <Element (id = ef0f3f83-671a-4c61-bb86-8d6740935062)>
+
+[2017-06-04T10:41:15] [Passed] Create_ArticleWIthoutTitle_ArticleNotCreated
+[2017-06-04T10:47:15] [Passed] Create_ArticleWithoutContent_ArticleNotCreated
+[2017-06-04T10:52:06] [Failed] Create_ArticleWithTitleOutsideRange_ArticleNotCreated
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-04T10:53:32] [Passed] Create_ArticleWithTitleOutsideRange_ArticleNotCreated
+[2017-06-04T11:06:36] [Failed] Login_WithInvalidPassword_LoginUnsuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-04T11:15:00] [Passed] Login_WithInvalidPassword_LoginUnsuccessful
+[2017-06-04T11:23:34] [Failed] Login_WithInvalidEmail_LoginUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Email\-error
+[2017-06-04T11:24:40] [Failed] Login_WithInvalidEmail_LoginUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: AssertInvalidEmailErrorMessageExists
+[2017-06-04T11:26:30] [Failed] Login_WithInvalidEmail_LoginUnsuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-04T11:27:22] [Failed] Login_WithInvalidEmail_LoginUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[@id="Email-error"]
+[2017-06-04T11:44:25] [Passed] Login_WithInvalidEmail_LoginUnsuccessful
+[2017-06-04T11:51:28] [Passed] Create_ArticleWithoutContent_ArticleNotCreated
+[2017-06-04T11:51:31] [Failed] Create_ArticleWIthoutTitle_ArticleNotCreated
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-04T11:51:35] [Passed] Create_ArticleWithTitleOutsideRange_ArticleNotCreated
+[2017-06-04T11:51:40] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-04T11:51:43] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-04T11:51:48] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-04T11:52:03] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-04T11:52:09] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-04T11:52:13] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-04T11:52:14] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-04T11:52:25] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-04T11:52:37] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-04T11:52:42] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-04T11:52:44] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-04T11:52:48] [Failed] Manage_ClickAccount_NavigateToManagePage
+  Expected string length 29 but was 35. Strings differ at index 23.
+  Expected: "http://localhost:60639/Manage"
+  But was:  "http://localhost:60639/Article/List"
+  ----------------------------------^
+
+[2017-06-04T11:52:50] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-04T11:52:54] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-04T11:52:56] [Passed] Login_WithInvalidEmail_LoginUnsuccessful
+[2017-06-04T11:52:59] [Passed] Login_WithInvalidPassword_LoginUnsuccessful
+[2017-06-04T11:53:01] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-04T11:53:03] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-04T11:53:09] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-04T11:53:10] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-04T11:53:12] [Passed] Register_Without_ConfirmPassword
+[2017-06-04T11:53:14] [Passed] Register_Without_Email
+[2017-06-04T11:53:15] [Passed] Register_Without_FullName
+[2017-06-04T11:53:17] [Passed] Register_Without_Password
+[2017-06-04T11:54:44] [Passed] Create_ArticleWIthoutTitle_ArticleNotCreated
+[2017-06-04T12:23:52] [Failed] Create_CommentArticle_CommentButtonExists
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/div/form/div[1]/ul/li
+[2017-06-04T12:33:50] [Failed] Create_NavigateToArticle_ArticleAuthorExists
+  Expected string length 44 but was 8. Strings differ at index 8.
+  Expected: "--authorfa402b71-ac8e-42fc-bf49-d3bb5f96f448"
+  But was:  "--author"
+  -------------------^
+
+[2017-06-04T12:48:18] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+System.NullReferenceException : Object reference not set to an instance of an object.
+[2017-06-04T12:50:04] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-04T12:51:08] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-04T12:52:42] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/article/footer/a[1]
+[2017-06-04T12:53:40] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/article/footer/a[1]
+[2017-06-04T12:54:41] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+System.InvalidOperationException : Failed to decode response from marionette
+[2017-06-04T12:57:33] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: /html/body/div[2]/div/article/footer/a[1]
+[2017-06-04T12:58:10] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//a[contains(text(), 'Unable to edit other Author's articles')]" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-06-04T13:05:16] [Passed] Create_ArticleWithoutContent_ArticleNotCreated
+[2017-06-04T13:05:20] [Passed] Create_ArticleWIthoutTitle_ArticleNotCreated
+[2017-06-04T13:05:23] [Passed] Create_ArticleWithTitleOutsideRange_ArticleNotCreated
+[2017-06-04T13:05:27] [Failed] Create_CommentArticle_CommentButtonExists
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//a[contains(text(), 'About us']" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-06-04T13:05:32] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-04T13:05:36] [Failed] Create_NavigateToArticle_ArticleAuthorExists
+  Expected string length 44 but was 8. Strings differ at index 8.
+  Expected: "--author2fa2662a-f67d-4785-9479-a2f2aee86432"
+  But was:  "--author"
+  -------------------^
+
+[2017-06-04T13:05:40] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-04T13:05:45] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-04T13:06:00] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-04T13:06:06] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-04T13:06:11] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-04T13:06:19] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//a[contains(text(), 'Unable to edit other Author's articles')]" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-06-04T13:06:19] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-04T13:06:31] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-04T13:06:42] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-04T13:06:47] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-04T13:06:49] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-04T13:06:54] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-04T13:06:55] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-04T13:06:59] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-04T13:07:00] [Passed] Login_WithInvalidEmail_LoginUnsuccessful
+[2017-06-04T13:07:04] [Passed] Login_WithInvalidPassword_LoginUnsuccessful
+[2017-06-04T13:07:07] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-04T13:07:12] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-04T13:07:18] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-04T13:07:20] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-04T13:07:22] [Passed] Register_Without_ConfirmPassword
+[2017-06-04T13:07:23] [Passed] Register_Without_Email
+[2017-06-04T13:07:25] [Passed] Register_Without_FullName
+[2017-06-04T13:07:27] [Passed] Register_Without_Password
+[2017-06-04T13:35:37] [Failed] Comment_CommentAnArticle_CommentCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articled0c7c0ed-6f65-4aeb-83be-0fd50ea40ac4')]
+[2017-06-04T13:36:10] [Failed] Comment_CommentAnArticle_CommentCreated
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//a[contains(text(), 'Comment']" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-06-04T13:37:24] [Failed] Comment_CommentArticle_CommentButtonExists
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//a[contains(text(), 'Comment']" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-06-04T13:40:33] [Failed] Comment_CommentArticle_CommentButtonExists
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]
+[2017-06-04T13:42:01] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//a[contains(text(), 'Unable to edit other Author's articles')]" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-06-04T13:42:49] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//a[contains(text(), 'Unable to edit other Author's articles')]" is invalid: SyntaxError: The expression is not a legal expression.
+[2017-06-04T13:43:30] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Unable to edit other Authors articles')]
+[2017-06-04T13:44:57] [Failed] Comment_CommentAnArticle_CommentCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]
+[2017-06-04T13:45:11] [Failed] Comment_CommentArticle_CommentButtonExists
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]
+[2017-06-04T13:45:15] [Passed] Create_ArticleWithoutContent_ArticleNotCreated
+[2017-06-04T13:45:18] [Passed] Create_ArticleWIthoutTitle_ArticleNotCreated
+[2017-06-04T13:45:22] [Passed] Create_ArticleWithTitleOutsideRange_ArticleNotCreated
+[2017-06-04T13:45:26] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-04T13:45:30] [Failed] Create_NavigateToArticle_ArticleAuthorExists
+  Expected string length 44 but was 8. Strings differ at index 8.
+  Expected: "--authorff427cc3-c6f5-426f-b6e0-5fea5c13f4aa"
+  But was:  "--author"
+  -------------------^
+
+[2017-06-04T13:45:34] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-04T13:45:39] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-04T13:45:54] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-04T13:46:00] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-04T13:46:05] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-04T13:46:08] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-04T13:46:09] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-04T13:46:20] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-04T13:46:32] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-04T13:46:36] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-04T13:46:42] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-04T13:46:47] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-04T13:46:48] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-04T13:46:52] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-04T13:46:54] [Passed] Login_WithInvalidEmail_LoginUnsuccessful
+[2017-06-04T13:46:57] [Passed] Login_WithInvalidPassword_LoginUnsuccessful
+[2017-06-04T13:46:59] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-04T13:47:02] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-04T13:47:07] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-04T13:47:09] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-04T13:47:11] [Passed] Register_Without_ConfirmPassword
+[2017-06-04T13:47:13] [Passed] Register_Without_Email
+[2017-06-04T13:47:14] [Passed] Register_Without_FullName
+[2017-06-04T13:47:16] [Passed] Register_Without_Password

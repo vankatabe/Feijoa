@@ -4,6 +4,9 @@ Work directory:	E:\GitHub\Feijoa\Blog.UI.Tests\bin\Debug
 
 Pass count:	0
 
-Result:	Failed:Error
+Result:	Failed
 
-Message:	System.NullReferenceException : Object reference not set to an instance of an object.
+Message:	  Expected string length 29 but was 35. Strings differ at index 23.
+  Expected: "http://localhost:60639/Manage"
+  But was:  "http://localhost:60639/Article/List"
+  ----------------------------------^

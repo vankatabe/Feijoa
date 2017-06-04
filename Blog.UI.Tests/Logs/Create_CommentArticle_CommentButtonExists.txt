@@ -1,0 +1,9 @@
+Test full name:	Blog.UI.Tests.CreatePageTests.Create_CommentArticle_CommentButtonExists
+
+Work directory:	E:\GitHub\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	OpenQA.Selenium.InvalidSelectorException : Given xpath expression "//a[contains(text(), 'About us']" is invalid: SyntaxError: The expression is not a legal expression.

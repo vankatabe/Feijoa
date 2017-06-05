@@ -1,9 +1,9 @@
 Test full name:	Blog.UI.Tests.CreatePageTests.Comment_CommentAnArticle_CommentCreated
 
-Work directory:	E:\GitHub\Feijoa\Blog.UI.Tests\bin\Debug
+Work directory:	C:\Users\vaneto\Documents\Visual Studio 2015\Projects\Blog-Skeleton\Blog-Skeleton\Blog.UI.Tests\bin\Debug
 
 Pass count:	0
 
 Result:	Failed:Error
 
-Message:	OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), 'Articleff9b69a0-63d2-4838-b6e9-41e34750bf44')]
+Message:	OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]

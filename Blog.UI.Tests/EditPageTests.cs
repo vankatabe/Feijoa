@@ -74,9 +74,8 @@ namespace Blog.UI.Tests
             asserter.Invoke(null, new object[] { editPage, page.Effect });
         }
 
-
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 8)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid data to create article, then navigates to his article and clicks Edit, expected: Navigates to Edit page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -104,7 +103,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 3), Property("Test scenario number:", 7), Property("Edit test number:", 2)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]

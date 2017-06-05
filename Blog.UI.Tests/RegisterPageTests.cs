@@ -59,7 +59,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 2)]
+        [Property("Priority", 3), Property("Test scenario number:", 2), Property("Registration test number:", 2)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Email field empty, exected: Account not registered and Email field required message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -70,17 +70,17 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
-            Thread.Sleep(1000); // Necessary due to test execution speed.
+            Thread.Sleep(1000); // Necessary due to test execution speed
+
             registerPage.AssertEmailErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });
-
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 3)]
+        [Property("Priority", 3), Property("Test scenario number:", 2), Property("Registration test number:", 3)]
         [Description("Navigate to Registration page web address and populate fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -91,17 +91,17 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
-            Thread.Sleep(1000); // Necessary due to test execution speed.
+            Thread.Sleep(1000); // Necessary due to test execution speed
+
             registerPage.AssertFullNameErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { registerPage, page.Effect });
-
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 4)]
+        [Property("Priority", 3), Property("Test scenario number:", 2), Property("Registration test number:", 4)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Passwordd field empty, exected: Account not registered and Password field required message displayed, and Password missmatch message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -112,7 +112,8 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
-            Thread.Sleep(1000); // Necessary due to test execution speed.
+            Thread.Sleep(1000); // Necessary due to test execution speed
+
             registerPage.AssertPasswordErrorMessageExists(page.Effect);
             registerPage.AssertPasswordMissmatchErrorMessageExists(page.Effect2);
             // for the DataDriven Asserter:
@@ -124,7 +125,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 5)]
+        [Property("Priority", 3), Property("Test scenario number:", 2), Property("Registration test number:", 5)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Confirm Passwordd field empty, exected: Account not registered and Password missmatch message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -135,7 +136,8 @@ namespace Blog.UI.Tests
 
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationFormNegative(page);
-            Thread.Sleep(1000); // Necessary due to test execution speed.
+            Thread.Sleep(1000); // Necessary due to test execution speed
+
             registerPage.AssertPasswordMissmatchErrorMessageExists2(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);

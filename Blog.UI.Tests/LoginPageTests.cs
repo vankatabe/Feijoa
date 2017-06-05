@@ -67,7 +67,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Property("Priority", 3), Property("Test scenario number:", 3), Property("Login test number:", 2)]
         [Description("Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -75,6 +75,7 @@ namespace Blog.UI.Tests
         {
             LoginPage loginPage = new LoginPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginFormNegative(page);
             Thread.Sleep(1000);
@@ -87,14 +88,15 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Property("Priority", 3), Property("Test scenario number:", 3), Property("Login test number:", 4)]
         [Description("Navigate to Login page web address and enter an invalid Email but valid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
-        public void Login_Blank_Email_Login_Unsuccessful()
+        public void Login_BlankEmail_Login_Unsuccessful()
         {
             LoginPage loginPage = new LoginPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginFormNegative(page);
             Thread.Sleep(1000);
@@ -107,7 +109,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Property("Priority", 3), Property("Test scenario number:", 3), Property("Login test number:", 3)]
         [Description("Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -134,7 +136,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Property("Priority", 3), Property("Test scenario number:", 3), Property("Login test number:", 5)]
         [Description("Navigate to Login page web address and enter an invalid Email format but valid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]

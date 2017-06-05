@@ -1758,3 +1758,94 @@ OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
 [2017-06-04T21:34:19] [Passed] Register_Without_Email
 [2017-06-04T21:34:21] [Passed] Register_Without_FullName
 [2017-06-04T21:34:23] [Passed] Register_Without_Password
+[2017-06-05T21:52:02] [Failed] Comment_CommentAnArticle_CommentCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]
+[2017-06-05T21:52:16] [Failed] Comment_CommentArticle_CommentButtonExists
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]
+[2017-06-05T21:52:20] [Passed] Create_ArticleWithoutContent_ArticleNotCreated
+[2017-06-05T21:52:23] [Passed] Create_ArticleWIthoutTitle_ArticleNotCreated
+[2017-06-05T21:52:26] [Passed] Create_ArticleWithTitleOutsideRange_ArticleNotCreated
+[2017-06-05T21:52:31] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-05T21:52:35] [Failed] Create_NavigateToArticle_ArticleAuthorExists
+  Expected string length 44 but was 8. Strings differ at index 8.
+  Expected: "--author1a430444-1af3-4704-a069-6a97f249eb7c"
+  But was:  "--author"
+  -------------------^
+
+[2017-06-05T21:52:40] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-05T21:52:45] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-05T21:53:00] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-05T21:53:06] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-05T21:53:11] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-05T21:53:28] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Unable to edit other Authors articles')]
+[2017-06-05T21:53:28] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-05T21:53:40] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-05T21:53:52] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-05T21:53:56] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-05T21:53:59] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-05T21:54:03] [Failed] Manage_ClickAccount_NavigateToManagePage
+  Expected string length 29 but was 35. Strings differ at index 23.
+  Expected: "http://localhost:60639/Manage"
+  But was:  "http://localhost:60639/Article/List"
+  ----------------------------------^
+
+[2017-06-05T21:54:05] [Passed] Login_Blank_Email_Login_Unsuccessful
+[2017-06-05T21:54:09] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-05T21:54:11] [Passed] Login_WithInvalidEmail_LoginUnsuccessful
+[2017-06-05T21:54:14] [Passed] Login_WithInvalidPassword_LoginUnsuccessful
+[2017-06-05T21:54:16] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-05T21:54:19] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-05T21:54:24] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-05T21:54:26] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-05T21:54:28] [Passed] Register_Without_ConfirmPassword
+[2017-06-05T21:54:29] [Passed] Register_Without_Email
+[2017-06-05T21:54:31] [Passed] Register_Without_FullName
+[2017-06-05T21:54:33] [Passed] Register_Without_Password
+[2017-06-05T23:03:58] [Failed] Comment_CommentAnArticle_CommentCreated
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]
+[2017-06-05T23:04:12] [Failed] Comment_CommentArticle_CommentButtonExists
+OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]
+[2017-06-05T23:04:16] [Passed] Create_ArticleWithoutContent_ArticleNotCreated
+[2017-06-05T23:04:19] [Passed] Create_ArticleWIthoutTitle_ArticleNotCreated
+[2017-06-05T23:04:23] [Passed] Create_ArticleWithTitleOutsideRange_ArticleNotCreated
+[2017-06-05T23:04:27] [Passed] Create_CreateArticleCancelButton_NavigateToHomePage
+[2017-06-05T23:04:31] [Failed] Create_NavigateToArticle_ArticleAuthorExists
+  Expected string length 44 but was 8. Strings differ at index 8.
+  Expected: "--authorc1aeb752-6159-4e94-8436-27855bda1b9a"
+  But was:  "--author"
+  -------------------^
+
+[2017-06-05T23:04:36] [Passed] Create_ValidFieldEntries_ArticleCreated
+[2017-06-05T23:04:41] [Passed] Delete_ClickDeleteButton_ConfirmationPageLoaded
+[2017-06-05T23:04:56] [Passed] Delete_DeleteArticle_ArticleDeteted
+[2017-06-05T23:05:02] [Passed] Edit_ChangeContent_ContentChanged
+[2017-06-05T23:05:07] [Passed] Edit_ClickEdit_EditPageLoaded
+[2017-06-05T23:05:10] [Failed] Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+[2017-06-05T23:05:11] [Passed] CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage
+[2017-06-05T23:05:22] [Failed] Home_ClickLogin_LoginLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #loginLink
+[2017-06-05T23:05:34] [Failed] Home_ClickRegister_RegisterLoaded
+OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #registerLink
+[2017-06-05T23:05:39] [Passed] Home_CreateArticle_ReadArticle
+[2017-06-05T23:05:41] [Passed] Home_LogoClick_HomePageLoaded
+[2017-06-05T23:05:46] [Passed] Manage_ClickAccount_NavigateToManagePage
+[2017-06-05T23:05:47] [Passed] Login_BlankEmail_Login_Unsuccessful
+[2017-06-05T23:05:51] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-05T23:05:52] [Passed] Login_WithInvalidEmail_LoginUnsuccessful
+[2017-06-05T23:05:56] [Passed] Login_WithInvalidPassword_LoginUnsuccessful
+[2017-06-05T23:05:58] [Passed] Login_WithoutPassword_LoginUnsuccessful
+[2017-06-05T23:06:01] [Passed] Logoff_ClickLogoffLink_LogoffSuccessful
+[2017-06-05T23:06:06] [Passed] Account_ClickOnChangePassword_ChangePasswordPageLoaded
+[2017-06-05T23:06:08] [Passed] Register_UniqueCredentials_RegisterSuccessful
+[2017-06-05T23:06:10] [Passed] Register_Without_ConfirmPassword
+[2017-06-05T23:06:12] [Passed] Register_Without_Email
+[2017-06-05T23:06:13] [Passed] Register_Without_FullName
+[2017-06-05T23:06:15] [Passed] Register_Without_Password

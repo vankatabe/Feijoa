@@ -60,9 +60,9 @@ namespace Blog.UI.Tests
             // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
             asserter.Invoke(null, new object[] { homePage, page.Effect });
         }
-        //TODO: change property values
+
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 1)]
         [Description("Navigate to Blog web address, and click Log in, expected: navigates to Log in page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -70,7 +70,7 @@ namespace Blog.UI.Tests
         {
             HomePage homePage = new HomePage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
-            // homePage.LogoffLink.Click(); // Make sure User is Logged-off
+            // homePage.LogoffLink.Click(); // Make sure User is Logged-off - doesn't work well
 
             homePage.NavigateTo(homePage.URL);
             Thread.Sleep(1000);
@@ -79,12 +79,11 @@ namespace Blog.UI.Tests
                         
             homePage.AssertLoginPageUrl(this.driver, page.Effect);
             MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
-            asserter.Invoke(null, new object[] { homePage, this.driver, page.Effect  });
-
+            asserter.Invoke(null, new object[] { homePage, this.driver, page.Effect });
         }
-        //TODO: change property values
+
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 2)]
         [Description("Navigate to Blog web address, and click Register, expected: navigates to Register page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -93,7 +92,7 @@ namespace Blog.UI.Tests
             HomePage homePage = new HomePage(this.driver);
             RegisterPage regPage = new RegisterPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
-            // homePage.LogoffLink.Click(); // Make sure User is Logged-off
+            // homePage.LogoffLink.Click(); // Make sure User is Logged-off - doesn't work well
 
             homePage.NavigateTo(homePage.URL);
             Thread.Sleep(1000);
@@ -106,7 +105,7 @@ namespace Blog.UI.Tests
         }               
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 6)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid data to create article, then navigates to his article, expected: Navigates to own article")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -135,7 +134,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 6), Property("Logoff test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 4)]
         [Description("Register with valid User credentials where User Logs-in automatically and press his Account Name link, expected: User navigates to Manage page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -154,13 +153,14 @@ namespace Blog.UI.Tests
             Thread.Sleep(1000);
             loginPage.ManageLink.Click();
             Thread.Sleep(1000);
-            //cannot for the life of me make the data driven asserter work here.
+
+            // not feasible to make the data driven asserter here
             Assert.AreEqual(page.Effect, driver.Url);
             Assert.AreEqual(page.Effect2, managePage.ChangePasswordLink.Text);
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 3)]
         [Description("Navigate to Blog web address, and click the Logo, expected: navigates to Home page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -168,9 +168,10 @@ namespace Blog.UI.Tests
         {
             HomePage homePage = new HomePage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
-            // homePage.LogoffLink.Click(); // Make sure User is Logged-off
+            // homePage.LogoffLink.Click(); // Make sure User is Logged-off - doesn't work well
             homePage.NavigateTo(homePage.URL);
             Thread.Sleep(1000);
+
             homePage.ClickLogo();
             Thread.Sleep(1000);
 

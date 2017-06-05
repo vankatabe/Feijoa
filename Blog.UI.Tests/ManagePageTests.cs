@@ -37,7 +37,7 @@ namespace Blog.UI.Tests
         }
         
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 9)]
         [Description("User creates an account, logs in and enters Manage panel, then selects Change password, expected: Navigate to Change password page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -55,10 +55,10 @@ namespace Blog.UI.Tests
             loginPage.ManageLinkClick();
             Thread.Sleep(3000);
             managePage.ChangePasswordLink.Click();
-            //cannot for the life of me make the data driven asserter work
+
+            // not feasible to make the data driven asserter here
             Assert.AreEqual(page.Effect, driver.Url);
             Assert.AreEqual(page.Asserter, managePage.SubmitButton.Displayed.ToString());
-
         }
     }
 }

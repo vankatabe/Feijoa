@@ -69,7 +69,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 5)]
         [Description("User Register and Login, then navigate to Create page web address and clicks cancel button, expected: Redirected to Home page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -97,7 +97,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 3), Property("Test scenario number:", 4), Property("Create test number:", 2)]
         [Description("User Register and Login, then navigate to Create page web address and enter invalid article title but valid body, expected: Article not created")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -113,7 +113,7 @@ namespace Blog.UI.Tests
             Thread.Sleep(1000);
 
             createPage.NavigateTo(createPage.URL);
-            createPage.Content.SendKeys(page.ArticleBodyText);
+            createPage.Content.SendKeys(uniqId + ' ' + page.ArticleBodyText);
             createPage.SubmitButton.Click();
             Thread.Sleep(1000);
 
@@ -125,7 +125,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 3), Property("Test scenario number:", 4), Property("Create test number:", 3)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid article title but invalid body, expected: Article not created")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -141,7 +141,7 @@ namespace Blog.UI.Tests
             Thread.Sleep(1000);
 
             createPage.NavigateTo(createPage.URL);
-            createPage.Title.SendKeys("TestTitle");
+            createPage.Title.SendKeys("Article" + uniqId);
             createPage.SubmitButton.Click();
             Thread.Sleep(1000);
 
@@ -153,7 +153,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 3), Property("Test scenario number:", 4), Property("Create test number:", 4)]
         [Description("User Register and Login, then navigate to Create page web address and enter article title exceeding 50 characters but valid body, expected: Article not created")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -169,8 +169,8 @@ namespace Blog.UI.Tests
             Thread.Sleep(1000);
 
             createPage.NavigateTo(createPage.URL);
-            createPage.Title.SendKeys(page.ArticleBodyText);
-            createPage.Content.SendKeys(page.ArticleBodyText);
+            createPage.Title.SendKeys("Article" + uniqId + page.ArticleBodyText);
+            createPage.Content.SendKeys(uniqId + ' ' + page.ArticleBodyText);
             createPage.SubmitButton.Click();
             Thread.Sleep(1000);
 
@@ -182,7 +182,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 10)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -196,7 +196,6 @@ namespace Blog.UI.Tests
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationForm(page, uniqId);
             Thread.Sleep(1000);
-
 
             createPage.NavigateTo(createPage.URL);
             createPage.CreateArticle(page, uniqId);
@@ -212,7 +211,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 11)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -226,7 +225,6 @@ namespace Blog.UI.Tests
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationForm(page, uniqId);
             Thread.Sleep(1000);
-
 
             createPage.NavigateTo(createPage.URL);
             createPage.CreateArticle(page, uniqId);
@@ -242,7 +240,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Property("Priority", 3), Property("Test scenario number:", 5), Property("Comment test number:", 1)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -256,7 +254,6 @@ namespace Blog.UI.Tests
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationForm(page, uniqId);
             Thread.Sleep(1000);
-
 
             createPage.NavigateTo(createPage.URL);
             createPage.CreateArticle(page, uniqId);

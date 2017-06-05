@@ -51,7 +51,7 @@ namespace Blog.UI.Tests
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
             registerPage.NavigateTo(registerPage.URL);
             registerPage.FillRegistrationForm(page, uniqId);
-            // Assert that User is Logged-in - good to have but breaks the test
+            // Assert that User is Logged-in - good to have but breaks the test:
             // loginPage.AssertGreetingDisplayed("Hello " + page.UniqEmail(uniqId) + '!');
 
             Thread.Sleep(1000);

@@ -57,5 +57,14 @@ namespace Blog.UI.Tests.Pages.EditPage
                 return this.Driver.FindElement(By.XPath("//p"));
             }
         }
+
+        public IWebElement UnableToEdiErrorMessage
+        {
+            get
+            {
+                //a[contains(text(), 'Comment')]
+                return this.Driver.FindElement(By.XPath("//a[contains(text(), 'Unable to edit other Authors articles')]"));
+            }
+        }
     }
 }

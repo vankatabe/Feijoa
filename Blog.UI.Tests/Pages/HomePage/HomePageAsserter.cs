@@ -29,5 +29,20 @@ namespace Blog.UI.Tests.Pages.HomePage
              Assert.That(ex.Message, Is.StringContaining($"OpenQA.Selenium.NoSuchElementException : Unable to locate element: //*[contains(text(), '{page.ArticleTitle(uniqId)}')]"));
             */
         }
+
+        public static void AssertLoginPageUrl(this HomePage page, IWebDriver driver, string text)
+        {
+            Assert.AreEqual(text, driver.Url);
+        }
+
+        public static void AssertRegisterPageUrl(this HomePage page, IWebDriver driver, string text)
+        {
+            Assert.AreEqual(text, driver.Url);
+        }
+
+        public static void AssertHomePageUrl(this HomePage page, IWebDriver driver, string text)
+        {
+            Assert.AreEqual(text, driver.Url);
+        }
     }
 }

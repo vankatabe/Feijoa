@@ -99,8 +99,44 @@ namespace Blog.UI.Tests
 
             editPage.EditButton.Click();
             Thread.Sleep(1000);
-
+            //Cannot for the life of me make the data driven asserter work here
             Assert.IsTrue(createPage.SubmitButton.Displayed);
+        }
+
+        [Test]
+        [Property("Priority", 1), Property("Test scenario number:", 4), Property("Create test number:", 1)]
+        [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
+        [Author("Mario Georgiev")]
+        [LogResultToFileAttribute]
+        public void Edit_EditArticleFromOtherAuthor_EditUnsuccessful()
+        {
+            HomePage homePage = new HomePage(this.driver);
+            RegisterPage registerPage = new RegisterPage(this.driver);
+            LoginPage loginPage = new LoginPage(this.driver);
+            CreatePage createPage = new CreatePage(this.driver);
+            EditPage editPage = new EditPage(this.driver);
+            BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = Login_UniqueCredentials_LoginSuccessful) and use it as a Key in the xlsx file
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId);
+            Thread.Sleep(1000);
+
+            createPage.NavigateTo(createPage.URL);
+            createPage.CreateArticle(page, uniqId);
+            homePage.OpenArticle(uniqId);            
+            homePage.LogoffLink.Click();
+            Thread.Sleep(1000);
+            registerPage.NavigateTo(registerPage.URL);
+            registerPage.FillRegistrationForm(page, uniqId + "2");
+            Thread.Sleep(1000);
+            homePage.OpenArticle(uniqId);
+            editPage.EditButton.Click();
+            Thread.Sleep(1000);
+
+            editPage.AssertUnableToEditMessageExists(page.Effect);
+            // for the DataDriven Asserter:
+            MethodInfo asserter = typeof(CreatePageAsserter).GetMethod(page.Asserter);
+            // could be also like next row - Effect - from the Effect column in the Excel file - what message or effect are we expecting
+            asserter.Invoke(null, new object[] { createPage, page.Effect });
         }
     }
 }

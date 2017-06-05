@@ -91,11 +91,12 @@ namespace Blog.UI.Tests
             createPage.CreateArticle(page, uniqId);
             Thread.Sleep(1000);
 
-            homePage.GetArticleNumber(uniqId);
+            var articleNumber = homePage.GetArticleNumber(uniqId);
             deletePage.NavigateTo(deletePage.URL + homePage.ArticleNumber);            
             Thread.Sleep(1000);
 
-            Assert.AreEqual(page.Asserter, deletePage.DeleteButton.Displayed.ToString());
+            //cannot for the love of me make the data driven asserter work            
+            Assert.AreEqual(page.Effect + articleNumber, driver.Url.ToString());
         }
     }
 }

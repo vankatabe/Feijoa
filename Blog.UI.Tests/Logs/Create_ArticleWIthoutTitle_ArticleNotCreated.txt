@@ -1,0 +1,9 @@
+Test full name:	Blog.UI.Tests.CreatePageTests.Create_ArticleWIthoutTitle_ArticleNotCreated
+
+Work directory:	E:\GitHub\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	System.NullReferenceException : Object reference not set to an instance of an object.

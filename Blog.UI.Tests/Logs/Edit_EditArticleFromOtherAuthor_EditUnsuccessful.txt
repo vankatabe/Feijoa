@@ -1,0 +1,9 @@
+Test full name:	Blog.UI.Tests.EditPageTests.Edit_EditArticleFromOtherAuthor_EditUnsuccessful
+
+Work directory:	E:\GitHub\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	OpenQA.Selenium.StaleElementReferenceException : The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed

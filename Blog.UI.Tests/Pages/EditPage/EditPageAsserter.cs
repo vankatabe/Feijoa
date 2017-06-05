@@ -14,5 +14,10 @@ namespace Blog.UI.Tests.Pages.EditPage
         {
             Assert.AreEqual(text, page.ArticleContent.Text);
         }
+
+        public static void AssertUnableToEditMessageExists(this EditPage page, string text)
+        {
+            Assert.AreEqual(text, page.UnableToEdiErrorMessage.Text);
+        }
     }
 }

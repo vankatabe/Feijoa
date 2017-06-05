@@ -29,7 +29,7 @@ namespace Blog.UI.Tests.Pages.DeletePage
         {
             get
             {
-                return this.Driver.FindElement(By.XPath("//div[3]/div/input"));
+                return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/article/footer/a[2]"));
             }
         }
 

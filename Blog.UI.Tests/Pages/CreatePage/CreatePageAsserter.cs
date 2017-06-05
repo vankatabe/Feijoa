@@ -14,5 +14,40 @@ namespace Blog.UI.Tests.Pages.CreatePage
         {
             Assert.AreEqual(text, title.Text);
         }
+
+        public static void AssertHomePageUrl(this CreatePage page, IWebDriver driver, string text)
+        {
+            Assert.AreEqual(text, driver.Url);
+        }
+
+        public static void AssertTitleErrorMessageDisplayed(this CreatePage page, string text)
+        {
+            Assert.AreEqual(text, page.TitleErrorMessage.Text);
+        }
+
+        public static void AssertContentErrorMessageDisplayed(this CreatePage page, string text)
+        {
+            Assert.AreEqual(text, page.ContentErrorMessage.Text);
+        }
+
+        public static void AssertTitleOutsideRangeErrorMessageDisplayed(this CreatePage page, string text)
+        {
+            Assert.AreEqual(text, page.TitleOutsideRangeErrorMessage.Text);
+        }
+
+        public static void AssertCommentButtonExists(this CreatePage page, string text)
+        {
+            Assert.AreEqual(text, page.CommentButton.Text);
+        }
+
+        public static void AssertArticleAuthorExists(this CreatePage page, string text)
+        {
+            Assert.AreEqual(text, page.ArticleAuthor.Text);
+        }
+
+        public static void AssertCommentExists(this CreatePage page, string text)
+        {
+            Assert.AreEqual(text, page.Comment.Text);
+        }
     }
 }

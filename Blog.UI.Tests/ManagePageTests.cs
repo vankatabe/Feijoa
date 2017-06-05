@@ -41,7 +41,7 @@ namespace Blog.UI.Tests
         [Description("User creates an account, logs in and enters Manage panel, then selects Change password, expected: Navigate to Change password page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
-        public void Manage_ClickAccount_NavigateToManagePage()
+        public void Account_ClickOnChangePassword_ChangePasswordPageLoaded()
         {
             RegisterPage regPage = new RegisterPage(this.driver);
             LoginPage loginPage = new LoginPage(this.driver);
@@ -55,7 +55,7 @@ namespace Blog.UI.Tests
             loginPage.ManageLinkClick();
             Thread.Sleep(3000);
             managePage.ChangePasswordLink.Click();
-
+            //cannot for the life of me make the data driven asserter work
             Assert.AreEqual(page.Effect, driver.Url);
             Assert.AreEqual(page.Asserter, managePage.SubmitButton.Displayed.ToString());
 

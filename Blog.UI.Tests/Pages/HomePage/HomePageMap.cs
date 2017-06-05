@@ -99,5 +99,12 @@ namespace Blog.UI.Tests.Pages.HomePage
                 return this.Driver.FindElement(By.XPath("//div[4]/div/input"));
             }
         }
+        public IWebElement ChangePassword
+        {
+            get
+            {
+                return this.Driver.FindElement(By.XPath("/html/body/div[2]/div/dl/dd/a"));
+            }
+        }
     }
 }

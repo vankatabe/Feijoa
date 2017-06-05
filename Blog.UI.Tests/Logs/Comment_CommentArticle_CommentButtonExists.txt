@@ -1,0 +1,9 @@
+Test full name:	Blog.UI.Tests.CreatePageTests.Comment_CommentArticle_CommentButtonExists
+
+Work directory:	E:\GitHub\Feijoa\Blog.UI.Tests\bin\Debug
+
+Pass count:	0
+
+Result:	Failed:Error
+
+Message:	OpenQA.Selenium.NoSuchElementException : Unable to locate element: //a[contains(text(), 'Comment')]

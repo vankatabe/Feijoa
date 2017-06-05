@@ -10,6 +10,9 @@ namespace Blog.UI.Tests.Pages.DeletePage
 {
     public static class DeletePageAsserter
     {
-     // Asserter is in the HomePageAsserter
+        public static void AssertConfirmDeleteButtonDisplayed(this DeletePage page, string text)
+        {
+            Assert.AreEqual(text, page.Delete.Text);
+        }
     }
 }

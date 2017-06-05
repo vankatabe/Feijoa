@@ -69,17 +69,18 @@ namespace Blog.UI.Tests
         public void Home_ClickLogin_LoginLoaded()
         {
             HomePage homePage = new HomePage(this.driver);
-            LoginPage loginPage = new LoginPage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
             // homePage.LogoffLink.Click(); // Make sure User is Logged-off
 
             homePage.NavigateTo(homePage.URL);
             Thread.Sleep(1000);
-            homePage.OpenLoginPage();
+            homePage.LoginLink.Click();
             Thread.Sleep(1000);
+                        
+            homePage.AssertLoginPageUrl(this.driver, page.Effect);
+            MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
+            asserter.Invoke(null, new object[] { homePage, this.driver, page.Effect  });
 
-            Assert.AreEqual(page.Effect, driver.Url);
-            Assert.AreEqual(page.Asserter, loginPage.SubmitButton.Displayed.ToString());       
         }
         //TODO: change property values
         [Test]
@@ -99,8 +100,9 @@ namespace Blog.UI.Tests
             homePage.OpenRegistrationPage();
             Thread.Sleep(1000);
 
-            Assert.AreEqual(page.Effect, driver.Url);
-            Assert.AreEqual(page.Asserter, regPage.SubmitButton.Displayed.ToString());
+            homePage.AssertRegisterPageUrl(this.driver, page.Effect);
+            MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
+            asserter.Invoke(null, new object[] { homePage, this.driver, page.Effect });
         }               
 
         [Test]
@@ -123,6 +125,7 @@ namespace Blog.UI.Tests
             createPage.CreateArticle(page, uniqId);
             Thread.Sleep(1000);
             homePage.OpenArticle(uniqId);
+            Thread.Sleep(1000);
 
             createPage.AssertArticleIsDisplayed(homePage.ArticleTitle(uniqId), page.Effect + uniqId);
             // for the DataDriven Asserter:
@@ -136,7 +139,7 @@ namespace Blog.UI.Tests
         [Description("Register with valid User credentials where User Logs-in automatically and press his Account Name link, expected: User navigates to Manage page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
-        public void Home_ClickOnAccount_ManagePageLoaded()
+        public void Manage_ClickAccount_NavigateToManagePage()
         {
             RegisterPage registerPage = new RegisterPage(this.driver);
             ManagePage managePage = new ManagePage(this.driver);
@@ -149,10 +152,11 @@ namespace Blog.UI.Tests
             loginPage.NavigateTo(loginPage.URL);
             loginPage.FillLoginForm(page, uniqId);
             Thread.Sleep(1000);
-            managePage.NavigateTo(managePage.URL);
+            loginPage.ManageLink.Click();
             Thread.Sleep(1000);
-
-            Assert.AreEqual(page.Asserter, managePage.ChangePasswordLink.Displayed.ToString());
+            //cannot for the life of me make the data driven asserter work here.
+            Assert.AreEqual(page.Effect, driver.Url);
+            Assert.AreEqual(page.Effect2, managePage.ChangePasswordLink.Text);
         }
 
         [Test]
@@ -165,14 +169,14 @@ namespace Blog.UI.Tests
             HomePage homePage = new HomePage(this.driver);
             BlogPages page = AccessExcelData.GetTestData(TestContext.CurrentContext.Test.Name); // Get the current test method name (TestContext.CurrentContext.Test.Name = CheckWebSiteLoad_EnterBlogURL_OpenBlogHomePage) and use it as a Key in the xlsx file
             // homePage.LogoffLink.Click(); // Make sure User is Logged-off
-
             homePage.NavigateTo(homePage.URL);
             Thread.Sleep(1000);
             homePage.ClickLogo();
             Thread.Sleep(1000);
 
-            Assert.AreEqual(page.Effect, driver.Url);
-            Assert.AreEqual(page.Asserter, homePage.LoginLink.Displayed.ToString());
+            homePage.AssertHomePageUrl(this.driver, page.Effect);
+            MethodInfo asserter = typeof(HomePageAsserter).GetMethod(page.Asserter);
+            asserter.Invoke(null, new object[] { homePage, this.driver, page.Effect });
         }
     }
 }

@@ -36,6 +36,13 @@ namespace Blog.UI.Tests.Pages.LoginPage
             this.SubmitButton.Click();
         }
 
+        public void FillLoginForm2(BlogPages user, string uniqId)
+        {
+            Type(this.Email, user.UniqEmail(uniqId));
+            Type(this.Password, user.Password + "1");
+            this.SubmitButton.Click();
+        }
+
         private void Type(IWebElement element, string text)
         {
             element.Clear();

@@ -7,6 +7,6 @@ Pass count:	0
 Result:	Failed
 
 Message:	  Expected string length 44 but was 8. Strings differ at index 8.
-  Expected: "--authorff427cc3-c6f5-426f-b6e0-5fea5c13f4aa"
+  Expected: "--author5df1541b-3390-4c9e-8aae-68aaffb17d33"
   But was:  "--author"
   -------------------^

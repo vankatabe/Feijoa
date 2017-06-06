@@ -41,7 +41,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 8), Property("Delete test number:", 1)]
+        [Property("Priority", 1), Property("Category", "Regression"), Property("Test scenario number:", 8), Property("Delete test number:", 1)]
         [Description("User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]
@@ -71,7 +71,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 7)]
+        [Property("Priority", 2), Property("Category", "Navigation"), Property("Test scenario number:", 10), Property("Navigation test number:", 7)]
         [Description("User Register and Login and Create Article, then navigate to Delete page and click 'Delete' button, expected: Article Deleted from Article List")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]

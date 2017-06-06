@@ -41,7 +41,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 7), Property("Edit test number:", 1)]
+        [Property("Priority", 1), Property("Category", "Regression"), Property("Test scenario number:", 7), Property("Edit test number:", 1)]
         [Description("User Register and Login and Create Article, then navigate to Edit page and enter 'Edited' as Article content, expected: Article content changed to 'Edited'")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]
@@ -75,7 +75,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 8)]
+        [Property("Priority", 2), Property("Category", "Navigation"), Property("Test scenario number:", 10), Property("Navigation test number:", 8)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid data to create article, then navigates to his article and clicks Edit, expected: Navigates to Edit page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -103,7 +103,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 7), Property("Edit test number:", 2)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 7), Property("Edit test number:", 2)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid article title and body, expected: Comment button exists")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]

@@ -43,7 +43,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
+        [Property("Priority", 1), Property("Category", "Regression"), Property("Test scenario number:", 9), Property("Homepage test number:", 1)]
         [Description("Navigate to Blog web address, expected: Blog homepage open and Logo present")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]
@@ -62,7 +62,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 1)]
+        [Property("Priority", 2), Property("Category", "Navigation"), Property("Test scenario number:", 10), Property("Navigation test number:", 1)]
         [Description("Navigate to Blog web address, and click Log in, expected: navigates to Log in page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -83,7 +83,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 2)]
+        [Property("Priority", 2), Property("Category", "Navigation"), Property("Test scenario number:", 10), Property("Navigation test number:", 2)]
         [Description("Navigate to Blog web address, and click Register, expected: navigates to Register page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -105,7 +105,7 @@ namespace Blog.UI.Tests
         }               
 
         [Test]
-        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 6)]
+        [Property("Priority", 2), Property("Category", "Navigation"), Property("Test scenario number:", 10), Property("Navigation test number:", 6)]
         [Description("User Register and Login, then navigate to Create page web address and enter valid data to create article, then navigates to his article, expected: Navigates to own article")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -134,7 +134,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 4)]
+        [Property("Priority", 2), Property("Category", "Navigation"), Property("Test scenario number:", 10), Property("Navigation test number:", 4)]
         [Description("Register with valid User credentials where User Logs-in automatically and press his Account Name link, expected: User navigates to Manage page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -160,7 +160,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 3)]
+        [Property("Priority", 2), Property("Category", "Navigation"), Property("Test scenario number:", 10), Property("Navigation test number:", 3)]
         [Description("Navigate to Blog web address, and click the Logo, expected: navigates to Home page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]

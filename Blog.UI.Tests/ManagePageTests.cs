@@ -37,7 +37,7 @@ namespace Blog.UI.Tests
         }
         
         [Test]
-        [Property("Priority", 2), Property("Test scenario number:", 10), Property("Navigation test number:", 9)]
+        [Property("Priority", 2), Property("Category", "Navigation"), Property("Test scenario number:", 10), Property("Navigation test number:", 9)]
         [Description("User creates an account, logs in and enters Manage panel, then selects Change password, expected: Navigate to Change password page")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]

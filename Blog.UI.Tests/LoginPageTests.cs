@@ -40,7 +40,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 3), Property("Login test number:", 1)]
+        [Property("Priority", 1), Property("Category", "Regression"), Property("Category", "Regression"), Property("Test scenario number:", 3), Property("Login test number:", 1)]
         [Description("Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]
@@ -67,7 +67,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 3), Property("Login test number:", 2)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 3), Property("Login test number:", 2)]
         [Description("Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -88,7 +88,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 3), Property("Login test number:", 4)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 3), Property("Login test number:", 4)]
         [Description("Navigate to Login page web address and enter an invalid Email but valid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -109,7 +109,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 3), Property("Login test number:", 3)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 3), Property("Login test number:", 3)]
         [Description("Navigate to Login page web address and enter a valid Email but invalid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -136,7 +136,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 3), Property("Login test number:", 5)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 3), Property("Login test number:", 5)]
         [Description("Navigate to Login page web address and enter an invalid Email format but valid Password, expected: Login unsuccessful and Password field required message")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]

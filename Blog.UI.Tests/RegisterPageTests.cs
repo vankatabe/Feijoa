@@ -38,7 +38,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 2), Property("Registration test number:", 1)]
+        [Property("Priority", 1), Property("Category", "Regression"), Property("Test scenario number:", 2), Property("Registration test number:", 1)]
         [Description("Navigate to Registration page web address and populate fields with valid input, expected: Account registered and User Logged automatially")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]
@@ -59,7 +59,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 2), Property("Registration test number:", 2)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 2), Property("Registration test number:", 2)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Email field empty, exected: Account not registered and Email field required message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -80,7 +80,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 2), Property("Registration test number:", 3)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 2), Property("Registration test number:", 3)]
         [Description("Navigate to Registration page web address and populate fields with valid data while leaving Full Name field empty, exected: Account not registered and Full Name field required message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -101,7 +101,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 2), Property("Registration test number:", 4)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 2), Property("Registration test number:", 4)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Passwordd field empty, exected: Account not registered and Password field required message displayed, and Password missmatch message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]
@@ -125,7 +125,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 3), Property("Test scenario number:", 2), Property("Registration test number:", 5)]
+        [Property("Priority", 3), Property("Category", "Negative"), Property("Test scenario number:", 2), Property("Registration test number:", 5)]
         [Description("Navigate to Registration page web address and popualte fields with valid data while leaving Confirm Passwordd field empty, exected: Account not registered and Password missmatch message displayed")]
         [Author("Mario Georgiev")]
         [LogResultToFileAttribute]

@@ -39,7 +39,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Test scenario number:", 6), Property("Logoff test number:", 1)]
+        [Property("Priority", 1), Property("Category", "Regression"), Property("Test scenario number:", 6), Property("Logoff test number:", 1)]
         [Description("Register with valid User credentials where User Logs-in automatically and press Logoff link, expected: User logged-off and Login link displayed")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]

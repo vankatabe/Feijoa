@@ -40,7 +40,7 @@ namespace Blog.UI.Tests
         }
 
         [Test]
-        [Property("Priority", 1), Property("Category", "Regression"), Property("Category", "Regression"), Property("Test scenario number:", 3), Property("Login test number:", 1)]
+        [Property("Priority", 1), Property("Category", "Regression"), Property("Test scenario number:", 3), Property("Login test number:", 1)]
         [Description("Navigate to Login page web address and enter valid registered User credentials, expected: User logged and greeting displayed")]
         [Author("vankatabe")]
         [LogResultToFileAttribute]

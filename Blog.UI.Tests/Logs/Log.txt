@@ -1851,3 +1851,4 @@ OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
 [2017-06-05T23:06:15] [Passed] Register_Without_Password
 [2017-06-06T20:46:27] [Passed] Login_ValidCredentials_LoginSuccessful
 [2017-06-06T20:53:23] [Passed] Login_ValidCredentials_LoginSuccessful
+[2017-06-09T21:24:57] [Passed] Register_UniqueCredentials_RegisterSuccessful

@@ -26,16 +26,16 @@ namespace Blog.UI.Tests
         }
 
         [When(@"I fill-in the registration form is ""(.*)""")]
-        public void WhenIFill_InTheRegistrationFormWithoutIs(string testName)
+        public void WhenIFill_InTheRegistrationFormIs(string testName)
         {
             registerPage.FillRegistrationFormNegative(page);
             Thread.Sleep(1000); // Necessary due to test execution speed
         }
 
         [Then(@"Message should be displayed is ""(.*)""")]
-        public void ThenErrorMessageForNamesShouldBeDisplayedIs(string errorMessage)
+        public void ThenMessageShouldBeDisplayedIs(string message)
         {
-            registerPage.AssertEmailErrorMessageExists(page.Effect);
+            //Not a good idea for this SpecFlow type of tests: registerPage.AssertEmailErrorMessageExists(page.Effect);
             // for the DataDriven Asserter:
             MethodInfo asserter = typeof(RegisterPageAsserter).GetMethod(page.Asserter);
             //could be also like next row -Effect - from the Effect column in the Excel file - what message or effect are we expecting
